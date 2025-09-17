@@ -1,0 +1,2 @@
+PyMuPDF==1.26.4
+Unidecode==1.4.0
