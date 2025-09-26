@@ -20,18 +20,20 @@ def pdf_to_text(pdf_path):
 
 corpus = pdf_to_text("./Corpus/Corpus_ASIMOV/Fondation_sample.pdf")
 corpus = re.sub(r'\s+', ' ', corpus)    #Remplace '/n', '/t', ' ' isolé comme groupé par un espace
-                                        #ATTENTION : ENLEVER LES NUMEROS DE PAGE AU CORPUS
 
 nlp = sp.load("fr_core_news_md")
 doc = nlp(corpus)
 
 LP = []
 LL = []
+LM = []
 for ent in doc.ents:            #Pour anti-dictionnaire : SE SERVIR DES LEMMES
     if ent.label_ == "PER":
         LP.append(ent.text)
     elif ent.label_ == "LOC":
         LL.append(ent.text)
+    elif ent.label_ == "MISC":
+        LM.append(ent.text)
         
 for ent in set(LP):
     print(f"{ent:<30}{LP.count(ent)}")
@@ -40,4 +42,8 @@ print("\n------------------------------------------------------\n")
 for ent in set(LL):
     print(f"{ent:<30}{LL.count(ent)}")
 print("Nombre de lieux détéctés : ", len(set(LL)))
+print("\n------------------------------------------------------\n")
+for ent in set(LM):
+    print(f"{ent:<30}{LM.count(ent)}")
+print("Nombre de d'entitées non catégorisés : ", len(set(LM)))
 
