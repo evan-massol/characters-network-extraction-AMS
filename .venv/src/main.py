@@ -11,7 +11,7 @@ def pdf_to_text(pdf_path):
             text += page.get_textpage().extractText()
     return text
 
-corpus = pdf_to_text("src/pdf/Fondation_sample.pdf")
+corpus = pdf_to_text("pdf/Fondation_sample.pdf")
 corpus = re.sub(r'\s+', ' ', corpus)
 tokens = re.findall(r"[A-Za-zÀ-ÖØ-öø-ÿ\-']+", corpus)
 
@@ -23,7 +23,7 @@ def filter_antidict(file):
 def generate_candidates(tokens):
     """Generate candidate words from tokens."""
     L = []
-    anti_words = filter_antidict('src/fonctionnels_fr.txt')
+    anti_words = filter_antidict('fonctionnels_fr.txt')
     for i, token in enumerate(tokens):
         if token.istitle() and unidecode(token.lower()) not in anti_words:
             L.append(token)
@@ -42,7 +42,7 @@ LP = [word for word, count in L.items() if count > 2]
 
 def generate_entities(L):
     """Filter out entities based on an anti-dictionary."""
-    return [token for token in L if unidecode(token.lower()) not in filter_antidict('src/fonctionnels_fr.txt')]
+    return [token for token in L]
 
 LP = generate_entities(LP)
 LP.sort()

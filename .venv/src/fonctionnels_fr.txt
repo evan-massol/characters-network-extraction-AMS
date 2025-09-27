@@ -48,6 +48,7 @@ bientôt
 bis
 bof
 bon
+bonjour
 bons
 bonnes
 bonne
@@ -193,6 +194,7 @@ incessante
 il
 ils
 issu
+intéressant
 j
 jadis
 jamais
