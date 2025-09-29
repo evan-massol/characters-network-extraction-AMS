@@ -50,7 +50,13 @@ def supprCutSentences(texte):
 
     return texte
 
-# FAIRE FONCTION SUPPRIMER NUMEROS DE CHAPITER ET DE PARTIE
+def supprPartsTitle(texte):
+    texte = re.sub(r'\n[A-ZÈ]+ PARTIE \n \n \n[A-ZÀÂÇÉÈÊËÎÏÔÙÛ ]+', '', texte)
+    return texte
+
+def supprChapterNum(texte):
+    texte = re.sub(r'\n\b[IVXLCDM]+(?!\')\b \n', '', texte)
+    return texte
 
 # FAIRE FONCTION GERER DIALOGUES
 
@@ -64,11 +70,10 @@ def supprCutSentences(texte):
 
 
 
-os.chdir('..')
-os.chdir('..')
-corpus = pdf_to_text("./Corpus/Corpus_ASIMOV/Fondation_sample.pdf")
-
+corpus = pdf_to_text("./.venv/src/pdf/Fondation_sample.pdf") 
 corpus = re.sub(r'\ufffd\s*\d+\s*\ufffd', ' ', corpus)  #Supprime les numéros de pages
+corpus = supprPartsTitle(corpus)                        #Supprime les titres
+corpus = supprChapterNum(corpus)                        #Supprime les numéros de chapitres
 corpus = supprCutSentences(corpus)                      #Supprime les phrases coupées
 corpus = re.sub(r'\s+', ' ', corpus)                    #Remplace '/n', '/t', ' ' isolé comme groupé par un espace
 
@@ -78,6 +83,6 @@ corpus = re.sub(r'\s+', ' ', corpus)                    #Remplace '/n', '/t', ' 
 
 
 
-f = open('fichier.txt', 'w', encoding="utf-8")
+f = open('./.venv/src/txt/Fondation.txt', 'w', encoding="utf-8")
 f.write(corpus)
 f.close()
