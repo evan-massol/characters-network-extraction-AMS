@@ -1,24 +1,29 @@
 import spacy as sp
 import fitz
 import re
+import os
 from unidecode import unidecode
 
-def pdf_to_text(pdf_path):
-    """Extract text from a PDF file."""
-    text = ""
-    with fitz.open(pdf_path) as doc:
-        for page in doc:
-            text += page.get_textpage().extractText()
-    return text
 
-corpus = pdf_to_text("pdf/Fondation_sample.pdf")
-corpus = re.sub(r'\s+', ' ', corpus)    #Remplace '/n', '/t', ' ' isolé comme groupé par un espace
+
+#-----------------------------------FONCTIONS---------------------------------------
+
+
 
 # Charger l'antidictionnaire
 def filter_antidict(file):
     with open(file, 'r', encoding='utf-8') as f:
         return set(unidecode(line.strip()) for line in f)
 
+
+
+#------------------------------TRAITEMENT DU TEXTE---------------------------------
+
+
+
+f = open('txt/Fondation.txt', 'r', encoding="utf-8")
+corpus = f.read()
+f.close()
 anti_words = filter_antidict('fonctionnels_fr.txt')
 
 nlp = sp.load("fr_core_news_md")
@@ -59,13 +64,13 @@ for ent in doc.ents:            #Pour anti-dictionnaire : SE SERVIR DES LEMMES
 
 for ent in sorted(set(LP)):
     print(f"{ent:<30}{LP.count(ent)}")
-print("Nombre de personnages détéctés : ", len(set(LP)))
 print("\n------------------------------------------------------\n")
 for ent in sorted(set(LL)):
     print(f"{ent:<30}{LL.count(ent)}")
-print("Nombre de lieux détéctés : ", len(set(LL)))
 print("\n------------------------------------------------------\n")
 for ent in set(LM):
     print(f"{ent:<30}{LM.count(ent)}")
+print("Nombre de personnages détéctés : ", len(set(LP)))
+print("Nombre de lieux détéctés : ", len(set(LL)))
 print("Nombre d'entités non catégorisés : ", len(set(LM)))
 
