@@ -14,15 +14,27 @@
 \maketitle
 % 
 \begin{abstract}
-  For your paper to be published in the conference proceedings, you must use this document as both an instruction set and as a template into which you can type your own text. If your paper does not conform to the required format, you will be asked to fix it.
-
-  Please do not reuse your past papers as a template. To prepare your paper for submission, please always download a fresh copy of this template from the conference website and please read the format instructions in this template before you use it for your paper.
-
-  Conversion to PDF may cause problems in the resulting PDF or expose problems in your source document. Before submitting your final paper in PDF, check that the format in your paper PDF conforms to this template. Specifically, check the appearance of the title and author block, the appearance of section headings, document margins, column width, column spacing, and other features such as figure numbers, table numbers and equation number. In summary, you must proofread your final paper in PDF before submission.
-  
-  The maximum number of pages is 5. The 5\textsuperscript{th} page may be used exclusively for references. The references should begin on an earlier page immediately after the Acknowledgements section, and continue onto the 5\textsuperscript{th} page. If no space is available on an earlier page, then the references may begin on the 5\textsuperscript{th} page.
-
-  Index terms should be included as shown below.
+  The objective of this document is to present and explain the core concepts and
+  implementations of our project, that is, Character Network Extraction, using the book series
+  "The Foundation" by Isaac Asimov. We will detail the way we decided to use the resources at
+  our disposal to achieve it, our way of thinking and the choices we made. We will
+  also present the results we obtained and the conclusions we drew from our work.
+  Although this project can largely be improved, it also means that the possibilities
+  for working on it were numerous, resulting in a work that might not always be coherent and comprehensive.
 \end{abstract}
+
+\section{Corpus pre-processing}
+
+\subsection{Methodology}
+
+In order to correctly process the corpus, the raw material we were given, that is, the pdf files
+of the book series "The Foundation", needed to be refined in order to make them usable by our
+algorithms. Therefore, we decided to use the Python library \textit{Fitz} to extract the text from
+the pdf files. We ended up with new text files that we've been able to use to check for potential future
+problems, such as the presence of page numbers, headers, footers, etc.
+\newline
+First, we decided to handle the problem of page numbers.
+
+
 
 \end{document}
