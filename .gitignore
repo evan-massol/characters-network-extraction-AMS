@@ -1,5 +1,4 @@
 /.vscode
 
-/output
-
-*.pdf
+/.venv/bin
+/.venv/lib
