@@ -1,6 +1,6 @@
 import spacy as sp
 
-f = open('txt/Fondation.txt', 'r', encoding="utf-8")
+f = open('src/txt/Fondation.txt', 'r', encoding="utf-8")
 texte = f.read()
 f.close()
 
