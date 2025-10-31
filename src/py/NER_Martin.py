@@ -4,18 +4,18 @@ from unidecode import unidecode
 
 
 
-#------------------------------INITIALISATION---------------------------------
+#------------------------------INITIALIZATION---------------------------------
 
 
 
-#Création de la liste anti-dictionnaire
+#Create the anti-dictionary list
 anti_words = []
 f = open('fonctionnels_fr.txt', 'r', encoding="utf-8")
 for line in f:
     anti_words.append(line.strip())
 f.close()   
 
-#Importation du texte
+#Import the text
 f = open('txt/Fondation.txt', 'r', encoding="utf-8")
 corpus = f.read()
 f.close()
@@ -37,7 +37,7 @@ doc = nlp(corpus)
 
 sizeMax_EN = 5
 
-# Ajout de toute potentielle entité nommée
+# Add all potential named entities
 tag_EN = ["NOUN", "PROPN", "ADJ", "DET"]
 i=0
 while i<len(doc):
@@ -50,7 +50,7 @@ while i<len(doc):
         if taille == 1:
             i += 1
 
-# Suppresions des tokens isolés indésirables
+# Remove unwanted isolated tokens
 tagsFilter = ["NOUN", "ADJ", "DET"]
 liste = []
 for span in L:
@@ -58,7 +58,7 @@ for span in L:
         liste.append(span)
 L = liste
 
-# Suppression des doublons
+# Remove duplicates
 L_unique = []
 texte_vu = set()
 for span in L:

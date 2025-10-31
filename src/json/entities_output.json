@@ -1,0 +1,7471 @@
+[
+  {
+    "book_code": "paf",
+    "file": "chapter_1.txt",
+    "chapter_number": 0,
+    "entities": {
+      "PER": [
+        {
+          "name": "Alban Wellis",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Cléon",
+          "type": "PER",
+          "count": 15
+        },
+        {
+          "name": "Empereur",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Eto Demerzel",
+          "type": "PER",
+          "count": 11
+        },
+        {
+          "name": "Hari Seldon",
+          "type": "PER",
+          "count": 38
+        },
+        {
+          "name": "Hummin",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Sire",
+          "type": "PER",
+          "count": 8
+        },
+        {
+          "name": "Trantor",
+          "type": "PER",
+          "count": 1
+        }
+      ],
+      "LOC": [
+        {
+          "name": "Astronef",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Cléon",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Empereurs",
+          "type": "LOC",
+          "count": 2
+        },
+        {
+          "name": "Exos",
+          "type": "LOC",
+          "count": 2
+        },
+        {
+          "name": "Palais",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Soleil",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Terminus",
+          "type": "LOC",
+          "count": 1
+        }
+      ],
+      "MISC": [
+        {
+          "name": "Asseyez",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Cléon",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Congrès décennal",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Demerzel",
+          "type": "MISC",
+          "count": 4
+        },
+        {
+          "name": "Encyclopaedia Galactica",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Hélicon",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Inconnus !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "L’Empereur",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Sire !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Sire !\n     ",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Sire ?\n     ",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Trantor",
+          "type": "MISC",
+          "count": 6
+        },
+        {
+          "name": "dynastie Entun",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "« Pardonnez-moi",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Ça",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Ère Galactique",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "― Sire",
+          "type": "MISC",
+          "count": 1
+        }
+      ]
+    },
+    "aliases": {
+      "PER": {
+        "Demerzel": "Eto Demerzel",
+        "Wellis": "Alban Wellis",
+        "Seldon": "Hari Seldon"
+      },
+      "LOC": {},
+      "MISC": {}
+    },
+    "summary": {
+      "total_persons": 8,
+      "total_locations": 7,
+      "total_misc": 17
+    }
+  },
+  {
+    "book_code": "paf",
+    "file": "chapter_2.txt",
+    "chapter_number": 1,
+    "entities": {
+      "PER": [
+        {
+          "name": "Alem",
+          "type": "PER",
+          "count": 11
+        },
+        {
+          "name": "Anacréon",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Cléon Ier",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Demerzel",
+          "type": "PER",
+          "count": 3
+        },
+        {
+          "name": "Hari Seldon",
+          "type": "PER",
+          "count": 41
+        },
+        {
+          "name": "Hummin",
+          "type": "PER",
+          "count": 24
+        },
+        {
+          "name": "Héliconien",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Trantor",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Trantorien",
+          "type": "PER",
+          "count": 4
+        }
+      ],
+      "LOC": [
+        {
+          "name": "Hummin",
+          "type": "LOC",
+          "count": 3
+        },
+        {
+          "name": "Montez",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Palais",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Pseudomagnétique",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Trantor",
+          "type": "LOC",
+          "count": 1
+        }
+      ],
+      "MISC": [
+        {
+          "name": "Coup d’œil du jeune homme",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Demerzel",
+          "type": "MISC",
+          "count": 3
+        },
+        {
+          "name": "Empire Galactique",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Hélicon",
+          "type": "MISC",
+          "count": 6
+        },
+        {
+          "name": "Marbie ?",
+          "type": "MISC",
+          "count": 7
+        },
+        {
+          "name": "Non !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Oh",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Pire",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Prétendez",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Seldon",
+          "type": "MISC",
+          "count": 3
+        },
+        {
+          "name": "Si",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Sourire",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "TRANTOR",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Trantor",
+          "type": "MISC",
+          "count": 7
+        },
+        {
+          "name": "Vous êtes dessus",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "trantorienne",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Ça",
+          "type": "MISC",
+          "count": 7
+        },
+        {
+          "name": "Étendez-",
+          "type": "MISC",
+          "count": 1
+        }
+      ]
+    },
+    "aliases": {
+      "PER": {
+        "Seldon": "Hari Seldon"
+      },
+      "LOC": {},
+      "MISC": {
+        "Marbie": "Marbie ?"
+      }
+    },
+    "summary": {
+      "total_persons": 9,
+      "total_locations": 5,
+      "total_misc": 18
+    }
+  },
+  {
+    "book_code": "paf",
+    "file": "chapter_3.txt",
+    "chapter_number": 2,
+    "entities": {
+      "PER": [
+        {
+          "name": "Chetter Hummin",
+          "type": "PER",
+          "count": 12
+        },
+        {
+          "name": "Demerzel",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Hari\nSeldon",
+          "type": "PER",
+          "count": 27
+        },
+        {
+          "name": "Hari Seldon",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Trantor",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "échouerai",
+          "type": "PER",
+          "count": 1
+        }
+      ],
+      "LOC": [
+        {
+          "name": "Hummin",
+          "type": "LOC",
+          "count": 3
+        },
+        {
+          "name": "Secteur impérial",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Streeling",
+          "type": "LOC",
+          "count": 5
+        },
+        {
+          "name": "Trantoriens",
+          "type": "LOC",
+          "count": 1
+        }
+      ],
+      "MISC": [
+        {
+          "name": "Ah bon",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Demerzel",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Empire\nGalactique",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Exo",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Fuite",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Hélicon",
+          "type": "MISC",
+          "count": 5
+        },
+        {
+          "name": "Oh",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Secteur\nimpérial",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Secteur impérial",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "UNIVERSITÉ",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Voyager\nsur Trantor",
+          "type": "MISC",
+          "count": 11
+        }
+      ]
+    },
+    "aliases": {
+      "PER": {
+        "Hummin": "Chetter Hummin",
+        "Seldon": "Hari\nSeldon"
+      },
+      "LOC": {},
+      "MISC": {
+        "Trantor": "Voyager\nsur Trantor"
+      }
+    },
+    "summary": {
+      "total_persons": 6,
+      "total_locations": 4,
+      "total_misc": 11
+    }
+  },
+  {
+    "book_code": "paf",
+    "file": "chapter_4.txt",
+    "chapter_number": 3,
+    "entities": {
+      "PER": [
+        {
+          "name": "Chetter Hummin",
+          "type": "PER",
+          "count": 12
+        },
+        {
+          "name": "Cléon",
+          "type": "PER",
+          "count": 8
+        },
+        {
+          "name": "Demerzel",
+          "type": "PER",
+          "count": 8
+        },
+        {
+          "name": "Dors Venabili",
+          "type": "PER",
+          "count": 3
+        },
+        {
+          "name": "Empereur",
+          "type": "PER",
+          "count": 3
+        },
+        {
+          "name": "Hari Seldon",
+          "type": "PER",
+          "count": 38
+        },
+        {
+          "name": "Kan",
+          "type": "PER",
+          "count": 3
+        },
+        {
+          "name": "Sire",
+          "type": "PER",
+          "count": 6
+        },
+        {
+          "name": "Tambourinant",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Trantor",
+          "type": "PER",
+          "count": 2
+        }
+      ],
+      "LOC": [
+        {
+          "name": "Exos",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Hummin",
+          "type": "LOC",
+          "count": 2
+        },
+        {
+          "name": "Jennisek",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Radicales",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Université",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Université de Streeling",
+          "type": "LOC",
+          "count": 2
+        },
+        {
+          "name": "Universités",
+          "type": "LOC",
+          "count": 2
+        },
+        {
+          "name": "État",
+          "type": "LOC",
+          "count": 2
+        }
+      ],
+      "MISC": [
+        {
+          "name": "Accordez-moi... disons",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Ah !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Bibliothèque",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Cinna",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "DORS",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Demerzel",
+          "type": "MISC",
+          "count": 7
+        },
+        {
+          "name": "Dors",
+          "type": "MISC",
+          "count": 9
+        },
+        {
+          "name": "Désolé",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "En un sens",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Exo",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Fuite",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Grande Guerre",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Historienne",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Hélicon",
+          "type": "MISC",
+          "count": 6
+        },
+        {
+          "name": "Neuf heures",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Sire ?",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Sourire",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Tenez",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Traité de Poldark",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Trantor",
+          "type": "MISC",
+          "count": 4
+        },
+        {
+          "name": "VENABILI",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "trantorienne",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Ça",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Ç’",
+          "type": "MISC",
+          "count": 1
+        }
+      ]
+    },
+    "aliases": {
+      "PER": {
+        "Hummin": "Chetter Hummin",
+        "Chetter": "Chetter Hummin",
+        "Venabili": "Dors Venabili",
+        "Dors": "Dors Venabili",
+        "Seldon": "Hari Seldon",
+        "Hari": "Hari Seldon"
+      },
+      "LOC": {},
+      "MISC": {}
+    },
+    "summary": {
+      "total_persons": 10,
+      "total_locations": 8,
+      "total_misc": 24
+    }
+  },
+  {
+    "book_code": "paf",
+    "file": "chapter_5.txt",
+    "chapter_number": 4,
+    "entities": {
+      "PER": [
+        {
+          "name": "Clowzia",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Dors Venabili",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Hari Seldon",
+          "type": "PER",
+          "count": 38
+        },
+        {
+          "name": "Hummin",
+          "type": "PER",
+          "count": 3
+        },
+        {
+          "name": "Jenarr",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Kiangtow Randa",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Leggen",
+          "type": "PER",
+          "count": 3
+        },
+        {
+          "name": "Lisung Randa",
+          "type": "PER",
+          "count": 8
+        },
+        {
+          "name": "Marcher",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Taciturne",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Trantor",
+          "type": "PER",
+          "count": 2
+        }
+      ],
+      "LOC": [
+        {
+          "name": "Clowzia",
+          "type": "LOC",
+          "count": 6
+        },
+        {
+          "name": "Exos",
+          "type": "LOC",
+          "count": 2
+        },
+        {
+          "name": "Hummin",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Leggen",
+          "type": "LOC",
+          "count": 3
+        },
+        {
+          "name": "Palais",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Trantoriens",
+          "type": "LOC",
+          "count": 2
+        }
+      ],
+      "MISC": [
+        {
+          "name": "Couverture",
+          "type": "MISC",
+          "count": 18
+        },
+        {
+          "name": "Dors",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Hélicon",
+          "type": "MISC",
+          "count": 4
+        },
+        {
+          "name": "Parlez-moi de frustration !\n",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "TRANTOR",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Trantor",
+          "type": "MISC",
+          "count": 5
+        },
+        {
+          "name": "vertijets",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Ça",
+          "type": "MISC",
+          "count": 3
+        },
+        {
+          "name": "Ç’",
+          "type": "MISC",
+          "count": 1
+        }
+      ]
+    },
+    "aliases": {
+      "PER": {
+        "Randa": "Lisung Randa",
+        "Lisung": "Lisung Randa",
+        "Seldon": "Hari Seldon",
+        "Hari": "Hari Seldon"
+      },
+      "LOC": {},
+      "MISC": {}
+    },
+    "summary": {
+      "total_persons": 11,
+      "total_locations": 6,
+      "total_misc": 9
+    }
+  },
+  {
+    "book_code": "paf",
+    "file": "chapter_6.txt",
+    "chapter_number": 5,
+    "entities": {
+      "PER": [
+        {
+          "name": "Clowzia",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Controverse Leggen",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Dors Venabili",
+          "type": "PER",
+          "count": 6
+        },
+        {
+          "name": "Hari\nSeldon",
+          "type": "PER",
+          "count": 18
+        },
+        {
+          "name": "Hari Seldon",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Héliconien",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Inutile",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Jenarr Leggen",
+          "type": "PER",
+          "count": 13
+        },
+        {
+          "name": "Parfait",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Perplexité de Benastra",
+          "type": "PER",
+          "count": 10
+        }
+      ],
+      "LOC": [
+        {
+          "name": "Clowzia",
+          "type": "LOC",
+          "count": 2
+        },
+        {
+          "name": "Leggen",
+          "type": "LOC",
+          "count": 9
+        },
+        {
+          "name": "Réunis",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Université",
+          "type": "LOC",
+          "count": 1
+        }
+      ],
+      "MISC": [
+        {
+          "name": "Ah",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Couverture",
+          "type": "MISC",
+          "count": 8
+        },
+        {
+          "name": "Dors superposa",
+          "type": "MISC",
+          "count": 22
+        },
+        {
+          "name": "Excusez-moi...\nPuisque",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Illico",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Surprise de Benastra",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Trantor",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "vertijets",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Ça",
+          "type": "MISC",
+          "count": 3
+        }
+      ]
+    },
+    "aliases": {
+      "PER": {
+        "Benastra": "Perplexité de Benastra",
+        "Leggen": "Jenarr Leggen",
+        "Venabili": "Dors Venabili",
+        "Dors": "Dors Venabili",
+        "Jenarr": "Jenarr Leggen",
+        "Seldon": "Hari\nSeldon",
+        "Hari": "Hari\nSeldon"
+      },
+      "LOC": {},
+      "MISC": {
+        "Dors": "Dors superposa"
+      }
+    },
+    "summary": {
+      "total_persons": 10,
+      "total_locations": 4,
+      "total_misc": 9
+    }
+  },
+  {
+    "book_code": "paf",
+    "file": "chapter_7.txt",
+    "chapter_number": 6,
+    "entities": {
+      "PER": [
+        {
+          "name": "Cléon",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Damiano Nord",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Dors Venabili",
+          "type": "PER",
+          "count": 4
+        },
+        {
+          "name": "Eto Demerzel",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Hari Seldon",
+          "type": "PER",
+          "count": 34
+        },
+        {
+          "name": "Hestelonia",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Hummin",
+          "type": "PER",
+          "count": 22
+        },
+        {
+          "name": "Kan",
+          "type": "PER",
+          "count": 4
+        },
+        {
+          "name": "Leggen",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Mycogène",
+          "type": "PER",
+          "count": 6
+        },
+        {
+          "name": "Mycogéniens",
+          "type": "PER",
+          "count": 3
+        },
+        {
+          "name": "Primo",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Randa",
+          "type": "PER",
+          "count": 3
+        },
+        {
+          "name": "Redites",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Trantor",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Ziggoreth",
+          "type": "PER",
+          "count": 1
+        }
+      ],
+      "LOC": [
+        {
+          "name": "Appelez",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Enfouie",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Hummin",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Hélicon",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Leggen",
+          "type": "LOC",
+          "count": 4
+        },
+        {
+          "name": "Streeling",
+          "type": "LOC",
+          "count": 2
+        },
+        {
+          "name": "Trantoriens",
+          "type": "LOC",
+          "count": 1
+        }
+      ],
+      "MISC": [
+        {
+          "name": "Cinna",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Couverture",
+          "type": "MISC",
+          "count": 5
+        },
+        {
+          "name": "Demerzel",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Dors",
+          "type": "MISC",
+          "count": 20
+        },
+        {
+          "name": "Eh bien... »",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Excusez-moi, intervint",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Hélicon",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Oh",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Seldon",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Si",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Trantor",
+          "type": "MISC",
+          "count": 4
+        },
+        {
+          "name": "Ça",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "― w ‖renversé",
+          "type": "MISC",
+          "count": 1
+        }
+      ]
+    },
+    "aliases": {
+      "PER": {
+        "Dors": "Dors Venabili",
+        "Demerzel": "Eto Demerzel",
+        "Seldon": "Hari Seldon",
+        "Hari": "Hari Seldon"
+      },
+      "LOC": {},
+      "MISC": {}
+    },
+    "summary": {
+      "total_persons": 16,
+      "total_locations": 7,
+      "total_misc": 13
+    }
+  },
+  {
+    "book_code": "paf",
+    "file": "chapter_8.txt",
+    "chapter_number": 7,
+    "entities": {
+      "PER": [
+        {
+          "name": "Chetter Hummin",
+          "type": "PER",
+          "count": 3
+        },
+        {
+          "name": "Dors Venabili",
+          "type": "PER",
+          "count": 3
+        },
+        {
+          "name": "Endor Levanian",
+          "type": "PER",
+          "count": 4
+        },
+        {
+          "name": "Frère",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Grisnuage",
+          "type": "PER",
+          "count": 6
+        },
+        {
+          "name": "Hari Seldon",
+          "type": "PER",
+          "count": 39
+        },
+        {
+          "name": "Impossible",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Mycogène",
+          "type": "PER",
+          "count": 7
+        },
+        {
+          "name": "Mycogénien",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Mycogéniens",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Secteur de",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Égalitaire",
+          "type": "PER",
+          "count": 1
+        }
+      ],
+      "LOC": [
+        {
+          "name": "Clowzia",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Exos",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Hummin",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Peuh",
+          "type": "LOC",
+          "count": 1
+        }
+      ],
+      "MISC": [
+        {
+          "name": "Cinna",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Couverture",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Dors",
+          "type": "MISC",
+          "count": 24
+        },
+        {
+          "name": "Enchanté, monsieur",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Fuite...\n                                  ENCYCLOPAEDIA GALACTICA",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Hélicon",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Je suis une Exo",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Maître-du-Soleil Quatorze",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "QUATORZE",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Quarante-cinq",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Quarante-trois",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Sœurs",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Trantor",
+          "type": "MISC",
+          "count": 3
+        },
+        {
+          "name": "gnome",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Ça",
+          "type": "MISC",
+          "count": 5
+        },
+        {
+          "name": "― Gouttes de pluie",
+          "type": "MISC",
+          "count": 1
+        }
+      ]
+    },
+    "aliases": {
+      "PER": {
+        "Levanian": "Endor Levanian",
+        "Hummin": "Chetter Hummin",
+        "Dors": "Dors Venabili",
+        "Seldon": "Hari Seldon",
+        "Hari": "Hari Seldon"
+      },
+      "LOC": {},
+      "MISC": {}
+    },
+    "summary": {
+      "total_persons": 12,
+      "total_locations": 4,
+      "total_misc": 16
+    }
+  },
+  {
+    "book_code": "paf",
+    "file": "chapter_9.txt",
+    "chapter_number": 8,
+    "entities": {
+      "PER": [
+        {
+          "name": "Balivernes",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Chetter Hummin",
+          "type": "PER",
+          "count": 3
+        },
+        {
+          "name": "Dors",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Frère",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Grisnuage",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Hari Seldon",
+          "type": "PER",
+          "count": 37
+        },
+        {
+          "name": "Humanique",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Lois",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Mycogène",
+          "type": "PER",
+          "count": 8
+        },
+        {
+          "name": "Mycogéniens",
+          "type": "PER",
+          "count": 1
+        }
+      ],
+      "LOC": [
+        {
+          "name": "Plateaux",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Surnaturaliste",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Trantoriens",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "État",
+          "type": "LOC",
+          "count": 1
+        }
+      ],
+      "MISC": [
+        {
+          "name": "Ah, ah",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Attendez",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Couverture",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Dors",
+          "type": "MISC",
+          "count": 14
+        },
+        {
+          "name": "Dors du coin de\nl’œil",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Empire Galactique",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Frère",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Frère et chaque",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Fuite",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Goutte-",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Hélicon",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Je suis une Sœur",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "La Sœur",
+          "type": "MISC",
+          "count": 4
+        },
+        {
+          "name": "Les Sœurs",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Lois fondamentales",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "MYCOGÈNE",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Maître-du-Soleil Quatorze",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Religieux ―     ",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Seldon",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "les Sœurs",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Ça",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Ç’",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "― A Trantor",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "― escalators",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "― la table ‖.",
+          "type": "MISC",
+          "count": 1
+        }
+      ]
+    },
+    "aliases": {
+      "PER": {
+        "Hummin": "Chetter Hummin",
+        "Seldon": "Hari Seldon",
+        "Hari": "Hari Seldon"
+      },
+      "LOC": {},
+      "MISC": {
+        "Sœur": "La Sœur",
+        "Trantor": "― A Trantor"
+      }
+    },
+    "summary": {
+      "total_persons": 10,
+      "total_locations": 4,
+      "total_misc": 25
+    }
+  },
+  {
+    "book_code": "paf",
+    "file": "chapter_10.txt",
+    "chapter_number": 9,
+    "entities": {
+      "PER": [
+        {
+          "name": "Calmez",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Dors Venabili",
+          "type": "PER",
+          "count": 3
+        },
+        {
+          "name": "Frère",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Hari Seldon",
+          "type": "PER",
+          "count": 30
+        },
+        {
+          "name": "Héliconien",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Mycogène",
+          "type": "PER",
+          "count": 3
+        },
+        {
+          "name": "Mycogéniens",
+          "type": "PER",
+          "count": 1
+        }
+      ],
+      "LOC": [
+        {
+          "name": "Jennat",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "La Galaxie",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Streeling",
+          "type": "LOC",
+          "count": 1
+        }
+      ],
+      "MISC": [
+        {
+          "name": "Ah !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "CUISSE",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Frère",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Hélicon",
+          "type": "MISC",
+          "count": 3
+        },
+        {
+          "name": "La Sœur",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Livre",
+          "type": "MISC",
+          "count": 10
+        },
+        {
+          "name": "Livre et Dors",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Livre et dit",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Livre sur la petite table de chevet",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Relaxez",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Rire de Dors",
+          "type": "MISC",
+          "count": 8
+        },
+        {
+          "name": "Seldon",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Si",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Terra !",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Théoriquement",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Trantor",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Tâtant",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Tâter",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Ça",
+          "type": "MISC",
+          "count": 4
+        },
+        {
+          "name": "― Me",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "― robots ‖.\n     ",
+          "type": "MISC",
+          "count": 1
+        }
+      ]
+    },
+    "aliases": {
+      "PER": {
+        "Dors": "Dors Venabili",
+        "Seldon": "Hari Seldon",
+        "Hari": "Hari Seldon"
+      },
+      "LOC": {},
+      "MISC": {
+        "Dors": "Rire de Dors",
+        "Sœur": "La Sœur",
+        "Terra": "Terra !"
+      }
+    },
+    "summary": {
+      "total_persons": 7,
+      "total_locations": 3,
+      "total_misc": 21
+    }
+  },
+  {
+    "book_code": "paf",
+    "file": "chapter_11.txt",
+    "chapter_number": 10,
+    "entities": {
+      "PER": [
+        {
+          "name": "Dors\nVenabili",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Dors Venabili",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Espérez",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Fils",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Frère",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Hari Seldon",
+          "type": "PER",
+          "count": 45
+        },
+        {
+          "name": "Hummin",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Lissauer",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Mentone",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Mycogène",
+          "type": "PER",
+          "count": 8
+        },
+        {
+          "name": "Mycogénien",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Mycogéniens",
+          "type": "PER",
+          "count": 4
+        },
+        {
+          "name": "Mycélium",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Ridicule",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Sacratorium",
+          "type": "PER",
+          "count": 3
+        }
+      ],
+      "LOC": [
+        {
+          "name": "Grand Ancien",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Hummin",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Le Mycogénien",
+          "type": "LOC",
+          "count": 3
+        },
+        {
+          "name": "Novigor",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Palais\nimpérial",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Palais impérial",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Sacratorium",
+          "type": "LOC",
+          "count": 5
+        },
+        {
+          "name": "Tabou",
+          "type": "LOC",
+          "count": 1
+        }
+      ],
+      "MISC": [
+        {
+          "name": "AURORA",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Anciens",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Asseyez",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Aurora",
+          "type": "MISC",
+          "count": 3
+        },
+        {
+          "name": "Aviez",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Cinna",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Dors\nVenabili",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Dors\net moi",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Dors ?",
+          "type": "MISC",
+          "count": 22
+        },
+        {
+          "name": "Dors murmura :\n«",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Fils de l’Aube",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Grand Ancien",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Hélicon",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Invasion !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Le Livre ?",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Le Livre dit ça",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Le Sacratorium",
+          "type": "MISC",
+          "count": 14
+        },
+        {
+          "name": "Les Filles de l’Aube",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Livre",
+          "type": "MISC",
+          "count": 4
+        },
+        {
+          "name": "Livre\naussitôt que possible",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Livre au pied\nde la lettre",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Livre dit sur les automates",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Livre à propos des robots",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Livre...",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Monde mythique",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Sœurs",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Terra",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Trantor",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "aviez",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Ça",
+          "type": "MISC",
+          "count": 1
+        }
+      ]
+    },
+    "aliases": {
+      "PER": {
+        "Dors": "Dors\nVenabili",
+        "Seldon": "Hari Seldon",
+        "Hari": "Hari Seldon"
+      },
+      "LOC": {
+        "Mycogénien": "Le Mycogénien"
+      },
+      "MISC": {
+        "Sacratorium": "Le Sacratorium",
+        "Dors": "Dors ?",
+        "Ancien": "Grand Ancien"
+      }
+    },
+    "summary": {
+      "total_persons": 15,
+      "total_locations": 8,
+      "total_misc": 30
+    }
+  },
+  {
+    "book_code": "paf",
+    "file": "chapter_12.txt",
+    "chapter_number": 11,
+    "entities": {
+      "PER": [
+        {
+          "name": "Antennin",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Chetter",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Dors Venabili",
+          "type": "PER",
+          "count": 7
+        },
+        {
+          "name": "Empereur",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Eto Demerzel",
+          "type": "PER",
+          "count": 3
+        },
+        {
+          "name": "Frère",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Hari Seldon",
+          "type": "PER",
+          "count": 47
+        },
+        {
+          "name": "Hummin",
+          "type": "PER",
+          "count": 18
+        },
+        {
+          "name": "Mycogène",
+          "type": "PER",
+          "count": 14
+        },
+        {
+          "name": "Respirez",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Sacratorium",
+          "type": "PER",
+          "count": 2
+        }
+      ],
+      "LOC": [
+        {
+          "name": "Bendar",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Grand Ancien",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Mycogénien",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Sacratorium",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Streeling",
+          "type": "LOC",
+          "count": 1
+        }
+      ],
+      "MISC": [
+        {
+          "name": "Anciens",
+          "type": "MISC",
+          "count": 3
+        },
+        {
+          "name": "Attendez",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Couverture",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Dieu merci",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Dors",
+          "type": "MISC",
+          "count": 19
+        },
+        {
+          "name": "ENCYCLOPAEDIA GALACTICA",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Eh bien ?",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Eh bien... commença",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Encyclopédie impériale",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Eos",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Frère honoraire",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Frères",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Fuite",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Grand Ancien",
+          "type": "MISC",
+          "count": 4
+        },
+        {
+          "name": "Le Livre",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Livre\nsous le nom",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Livre entre vos mains",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Maître-du-Soleil\nQuatorze",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Maître-du-Soleil Quatorze",
+          "type": "MISC",
+          "count": 4
+        },
+        {
+          "name": "Monde perdu",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Renégat",
+          "type": "MISC",
+          "count": 3
+        },
+        {
+          "name": "Sacratorium",
+          "type": "MISC",
+          "count": 3
+        },
+        {
+          "name": "Sœur",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "TORIUM",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Trantor",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Wendome",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "les Sœurs",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Ça",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "― Renégat ‖. Le terme",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "― traître",
+          "type": "MISC",
+          "count": 1
+        }
+      ]
+    },
+    "aliases": {
+      "PER": {
+        "Venabili": "Dors Venabili",
+        "Dors": "Dors Venabili",
+        "Demerzel": "Eto Demerzel",
+        "Seldon": "Hari Seldon",
+        "Hari": "Hari Seldon"
+      },
+      "LOC": {},
+      "MISC": {
+        "Frère": "Frère honoraire",
+        "Livre": "Le Livre"
+      }
+    },
+    "summary": {
+      "total_persons": 11,
+      "total_locations": 5,
+      "total_misc": 30
+    }
+  },
+  {
+    "book_code": "paf",
+    "file": "chapter_13.txt",
+    "chapter_number": 12,
+    "entities": {
+      "PER": [
+        {
+          "name": "Amaryl",
+          "type": "PER",
+          "count": 11
+        },
+        {
+          "name": "Anat Bigell",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Casilia",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Cléon",
+          "type": "PER",
+          "count": 9
+        },
+        {
+          "name": "Dahl",
+          "type": "PER",
+          "count": 11
+        },
+        {
+          "name": "Demerzel",
+          "type": "PER",
+          "count": 7
+        },
+        {
+          "name": "Dors Venabili",
+          "type": "PER",
+          "count": 4
+        },
+        {
+          "name": "Empereur",
+          "type": "PER",
+          "count": 4
+        },
+        {
+          "name": "Empereurs",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Hano Lindor",
+          "type": "PER",
+          "count": 5
+        },
+        {
+          "name": "Hari Seldon",
+          "type": "PER",
+          "count": 43
+        },
+        {
+          "name": "Hummin",
+          "type": "PER",
+          "count": 5
+        },
+        {
+          "name": "Kan",
+          "type": "PER",
+          "count": 3
+        },
+        {
+          "name": "Maître Seldon",
+          "type": "PER",
+          "count": 3
+        },
+        {
+          "name": "Maîtresse Tisalver",
+          "type": "PER",
+          "count": 21
+        },
+        {
+          "name": "Maîtresse Venabili",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Mycogène",
+          "type": "PER",
+          "count": 7
+        },
+        {
+          "name": "Mère Rittah",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Prudent",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Sire",
+          "type": "PER",
+          "count": 6
+        },
+        {
+          "name": "Trantor",
+          "type": "PER",
+          "count": 2
+        }
+      ],
+      "LOC": [
+        {
+          "name": "Admettez",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Billibotton",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Exos",
+          "type": "LOC",
+          "count": 2
+        },
+        {
+          "name": "Grand Ancien",
+          "type": "LOC",
+          "count": 2
+        },
+        {
+          "name": "Hélicon",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Jirad",
+          "type": "LOC",
+          "count": 2
+        },
+        {
+          "name": "La Terre",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Trantor",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Trantoriens",
+          "type": "LOC",
+          "count": 1
+        }
+      ],
+      "MISC": [
+        {
+          "name": "Aurora",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "C-3",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Casilia",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Couverture",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Couverture de Streeling",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Dahlite mâle",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Dahlites",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Demerzel",
+          "type": "MISC",
+          "count": 6
+        },
+        {
+          "name": "Dieu merci",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Dors",
+          "type": "MISC",
+          "count": 14
+        },
+        {
+          "name": "Dors du regard et murmura",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Déduction mathématique",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Eh bien...",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Grimace",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Hélicon",
+          "type": "MISC",
+          "count": 3
+        },
+        {
+          "name": "Je suis\nlas des interrogatoires",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Les Tisalver",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "L’Empereur de toute",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Mettez",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Oh",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Peut-être",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Puisatiers",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Sire",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Soupir de Seldon",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Trantor",
+          "type": "MISC",
+          "count": 6
+        },
+        {
+          "name": "Violents",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "YUGO",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Ça",
+          "type": "MISC",
+          "count": 7
+        }
+      ]
+    },
+    "aliases": {
+      "PER": {
+        "Venabili": "Dors Venabili",
+        "Maîtresse": "Maîtresse Tisalver",
+        "Tisalver": "Maîtresse Tisalver",
+        "Seldon": "Hari Seldon",
+        "Dors": "Dors Venabili",
+        "Hari": "Hari Seldon",
+        "Lindor": "Hano Lindor"
+      },
+      "LOC": {},
+      "MISC": {
+        "Dieu": "Dieu merci"
+      }
+    },
+    "summary": {
+      "total_persons": 21,
+      "total_locations": 9,
+      "total_misc": 28
+    }
+  },
+  {
+    "book_code": "paf",
+    "file": "chapter_14.txt",
+    "chapter_number": 13,
+    "entities": {
+      "PER": [
+        {
+          "name": "Casilia",
+          "type": "PER",
+          "count": 4
+        },
+        {
+          "name": "Dahl",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Demerzel",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Dors Venabili",
+          "type": "PER",
+          "count": 5
+        },
+        {
+          "name": "Hari\nSeldon",
+          "type": "PER",
+          "count": 32
+        },
+        {
+          "name": "Hari Seldon",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Hummin",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Marron",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Maître Seldon",
+          "type": "PER",
+          "count": 5
+        },
+        {
+          "name": "Maîtresse\nVenabili",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Mycogène",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Mycogéniens",
+          "type": "PER",
+          "count": 4
+        },
+        {
+          "name": "Mère\nRittah",
+          "type": "PER",
+          "count": 4
+        },
+        {
+          "name": "Mère Rittah",
+          "type": "PER",
+          "count": 9
+        },
+        {
+          "name": "Raison",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Raych",
+          "type": "PER",
+          "count": 3
+        },
+        {
+          "name": "Tisalver",
+          "type": "PER",
+          "count": 8
+        },
+        {
+          "name": "Trantor",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Yugo Amaryl",
+          "type": "PER",
+          "count": 1
+        }
+      ],
+      "LOC": [
+        {
+          "name": "Billibottains",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Billibotton",
+          "type": "LOC",
+          "count": 10
+        },
+        {
+          "name": "Chetter",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Exos",
+          "type": "LOC",
+          "count": 3
+        },
+        {
+          "name": "Hummin",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "La Terre",
+          "type": "LOC",
+          "count": 2
+        },
+        {
+          "name": "Marron",
+          "type": "LOC",
+          "count": 7
+        },
+        {
+          "name": "Nân",
+          "type": "LOC",
+          "count": 2
+        },
+        {
+          "name": "Raych",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Streeling",
+          "type": "LOC",
+          "count": 1
+        }
+      ],
+      "MISC": [
+        {
+          "name": "Anciens",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Cinna",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Couverture",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "DAHL",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Dahlites",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Dors",
+          "type": "MISC",
+          "count": 21
+        },
+        {
+          "name": "Hélicon",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Il était une fois, sur Terre",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Impériaux",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Le garçon",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Mal",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Maître-du-Soleil Quatorze",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Mère Rittah",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Sais-tu",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Silence complet",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Soupir",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Tenez",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Tu t’en souviens",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Ça",
+          "type": "MISC",
+          "count": 4
+        }
+      ]
+    },
+    "aliases": {
+      "PER": {
+        "Seldon": "Hari\nSeldon",
+        "Dors": "Dors Venabili",
+        "Hari": "Hari\nSeldon",
+        "Mère": "Mère\nRittah"
+      },
+      "LOC": {},
+      "MISC": {}
+    },
+    "summary": {
+      "total_persons": 19,
+      "total_locations": 10,
+      "total_misc": 19
+    }
+  },
+  {
+    "book_code": "paf",
+    "file": "chapter_15.txt",
+    "chapter_number": 14,
+    "entities": {
+      "PER": [
+        {
+          "name": "Dahl",
+          "type": "PER",
+          "count": 3
+        },
+        {
+          "name": "Demerzel",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Dors Venabili",
+          "type": "PER",
+          "count": 8
+        },
+        {
+          "name": "Hari Seldon",
+          "type": "PER",
+          "count": 21
+        },
+        {
+          "name": "Hummin",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Marlo Tanto",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Maître Davan",
+          "type": "PER",
+          "count": 4
+        },
+        {
+          "name": "Maître Tisalver",
+          "type": "PER",
+          "count": 4
+        },
+        {
+          "name": "Maîtresse\nTisalver",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Maîtresse Tisalver",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Maîtresse Venabili",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Merci",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Raych",
+          "type": "PER",
+          "count": 17
+        },
+        {
+          "name": "Yugo\nAmaryl",
+          "type": "PER",
+          "count": 3
+        }
+      ],
+      "LOC": [
+        {
+          "name": "Billibotton",
+          "type": "LOC",
+          "count": 10
+        },
+        {
+          "name": "Clandestins",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Davan",
+          "type": "LOC",
+          "count": 9
+        },
+        {
+          "name": "Exos",
+          "type": "LOC",
+          "count": 2
+        },
+        {
+          "name": "Marron",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Raych",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Tisalver",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Trantorien",
+          "type": "LOC",
+          "count": 1
+        }
+      ],
+      "MISC": [
+        {
+          "name": "Appelez-moi Davan",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Dahlite",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Dahlites",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Davan !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Don Quichotte",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Dors par la manche",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Dors sourit",
+          "type": "MISC",
+          "count": 20
+        },
+        {
+          "name": "Mon amour",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Parole",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Premier Empire galactique",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Trantor",
+          "type": "MISC",
+          "count": 6
+        },
+        {
+          "name": "Vous êtes un scoop et moi j’essaie simplement de faire mon\nboulot",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "l’Empire vous recherche",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Ça",
+          "type": "MISC",
+          "count": 3
+        }
+      ]
+    },
+    "aliases": {
+      "PER": {
+        "Tisalver": "Maître Tisalver",
+        "Maîtresse": "Maîtresse Tisalver",
+        "Venabili": "Dors Venabili",
+        "Dors": "Dors Venabili",
+        "Davan": "Maître Davan",
+        "Seldon": "Hari Seldon",
+        "Amaryl": "Yugo\nAmaryl"
+      },
+      "LOC": {},
+      "MISC": {
+        "Dors": "Dors sourit"
+      }
+    },
+    "summary": {
+      "total_persons": 14,
+      "total_locations": 8,
+      "total_misc": 14
+    }
+  },
+  {
+    "book_code": "paf",
+    "file": "chapter_16.txt",
+    "chapter_number": 15,
+    "entities": {
+      "PER": [
+        {
+          "name": "Astinwald",
+          "type": "PER",
+          "count": 3
+        },
+        {
+          "name": "Casilia",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Dahl",
+          "type": "PER",
+          "count": 7
+        },
+        {
+          "name": "Davan",
+          "type": "PER",
+          "count": 4
+        },
+        {
+          "name": "Dors",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Dors Venabili de Cinna",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Empereur",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Hari     Seldon",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Hari Seldon",
+          "type": "PER",
+          "count": 32
+        },
+        {
+          "name": "Hummin",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Kan",
+          "type": "PER",
+          "count": 13
+        },
+        {
+          "name": "Lanel Russ",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Maire",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Marron",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Maître Seldon",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Maîtresse Tisalver",
+          "type": "PER",
+          "count": 4
+        },
+        {
+          "name": "Mycogène",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Neutralisez",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Raych",
+          "type": "PER",
+          "count": 12
+        }
+      ],
+      "LOC": [
+        {
+          "name": "Astronef",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Billibotton",
+          "type": "LOC",
+          "count": 5
+        },
+        {
+          "name": "Exos",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Galactos",
+          "type": "LOC",
+          "count": 2
+        },
+        {
+          "name": "Hummin",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Maire",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Marron",
+          "type": "LOC",
+          "count": 2
+        },
+        {
+          "name": "Soleil",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Trantoriens",
+          "type": "LOC",
+          "count": 1
+        }
+      ],
+      "MISC": [
+        {
+          "name": "Attention !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Dahlites",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Demerzel",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Dors impatientée",
+          "type": "MISC",
+          "count": 20
+        },
+        {
+          "name": "Hélicon ?",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Maîtresse, êtes-vous",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Policiers",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Russ",
+          "type": "MISC",
+          "count": 11
+        },
+        {
+          "name": "Sourire",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Trantor",
+          "type": "MISC",
+          "count": 4
+        },
+        {
+          "name": "Vous êtes au courant",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Ça",
+          "type": "MISC",
+          "count": 4
+        }
+      ]
+    },
+    "aliases": {
+      "PER": {
+        "Tisalver": "Maîtresse Tisalver",
+        "Maîtresse": "Maîtresse Tisalver",
+        "Seldon": "Hari Seldon",
+        "Hari": "Hari Seldon"
+      },
+      "LOC": {},
+      "MISC": {
+        "Dors": "Dors impatientée"
+      }
+    },
+    "summary": {
+      "total_persons": 19,
+      "total_locations": 9,
+      "total_misc": 12
+    }
+  },
+  {
+    "book_code": "paf",
+    "file": "chapter_17.txt",
+    "chapter_number": 16,
+    "entities": {
+      "PER": [
+        {
+          "name": "Attendez",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Chetter Hummin",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Dahl",
+          "type": "PER",
+          "count": 4
+        },
+        {
+          "name": "Davan",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Dors Venabili",
+          "type": "PER",
+          "count": 7
+        },
+        {
+          "name": "Emmer Thalus",
+          "type": "PER",
+          "count": 6
+        },
+        {
+          "name": "Empereur",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Hari\nSeldon",
+          "type": "PER",
+          "count": 37
+        },
+        {
+          "name": "Hari Seldon",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Hari amical",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Kan",
+          "type": "PER",
+          "count": 18
+        },
+        {
+          "name": "Kanite",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Mannix IV",
+          "type": "PER",
+          "count": 3
+        },
+        {
+          "name": "Maître Seldon",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Mycogène",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Rachelle",
+          "type": "PER",
+          "count": 19
+        },
+        {
+          "name": "Raych",
+          "type": "PER",
+          "count": 23
+        },
+        {
+          "name": "Sergent",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Trantor",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Yugo Amaryl",
+          "type": "PER",
+          "count": 1
+        }
+      ],
+      "LOC": [
+        {
+          "name": "Davan",
+          "type": "LOC",
+          "count": 2
+        },
+        {
+          "name": "Empereurs",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Empire Galactique",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Hummin",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Intrigué",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "La Galaxie",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Maire",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Palais impérial",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Raych",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Secteur impérial",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Tournez",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "État",
+          "type": "LOC",
+          "count": 1
+        }
+      ],
+      "MISC": [
+        {
+          "name": "Cinna",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Collaborez avec moi",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Congrès décennal",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Couverture",
+          "type": "MISC",
+          "count": 3
+        },
+        {
+          "name": "Couverture de Streeling",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Demerzel",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Dors",
+          "type": "MISC",
+          "count": 30
+        },
+        {
+          "name": "Empereurs",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Hélicon",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Musique !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Silencieusement",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Trantor",
+          "type": "MISC",
+          "count": 4
+        },
+        {
+          "name": "siffloter",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Ça",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "― madame le Maire",
+          "type": "MISC",
+          "count": 1
+        }
+      ]
+    },
+    "aliases": {
+      "PER": {
+        "Hummin": "Chetter Hummin",
+        "Seldon": "Hari\nSeldon",
+        "Maître": "Maître Seldon",
+        "Venabili": "Dors Venabili",
+        "Dors": "Dors Venabili",
+        "Thalus": "Emmer Thalus",
+        "Hari": "Hari\nSeldon",
+        "Mannix": "Mannix IV"
+      },
+      "LOC": {},
+      "MISC": {}
+    },
+    "summary": {
+      "total_persons": 20,
+      "total_locations": 12,
+      "total_misc": 15
+    }
+  },
+  {
+    "book_code": "paf",
+    "file": "chapter_18.txt",
+    "chapter_number": 17,
+    "entities": {
+      "PER": [
+        {
+          "name": "Chetter Hummin",
+          "type": "PER",
+          "count": 10
+        },
+        {
+          "name": "Cléon",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Dahlite",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Demerzel",
+          "type": "PER",
+          "count": 3
+        },
+        {
+          "name": "Dors Venabili",
+          "type": "PER",
+          "count": 7
+        },
+        {
+          "name": "Empereur",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Hari",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Insinuez",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Kan",
+          "type": "PER",
+          "count": 7
+        },
+        {
+          "name": "Madame le Maire",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Mannix IV",
+          "type": "PER",
+          "count": 5
+        },
+        {
+          "name": "Maître\n",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Mycogène",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Rachelle Ire",
+          "type": "PER",
+          "count": 16
+        },
+        {
+          "name": "Raych",
+          "type": "PER",
+          "count": 13
+        },
+        {
+          "name": "Seldon",
+          "type": "PER",
+          "count": 29
+        },
+        {
+          "name": "Sergent",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Thalus",
+          "type": "PER",
+          "count": 1
+        }
+      ],
+      "LOC": [
+        {
+          "name": "Billibotton",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Demerzel",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Hummin",
+          "type": "LOC",
+          "count": 2
+        },
+        {
+          "name": "Mairie",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Reculez",
+          "type": "LOC",
+          "count": 1
+        }
+      ],
+      "MISC": [
+        {
+          "name": "Clin d’œil du gamin",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Coup d’œil",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Couverture",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Demerzel",
+          "type": "MISC",
+          "count": 4
+        },
+        {
+          "name": "Dors",
+          "type": "MISC",
+          "count": 11
+        },
+        {
+          "name": "EMMER",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Facile",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Garde pour toi tes astuces et tâche de\nne pas te",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Idiot !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Maire de plein droit",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Ouais",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Sergent !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Splendide !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Trantor",
+          "type": "MISC",
+          "count": 11
+        },
+        {
+          "name": "Voilà, me suis-je dit",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "coup d’État",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Ça",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "― lointains néants ‖.\n      « Ce",
+          "type": "MISC",
+          "count": 1
+        }
+      ]
+    },
+    "aliases": {
+      "PER": {
+        "Maire": "Madame le Maire",
+        "Hummin": "Chetter Hummin",
+        "Venabili": "Dors Venabili",
+        "Dors": "Dors Venabili",
+        "Rachelle": "Rachelle Ire",
+        "Mannix": "Mannix IV"
+      },
+      "LOC": {},
+      "MISC": {}
+    },
+    "summary": {
+      "total_persons": 18,
+      "total_locations": 5,
+      "total_misc": 18
+    }
+  },
+  {
+    "book_code": "paf",
+    "file": "chapter_19.txt",
+    "chapter_number": 18,
+    "entities": {
+      "PER": [
+        {
+          "name": "Cléon",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Daneel",
+          "type": "PER",
+          "count": 11
+        },
+        {
+          "name": "Dors",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Hari\nSeldon",
+          "type": "PER",
+          "count": 25
+        },
+        {
+          "name": "Hummin",
+          "type": "PER",
+          "count": 7
+        },
+        {
+          "name": "Maire",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Mannix",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Mannix IV de Kan",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Mycogéniens",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Mère\nRittah",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Mère Rittah",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Rachelle",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Raych Seldon",
+          "type": "PER",
+          "count": 3
+        },
+        {
+          "name": "Sacratorium de Mycogène",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Tisalver",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Yugo\nAmaryl",
+          "type": "PER",
+          "count": 1
+        }
+      ],
+      "LOC": [
+        {
+          "name": "Demerzel",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Doucement",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Hummin",
+          "type": "LOC",
+          "count": 4
+        },
+        {
+          "name": "Hélicon",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Terriens",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Université",
+          "type": "LOC",
+          "count": 1
+        }
+      ],
+      "MISC": [
+        {
+          "name": "Attendez",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Aurora",
+          "type": "MISC",
+          "count": 4
+        },
+        {
+          "name": "Dahlite",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Dahlites",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Deuxième Loi",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Dors",
+          "type": "MISC",
+          "count": 15
+        },
+        {
+          "name": "Dors et moi",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "HARI",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Impériaux",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Loi Zéro",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Lois de la Robotique",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Maître Robot",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Maître-du-Soleil\nQuatorze",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Première Loi",
+          "type": "MISC",
+          "count": 3
+        },
+        {
+          "name": "SELDON",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Trantor",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Trois Lois de la Robotique",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "« Pardonnez-moi",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "― Loi\nZéro",
+          "type": "MISC",
+          "count": 1
+        }
+      ]
+    },
+    "aliases": {
+      "PER": {
+        "Seldon": "Hari\nSeldon",
+        "Raych": "Raych Seldon",
+        "Hari": "Hari\nSeldon"
+      },
+      "LOC": {},
+      "MISC": {
+        "Première": "Première Loi"
+      }
+    },
+    "summary": {
+      "total_persons": 16,
+      "total_locations": 6,
+      "total_misc": 19
+    }
+  },
+  {
+    "book_code": "lca",
+    "file": "chapter_1.txt",
+    "chapter_number": 0,
+    "entities": {
+      "PER": [
+        {
+          "name": "Baley",
+          "type": "PER",
+          "count": 20
+        },
+        {
+          "name": "Enderby",
+          "type": "PER",
+          "count": 9
+        },
+        {
+          "name": "Julius",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Robot Daneel\nOlivaw",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Roj Nemennuh Sarton",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Spacetown",
+          "type": "PER",
+          "count": 3
+        },
+        {
+          "name": "Spaciens",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Terrien",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Vince Barrett",
+          "type": "PER",
+          "count": 2
+        }
+      ],
+      "LOC": [
+        {
+          "name": "City\nHall Building",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Lije",
+          "type": "LOC",
+          "count": 9
+        },
+        {
+          "name": "Los Angeles",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "New York",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Spaciens",
+          "type": "LOC",
+          "count": 3
+        },
+        {
+          "name": "Town",
+          "type": "LOC",
+          "count": 1
+        }
+      ],
+      "MISC": [
+        {
+          "name": "Ah !",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Ah oui",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "C. 5",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "C. 7 !...\n     —",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "COMMISSAIRE",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Ecoutez",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Excusez-moi, monsieur",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Impossible !\n     ",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Jacques",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Jessie",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Julius",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Les Mondes Extérieurs",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Lije",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Oh !",
+          "type": "MISC",
+          "count": 5
+        },
+        {
+          "name": "Oh ! peu importe !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "PRINCIPAL DE POLICE DE NEW YORK",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Paul",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Pierre",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "R de Berlin",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Si la Maison-Blanche",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Simpson",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Space",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Un Spacien",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Vous le saviez ?",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "émeutes de Shanghai",
+          "type": "MISC",
+          "count": 1
+        }
+      ]
+    },
+    "aliases": {
+      "PER": {
+        "Vince": "Vince Barrett"
+      },
+      "LOC": {},
+      "MISC": {}
+    },
+    "summary": {
+      "total_persons": 9,
+      "total_locations": 6,
+      "total_misc": 25
+    }
+  },
+  {
+    "book_code": "lca",
+    "file": "chapter_2.txt",
+    "chapter_number": 1,
+    "entities": {
+      "PER": [
+        {
+          "name": "Daneel",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Elijah Baley",
+          "type": "PER",
+          "count": 21
+        },
+        {
+          "name": "Julius Enderby",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Montons",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Olivaw",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Spacetown",
+          "type": "PER",
+          "count": 8
+        },
+        {
+          "name": "Terrien",
+          "type": "PER",
+          "count": 1
+        }
+      ],
+      "LOC": [
+        {
+          "name": "Amérique",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Cité",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Hudson",
+          "type": "LOC",
+          "count": 2
+        },
+        {
+          "name": "Long\nIsland",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Los\nAngeles",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "New York",
+          "type": "LOC",
+          "count": 2
+        },
+        {
+          "name": "New York City",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "New Yorkais",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Newark",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Shanghaï",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Spacien",
+          "type": "LOC",
+          "count": 2
+        },
+        {
+          "name": "Spaciens",
+          "type": "LOC",
+          "count": 4
+        },
+        {
+          "name": "Terrien",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Terriens",
+          "type": "LOC",
+          "count": 4
+        },
+        {
+          "name": "Trenton",
+          "type": "LOC",
+          "count": 1
+        }
+      ],
+      "MISC": [
+        {
+          "name": "Ah !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "C. 5",
+          "type": "MISC",
+          "count": 3
+        },
+        {
+          "name": "Cassez",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Da... Daneel",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Elijah",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Excusez-moi, monsieur",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Moi, je vais vous le dire",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Mondes Extérieurs",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Parfait !\n     ",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "R",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "la Cité",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "les Mondes Extérieurs",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "émeutes de la Barrière !",
+          "type": "MISC",
+          "count": 1
+        }
+      ]
+    },
+    "aliases": {
+      "PER": {
+        "Enderby": "Julius Enderby",
+        "Baley": "Elijah Baley"
+      },
+      "LOC": {},
+      "MISC": {}
+    },
+    "summary": {
+      "total_persons": 7,
+      "total_locations": 15,
+      "total_misc": 13
+    }
+  },
+  {
+    "book_code": "lca",
+    "file": "chapter_3.txt",
+    "chapter_number": 2,
+    "entities": {
+      "PER": [
+        {
+          "name": "Baley",
+          "type": "PER",
+          "count": 9
+        },
+        {
+          "name": "Boris",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Daneel",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Messieurs",
+          "type": "PER",
+          "count": 1
+        }
+      ],
+      "LOC": [
+        {
+          "name": "Lije",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Terriens",
+          "type": "LOC",
+          "count": 2
+        }
+      ],
+      "MISC": [
+        {
+          "name": "Ah, ah !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Allons !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Allons !\n",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "BOTS",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Bon !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Ca",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Elijah",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Mondes Extérieurs",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Oh !",
+          "type": "MISC",
+          "count": 1
+        }
+      ]
+    },
+    "aliases": {
+      "PER": {},
+      "LOC": {},
+      "MISC": {}
+    },
+    "summary": {
+      "total_persons": 4,
+      "total_locations": 2,
+      "total_misc": 9
+    }
+  },
+  {
+    "book_code": "lca",
+    "file": "chapter_4.txt",
+    "chapter_number": 3,
+    "entities": {
+      "PER": [
+        {
+          "name": "Ahab",
+          "type": "PER",
+          "count": 3
+        },
+        {
+          "name": "Baal",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Ben",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Bentley Baley",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Daneel\nOlivaw",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Daneel Olivaw",
+          "type": "PER",
+          "count": 7
+        },
+        {
+          "name": "De Jessica",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Elie",
+          "type": "PER",
+          "count": 3
+        },
+        {
+          "name": "Jesreel",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Jessie",
+          "type": "PER",
+          "count": 4
+        },
+        {
+          "name": "Julius\nEnderby",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Jéhoram",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Jéhu galopa",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Jézabel",
+          "type": "PER",
+          "count": 10
+        },
+        {
+          "name": "Lije Baley",
+          "type": "PER",
+          "count": 15
+        },
+        {
+          "name": "Naboth",
+          "type": "PER",
+          "count": 5
+        }
+      ],
+      "LOC": [
+        {
+          "name": "Lije",
+          "type": "LOC",
+          "count": 3
+        },
+        {
+          "name": "New York",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Terriens",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Toilettes",
+          "type": "LOC",
+          "count": 1
+        }
+      ],
+      "MISC": [
+        {
+          "name": "Ah !",
+          "type": "MISC",
+          "count": 3
+        },
+        {
+          "name": "Ah, oui",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Allons, chérie",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Attendez-moi\nlà !\n     ",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Baalites",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Ben !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Ca",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Dieu",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Elie",
+          "type": "MISC",
+          "count": 4
+        },
+        {
+          "name": "Elijah",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Jessie !",
+          "type": "MISC",
+          "count": 12
+        },
+        {
+          "name": "Jouer les Jézabel",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Junior",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Jéhovah",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Jézabel de la Bible",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Lije",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Mondes Extérieurs",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Oh !",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Papa ?\n     ",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Premier Livre\ndes Rois",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "TOILETTES",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Toilettes",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Tu me dis ça",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Un homme",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Voyez-vous",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "tais-toi",
+          "type": "MISC",
+          "count": 1
+        }
+      ]
+    },
+    "aliases": {
+      "PER": {
+        "Baley": "Lije Baley",
+        "Bentley": "Bentley Baley",
+        "Olivaw": "Daneel Olivaw",
+        "Daneel": "Daneel Olivaw",
+        "Jéhu": "Jéhu galopa"
+      },
+      "LOC": {},
+      "MISC": {
+        "Bible": "Jézabel de la Bible",
+        "Jézabel": "Jouer les Jézabel",
+        "Jessie": "Jessie !"
+      }
+    },
+    "summary": {
+      "total_persons": 16,
+      "total_locations": 4,
+      "total_misc": 26
+    }
+  },
+  {
+    "book_code": "lca",
+    "file": "chapter_5.txt",
+    "chapter_number": 4,
+    "entities": {
+      "PER": [
+        {
+          "name": "Baley",
+          "type": "PER",
+          "count": 17
+        },
+        {
+          "name": "Daneel",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Dr Sarton",
+          "type": "PER",
+          "count": 5
+        },
+        {
+          "name": "Julius Enderby",
+          "type": "PER",
+          "count": 6
+        },
+        {
+          "name": "Le Dr Sarton",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Olivaw",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Spacetown",
+          "type": "PER",
+          "count": 10
+        },
+        {
+          "name": "Spacien",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Spaciens",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Terrien",
+          "type": "PER",
+          "count": 3
+        }
+      ],
+      "LOC": [
+        {
+          "name": "New York",
+          "type": "LOC",
+          "count": 2
+        },
+        {
+          "name": "Spaciens",
+          "type": "LOC",
+          "count": 4
+        },
+        {
+          "name": "Terrien",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Terriens",
+          "type": "LOC",
+          "count": 10
+        }
+      ],
+      "MISC": [
+        {
+          "name": "Ah !",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Ah, la barbe !\n     ",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Ah, vraiment ?",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Ben !\n     Mais le garçon",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "C",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Elijah",
+          "type": "MISC",
+          "count": 7
+        },
+        {
+          "name": "Impossible !",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Jessie",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Lije",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Mondes Extérieurs",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Oh !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Oh, oh !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "les Mondes Extérieurs",
+          "type": "MISC",
+          "count": 1
+        }
+      ]
+    },
+    "aliases": {
+      "PER": {
+        "Enderby": "Julius Enderby",
+        "Julius": "Julius Enderby"
+      },
+      "LOC": {},
+      "MISC": {
+        "Impossible": "Impossible !"
+      }
+    },
+    "summary": {
+      "total_persons": 10,
+      "total_locations": 4,
+      "total_misc": 13
+    }
+  },
+  {
+    "book_code": "lca",
+    "file": "chapter_6.txt",
+    "chapter_number": 5,
+    "entities": {
+      "PER": [
+        {
+          "name": "Daneel",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Elijah Baley",
+          "type": "PER",
+          "count": 14
+        },
+        {
+          "name": "Julius Enderby",
+          "type": "PER",
+          "count": 8
+        },
+        {
+          "name": "Spaciens",
+          "type": "PER",
+          "count": 1
+        }
+      ],
+      "LOC": [
+        {
+          "name": "Cité",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Lije",
+          "type": "LOC",
+          "count": 3
+        },
+        {
+          "name": "New York",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Plastofilm",
+          "type": "LOC",
+          "count": 1
+        }
+      ],
+      "MISC": [
+        {
+          "name": "Ah !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Chut",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Excuse-moi, murmura-t-il",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Jessie !",
+          "type": "MISC",
+          "count": 13
+        },
+        {
+          "name": "Lije",
+          "type": "MISC",
+          "count": 3
+        },
+        {
+          "name": "Médiévalisme outrancier",
+          "type": "MISC",
+          "count": 1
+        }
+      ]
+    },
+    "aliases": {
+      "PER": {
+        "Enderby": "Julius Enderby",
+        "Baley": "Elijah Baley"
+      },
+      "LOC": {},
+      "MISC": {
+        "Jessie": "Jessie !"
+      }
+    },
+    "summary": {
+      "total_persons": 4,
+      "total_locations": 4,
+      "total_misc": 6
+    }
+  },
+  {
+    "book_code": "lca",
+    "file": "chapter_7.txt",
+    "chapter_number": 6,
+    "entities": {
+      "PER": [
+        {
+          "name": "Baley",
+          "type": "PER",
+          "count": 32
+        },
+        {
+          "name": "Daneel",
+          "type": "PER",
+          "count": 4
+        },
+        {
+          "name": "Dr Fastolfe",
+          "type": "PER",
+          "count": 6
+        },
+        {
+          "name": "Dr Han Fastolfe",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Dr Sarton",
+          "type": "PER",
+          "count": 3
+        },
+        {
+          "name": "Enderby",
+          "type": "PER",
+          "count": 7
+        },
+        {
+          "name": "Spacetown",
+          "type": "PER",
+          "count": 4
+        },
+        {
+          "name": "Spacien",
+          "type": "PER",
+          "count": 1
+        }
+      ],
+      "LOC": [
+        {
+          "name": "New York",
+          "type": "LOC",
+          "count": 4
+        },
+        {
+          "name": "Spacien",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Spaciens",
+          "type": "LOC",
+          "count": 4
+        }
+      ],
+      "MISC": [
+        {
+          "name": "A Spacetown !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Ah !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Ah ?",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Aurore",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Bon !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Ecoutez",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Elijah",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Lije",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Permettez-moi de me",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Toilettes",
+          "type": "MISC",
+          "count": 4
+        }
+      ]
+    },
+    "aliases": {
+      "PER": {
+        "Fastolfe": "Dr Fastolfe"
+      },
+      "LOC": {},
+      "MISC": {}
+    },
+    "summary": {
+      "total_persons": 8,
+      "total_locations": 3,
+      "total_misc": 10
+    }
+  },
+  {
+    "book_code": "lca",
+    "file": "chapter_8.txt",
+    "chapter_number": 7,
+    "entities": {
+      "PER": [
+        {
+          "name": "Baley",
+          "type": "PER",
+          "count": 20
+        },
+        {
+          "name": "Daneel Olivaw",
+          "type": "PER",
+          "count": 7
+        },
+        {
+          "name": "Dr\nSarton",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Dr Fastolfe",
+          "type": "PER",
+          "count": 10
+        },
+        {
+          "name": "Dr Sarton",
+          "type": "PER",
+          "count": 7
+        },
+        {
+          "name": "Elijah",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Enderby",
+          "type": "PER",
+          "count": 15
+        },
+        {
+          "name": "Julius",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Spacetown",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Spaciens",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Supposez",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Terrien",
+          "type": "PER",
+          "count": 1
+        }
+      ],
+      "LOC": [
+        {
+          "name": "Lije",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Spacien",
+          "type": "LOC",
+          "count": 2
+        },
+        {
+          "name": "Spaciens",
+          "type": "LOC",
+          "count": 4
+        },
+        {
+          "name": "Terre",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Terriens",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Washington",
+          "type": "LOC",
+          "count": 1
+        }
+      ],
+      "MISC": [
+        {
+          "name": "Ah !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Eh bien ?",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Elijah",
+          "type": "MISC",
+          "count": 3
+        },
+        {
+          "name": "Jessie",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Lije",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Mon cher monsieur",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Mondes Extérieurs",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Oh !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Robotique",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Toilettes",
+          "type": "MISC",
+          "count": 5
+        }
+      ]
+    },
+    "aliases": {
+      "PER": {
+        "Daneel": "Daneel Olivaw",
+        "Fastolfe": "Dr Fastolfe"
+      },
+      "LOC": {},
+      "MISC": {}
+    },
+    "summary": {
+      "total_persons": 12,
+      "total_locations": 6,
+      "total_misc": 10
+    }
+  },
+  {
+    "book_code": "lca",
+    "file": "chapter_9.txt",
+    "chapter_number": 8,
+    "entities": {
+      "PER": [
+        {
+          "name": "Daneel",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Dr Fastolfe",
+          "type": "PER",
+          "count": 6
+        },
+        {
+          "name": "Monsieur Baley",
+          "type": "PER",
+          "count": 21
+        },
+        {
+          "name": "Spacetown",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Spaciens",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Terrien",
+          "type": "PER",
+          "count": 1
+        }
+      ],
+      "LOC": [
+        {
+          "name": "Amérique",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Epoque Médiévale",
+          "type": "LOC",
+          "count": 2
+        },
+        {
+          "name": "Etats",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "La Terre",
+          "type": "LOC",
+          "count": 2
+        },
+        {
+          "name": "New York",
+          "type": "LOC",
+          "count": 2
+        },
+        {
+          "name": "Spacien",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Spaciens",
+          "type": "LOC",
+          "count": 5
+        },
+        {
+          "name": "Terriens",
+          "type": "LOC",
+          "count": 6
+        }
+      ],
+      "MISC": [
+        {
+          "name": "Ah ?",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Bon !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Cité moderne",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Cités",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Comportait",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Croyez-moi, monsieur",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Dans ma planète Aurore",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Elijah",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Lije",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Mondes Extérieurs",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Mondes Nouveaux",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Oh !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Toilettes",
+          "type": "MISC",
+          "count": 3
+        }
+      ]
+    },
+    "aliases": {
+      "PER": {
+        "Baley": "Monsieur Baley",
+        "Fastolfe": "Dr Fastolfe"
+      },
+      "LOC": {
+        "Terre": "La Terre"
+      },
+      "MISC": {}
+    },
+    "summary": {
+      "total_persons": 6,
+      "total_locations": 8,
+      "total_misc": 13
+    }
+  },
+  {
+    "book_code": "lca",
+    "file": "chapter_10.txt",
+    "chapter_number": 9,
+    "entities": {
+      "PER": [
+        {
+          "name": "Adam",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Baley",
+          "type": "PER",
+          "count": 20
+        },
+        {
+          "name": "Churchill",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Daneel",
+          "type": "PER",
+          "count": 3
+        },
+        {
+          "name": "Dr Fastolfe",
+          "type": "PER",
+          "count": 3
+        },
+        {
+          "name": "Dr Sarton",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Enderby",
+          "type": "PER",
+          "count": 4
+        },
+        {
+          "name": "Julius",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Shakespeare",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Spacetown",
+          "type": "PER",
+          "count": 3
+        },
+        {
+          "name": "Spaciens",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Terrien",
+          "type": "PER",
+          "count": 1
+        }
+      ],
+      "LOC": [
+        {
+          "name": "Angleterre",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Brighton",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Budapest",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Buenos Aires",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Canterbury",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Cité",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Cité de\nLondres",
+          "type": "LOC",
+          "count": 3
+        },
+        {
+          "name": "Coventry",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Lije",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Los Angeles",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Médiévalistes",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "New York",
+          "type": "LOC",
+          "count": 2
+        },
+        {
+          "name": "Norwich",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Préfecture de\nPolice",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Saturne",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Shanghai",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Spaciens",
+          "type": "LOC",
+          "count": 3
+        },
+        {
+          "name": "Tachkent",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Terre",
+          "type": "LOC",
+          "count": 2
+        },
+        {
+          "name": "Terriens",
+          "type": "LOC",
+          "count": 2
+        },
+        {
+          "name": "Toronto",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Washington",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Winnipeg",
+          "type": "LOC",
+          "count": 1
+        }
+      ],
+      "MISC": [
+        {
+          "name": "C",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Ca",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Compris !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Don Quichotte",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Ecoutez",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Elijah",
+          "type": "MISC",
+          "count": 5
+        },
+        {
+          "name": "Jessie",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Lije",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Mondes\nExtérieurs",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Mondes Extérieurs",
+          "type": "MISC",
+          "count": 3
+        },
+        {
+          "name": "Oh !",
+          "type": "MISC",
+          "count": 3
+        },
+        {
+          "name": "Section Q. 27",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Service officiel",
+          "type": "MISC",
+          "count": 1
+        }
+      ]
+    },
+    "aliases": {
+      "PER": {
+        "Fastolfe": "Dr Fastolfe"
+      },
+      "LOC": {
+        "Londres": "Cité de\nLondres"
+      },
+      "MISC": {}
+    },
+    "summary": {
+      "total_persons": 12,
+      "total_locations": 23,
+      "total_misc": 13
+    }
+  },
+  {
+    "book_code": "lca",
+    "file": "chapter_11.txt",
+    "chapter_number": 10,
+    "entities": {
+      "PER": [
+        {
+          "name": "Ben",
+          "type": "PER",
+          "count": 5
+        },
+        {
+          "name": "Daneel",
+          "type": "PER",
+          "count": 6
+        },
+        {
+          "name": "Elijah Baley",
+          "type": "PER",
+          "count": 26
+        },
+        {
+          "name": "Spacetown",
+          "type": "PER",
+          "count": 2
+        }
+      ],
+      "LOC": [
+        {
+          "name": "Cité",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Grimpons",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Hôtel de\nVille",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Hôtel de Ville",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "San Francisco",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Zoo",
+          "type": "LOC",
+          "count": 1
+        }
+      ],
+      "MISC": [
+        {
+          "name": "-moi le plaisir",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Allons, ouste !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Ben ici cette nuit",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Bonsoir, ma chérie !\n     ",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Ca",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Eh bien ?",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Eh là !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Elijah",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Excusez-moi bredouilla Baley",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Jessie",
+          "type": "MISC",
+          "count": 4
+        },
+        {
+          "name": "Les oiseaux",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Lije",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Oh !",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Prêt",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Robot !",
+          "type": "MISC",
+          "count": 3
+        },
+        {
+          "name": "Ton ami...\n     ",
+          "type": "MISC",
+          "count": 1
+        }
+      ]
+    },
+    "aliases": {
+      "PER": {
+        "Baley": "Elijah Baley"
+      },
+      "LOC": {},
+      "MISC": {}
+    },
+    "summary": {
+      "total_persons": 4,
+      "total_locations": 6,
+      "total_misc": 16
+    }
+  },
+  {
+    "book_code": "lca",
+    "file": "chapter_12.txt",
+    "chapter_number": 11,
+    "entities": {
+      "PER": [
+        {
+          "name": "Baley",
+          "type": "PER",
+          "count": 21
+        },
+        {
+          "name": "Chester",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Daneel",
+          "type": "PER",
+          "count": 3
+        },
+        {
+          "name": "Enderby",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Francis\nClousarr",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Gerrigel",
+          "type": "PER",
+          "count": 4
+        },
+        {
+          "name": "Heisenberg",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Incertitude",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Julius",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Paul Gerhard",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Terrien",
+          "type": "PER",
+          "count": 1
+        }
+      ],
+      "LOC": [
+        {
+          "name": "Lije",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "New York",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Philadelphie",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Terre",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Terriens",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Washington",
+          "type": "LOC",
+          "count": 1
+        }
+      ],
+      "MISC": [
+        {
+          "name": "Asseyez",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Asseyez-vous !\n     ",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Cité vous demande de\nl’oublier",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Deuxième loi",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Dr Gerrigel",
+          "type": "MISC",
+          "count": 5
+        },
+        {
+          "name": "Dr Gerrigel sourit",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Elijah",
+          "type": "MISC",
+          "count": 3
+        },
+        {
+          "name": "Fous le camp !\n     ",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Frankenstein",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Incertitude",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Lije",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Loi fondamentale",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Lois fondamentales",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Mille tonnerres !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Oh !",
+          "type": "MISC",
+          "count": 4
+        },
+        {
+          "name": "Première Loi",
+          "type": "MISC",
+          "count": 5
+        },
+        {
+          "name": "Robotique",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Robotique des Mondes Extérieurs",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Robotique, monsieur\nBaley",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "l’Epoque Médiévale",
+          "type": "MISC",
+          "count": 1
+        }
+      ]
+    },
+    "aliases": {
+      "PER": {},
+      "LOC": {},
+      "MISC": {
+        "Gerrigel": "Dr Gerrigel"
+      }
+    },
+    "summary": {
+      "total_persons": 11,
+      "total_locations": 6,
+      "total_misc": 20
+    }
+  },
+  {
+    "book_code": "lca",
+    "file": "chapter_13.txt",
+    "chapter_number": 12,
+    "entities": {
+      "PER": [
+        {
+          "name": "Baley",
+          "type": "PER",
+          "count": 31
+        },
+        {
+          "name": "Daneel",
+          "type": "PER",
+          "count": 5
+        },
+        {
+          "name": "Dr\nFastolfe",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Dr Sarton",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Gerrigel",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Jessie",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Julius Enderby",
+          "type": "PER",
+          "count": 6
+        },
+        {
+          "name": "Manuel",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Norris",
+          "type": "PER",
+          "count": 7
+        },
+        {
+          "name": "Phil",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Spacetown",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Vince Barrett",
+          "type": "PER",
+          "count": 3
+        }
+      ],
+      "LOC": [
+        {
+          "name": "Lije",
+          "type": "LOC",
+          "count": 2
+        },
+        {
+          "name": "Mercure",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Médiévalistes",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "New York",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Spaciens",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Terriens",
+          "type": "LOC",
+          "count": 1
+        }
+      ],
+      "MISC": [
+        {
+          "name": "Allons donc !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Bah !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Bon !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Dr Gerrigel",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Ecoute",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Elijah",
+          "type": "MISC",
+          "count": 5
+        },
+        {
+          "name": "Garde ça pour toi",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Jessie",
+          "type": "MISC",
+          "count": 4
+        },
+        {
+          "name": "Lije",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Mange ton poulet et reprends tes\nesprits !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Oh, je te remercie !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Première Loi",
+          "type": "MISC",
+          "count": 4
+        },
+        {
+          "name": "Première Loi !\n     ",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Prétendez",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Un       instant !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Vraiment, murmura Norris",
+          "type": "MISC",
+          "count": 1
+        }
+      ]
+    },
+    "aliases": {
+      "PER": {
+        "Enderby": "Julius Enderby",
+        "Barrett": "Vince Barrett"
+      },
+      "LOC": {},
+      "MISC": {}
+    },
+    "summary": {
+      "total_persons": 12,
+      "total_locations": 6,
+      "total_misc": 16
+    }
+  },
+  {
+    "book_code": "lca",
+    "file": "chapter_14.txt",
+    "chapter_number": 13,
+    "entities": {
+      "PER": [
+        {
+          "name": "Baley",
+          "type": "PER",
+          "count": 20
+        },
+        {
+          "name": "Daneel",
+          "type": "PER",
+          "count": 6
+        },
+        {
+          "name": "Elisabeth",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Francis Clousarr",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Jane Myers",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Jessie",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Joseph Klemin",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Jésus",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Jézabel",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Lizzy",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Spaciens",
+          "type": "PER",
+          "count": 3
+        }
+      ],
+      "LOC": [
+        {
+          "name": "Hôtel de Ville",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Lije",
+          "type": "LOC",
+          "count": 5
+        },
+        {
+          "name": "Spaciens",
+          "type": "LOC",
+          "count": 2
+        }
+      ],
+      "MISC": [
+        {
+          "name": "Cités",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Commandez",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Daneel !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Décadent !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Elijah",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Jessie !",
+          "type": "MISC",
+          "count": 14
+        },
+        {
+          "name": "La Bible",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Lije",
+          "type": "MISC",
+          "count": 7
+        },
+        {
+          "name": "Oh !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Pardonnez-moi",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Réponds-moi oui ou non",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Réponds-moi simplement oui ou non",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Toilettes",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Un crime ?",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "la Bible",
+          "type": "MISC",
+          "count": 3
+        }
+      ]
+    },
+    "aliases": {
+      "PER": {
+        "Klemin": "Joseph Klemin"
+      },
+      "LOC": {},
+      "MISC": {
+        "Bible": "la Bible",
+        "Jessie": "Jessie !"
+      }
+    },
+    "summary": {
+      "total_persons": 11,
+      "total_locations": 3,
+      "total_misc": 15
+    }
+  },
+  {
+    "book_code": "lca",
+    "file": "chapter_15.txt",
+    "chapter_number": 14,
+    "entities": {
+      "PER": [
+        {
+          "name": "Baley",
+          "type": "PER",
+          "count": 22
+        },
+        {
+          "name": "Boris",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Daneel",
+          "type": "PER",
+          "count": 8
+        },
+        {
+          "name": "Dieu du Ciel",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Dr Fastolfe",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Enderby",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Francis Clousarr",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Médiévalistes",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Niez",
+          "type": "PER",
+          "count": 1
+        }
+      ],
+      "LOC": [
+        {
+          "name": "Bronx",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Cité",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Epoque Médiévale",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "New Brunswick",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "New Jersey",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "New York",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Newark",
+          "type": "LOC",
+          "count": 3
+        },
+        {
+          "name": "Olei Benedictae",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Préfecture",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Regardez",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Saccharomyces",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Spacien",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Spaciens",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Terre",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Trenton",
+          "type": "LOC",
+          "count": 2
+        },
+        {
+          "name": "Williamsburg",
+          "type": "LOC",
+          "count": 1
+        }
+      ],
+      "MISC": [
+        {
+          "name": "Bon !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Ca",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Clousarr",
+          "type": "MISC",
+          "count": 10
+        },
+        {
+          "name": "Daneel !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Elijah",
+          "type": "MISC",
+          "count": 4
+        },
+        {
+          "name": "Entendu !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Laissez-le !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Parfait, dit",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Zymologiste",
+          "type": "MISC",
+          "count": 1
+        }
+      ]
+    },
+    "aliases": {
+      "PER": {
+        "Ciel": "Dieu du Ciel"
+      },
+      "LOC": {},
+      "MISC": {}
+    },
+    "summary": {
+      "total_persons": 9,
+      "total_locations": 16,
+      "total_misc": 9
+    }
+  },
+  {
+    "book_code": "lca",
+    "file": "chapter_16.txt",
+    "chapter_number": 15,
+    "entities": {
+      "PER": [
+        {
+          "name": "Baley",
+          "type": "PER",
+          "count": 23
+        },
+        {
+          "name": "Ciel",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Daneel",
+          "type": "PER",
+          "count": 5
+        },
+        {
+          "name": "Docteur Gerrigel",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Enderby",
+          "type": "PER",
+          "count": 7
+        },
+        {
+          "name": "Francis",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Julius",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Spacetown",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Vince Barrett",
+          "type": "PER",
+          "count": 1
+        }
+      ],
+      "LOC": [
+        {
+          "name": "Centrale",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Détrompez",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Revenons",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Terre",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Terriens",
+          "type": "LOC",
+          "count": 1
+        }
+      ],
+      "MISC": [
+        {
+          "name": "Ah !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Ah, bien !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Ca",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Clousarr",
+          "type": "MISC",
+          "count": 3
+        },
+        {
+          "name": "Daneel !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Daneel les yeux",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Dieu",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Elijah",
+          "type": "MISC",
+          "count": 7
+        },
+        {
+          "name": "Enchanté de vous revoir",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Gerrigel",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Hum !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Jessie et moi",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Où diable étiez-vous\ndonc ?",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Première Loi",
+          "type": "MISC",
+          "count": 1
+        }
+      ]
+    },
+    "aliases": {
+      "PER": {},
+      "LOC": {},
+      "MISC": {}
+    },
+    "summary": {
+      "total_persons": 9,
+      "total_locations": 5,
+      "total_misc": 14
+    }
+  },
+  {
+    "book_code": "lca",
+    "file": "chapter_17.txt",
+    "chapter_number": 16,
+    "entities": {
+      "PER": [
+        {
+          "name": "Ciel",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Daneel",
+          "type": "PER",
+          "count": 3
+        },
+        {
+          "name": "Doucement",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Dr Fastolfe",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Dr Sarton",
+          "type": "PER",
+          "count": 5
+        },
+        {
+          "name": "Elijah Baley",
+          "type": "PER",
+          "count": 17
+        },
+        {
+          "name": "Enderby",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Francis\nClousarr",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Médiévalistes",
+          "type": "PER",
+          "count": 3
+        },
+        {
+          "name": "Spacetown",
+          "type": "PER",
+          "count": 4
+        },
+        {
+          "name": "Spaciens",
+          "type": "PER",
+          "count": 1
+        }
+      ],
+      "LOC": [
+        {
+          "name": "Cité",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Lije",
+          "type": "LOC",
+          "count": 5
+        },
+        {
+          "name": "Médiévalistes",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Spaciens",
+          "type": "LOC",
+          "count": 4
+        },
+        {
+          "name": "Terre",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Terriens",
+          "type": "LOC",
+          "count": 2
+        }
+      ],
+      "MISC": [
+        {
+          "name": "Ah !",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Allons donc !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "C",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Cités",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Clousarr",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Elijah",
+          "type": "MISC",
+          "count": 5
+        },
+        {
+          "name": "Jessie",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Lije",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Médiévalisme",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Oh !",
+          "type": "MISC",
+          "count": 1
+        }
+      ]
+    },
+    "aliases": {
+      "PER": {
+        "Baley": "Elijah Baley",
+        "Sarton": "Dr Sarton"
+      },
+      "LOC": {},
+      "MISC": {}
+    },
+    "summary": {
+      "total_persons": 11,
+      "total_locations": 6,
+      "total_misc": 10
+    }
+  },
+  {
+    "book_code": "lca",
+    "file": "chapter_18.txt",
+    "chapter_number": 17,
+    "entities": {
+      "PER": [
+        {
+          "name": "Allez",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Baley",
+          "type": "PER",
+          "count": 14
+        },
+        {
+          "name": "Ciel",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Daneel",
+          "type": "PER",
+          "count": 17
+        },
+        {
+          "name": "Dr\nSarton",
+          "type": "PER",
+          "count": 3
+        },
+        {
+          "name": "Dr Fastolfe",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Dr Sarton",
+          "type": "PER",
+          "count": 13
+        },
+        {
+          "name": "Jessie",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Julius Enderby",
+          "type": "PER",
+          "count": 15
+        },
+        {
+          "name": "Jézabel",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Médiévaliste",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Médiévalistes",
+          "type": "PER",
+          "count": 2
+        },
+        {
+          "name": "Spacetown",
+          "type": "PER",
+          "count": 8
+        },
+        {
+          "name": "Spacien",
+          "type": "PER",
+          "count": 1
+        },
+        {
+          "name": "Terrien",
+          "type": "PER",
+          "count": 3
+        }
+      ],
+      "LOC": [
+        {
+          "name": "Lije",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "Médiévalistes",
+          "type": "LOC",
+          "count": 1
+        },
+        {
+          "name": "New York",
+          "type": "LOC",
+          "count": 3
+        },
+        {
+          "name": "Spacetown",
+          "type": "LOC",
+          "count": 2
+        },
+        {
+          "name": "Spaciens",
+          "type": "LOC",
+          "count": 4
+        },
+        {
+          "name": "Terre",
+          "type": "LOC",
+          "count": 2
+        },
+        {
+          "name": "Terriens",
+          "type": "LOC",
+          "count": 2
+        },
+        {
+          "name": "Williamsburg",
+          "type": "LOC",
+          "count": 2
+        }
+      ],
+      "MISC": [
+        {
+          "name": "Allons, monsieur",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Attendez",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "C",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Daneel !",
+          "type": "MISC",
+          "count": 3
+        },
+        {
+          "name": "Dieu",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Dr Gerrigel",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Dr Sarton",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Elijah",
+          "type": "MISC",
+          "count": 4
+        },
+        {
+          "name": "Jessie",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Lije",
+          "type": "MISC",
+          "count": 2
+        },
+        {
+          "name": "Mon cher",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Mondes\nExtérieurs",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Mondes Extérieurs",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Médiévalisme vers la renaissance de la colonisation galactique",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Parfait !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Première Loi",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Rendez-moi votre insigne !\n     ",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Robotique",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Toilettes",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "Trop de complices !",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "la Cité",
+          "type": "MISC",
+          "count": 1
+        },
+        {
+          "name": "la Cité !\n\nimmédiat et correct",
+          "type": "MISC",
+          "count": 1
+        }
+      ]
+    },
+    "aliases": {
+      "PER": {
+        "Enderby": "Julius Enderby",
+        "Sarton": "Dr\nSarton"
+      },
+      "LOC": {},
+      "MISC": {}
+    },
+    "summary": {
+      "total_persons": 15,
+      "total_locations": 8,
+      "total_misc": 22
+    }
+  }
+]
