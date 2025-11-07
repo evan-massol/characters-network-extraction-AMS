@@ -130,12 +130,12 @@
           "count": 1
         },
         {
-          "name": "Sire !\n     ",
+          "name": "Sire !",
           "type": "MISC",
           "count": 1
         },
         {
-          "name": "Sire ?\n     ",
+          "name": "Sire ?",
           "type": "MISC",
           "count": 1
         },
@@ -390,7 +390,7 @@
           "count": 1
         },
         {
-          "name": "Hari\nSeldon",
+          "name": "Hari Seldon",
           "type": "PER",
           "count": 27
         },
@@ -444,7 +444,7 @@
           "count": 1
         },
         {
-          "name": "Empire\nGalactique",
+          "name": "Empire Galactique",
           "type": "MISC",
           "count": 1
         },
@@ -469,7 +469,7 @@
           "count": 1
         },
         {
-          "name": "Secteur\nimpérial",
+          "name": "Secteur impérial",
           "type": "MISC",
           "count": 1
         },
@@ -484,7 +484,7 @@
           "count": 1
         },
         {
-          "name": "Voyager\nsur Trantor",
+          "name": "Voyager sur Trantor",
           "type": "MISC",
           "count": 11
         }
@@ -493,11 +493,11 @@
     "aliases": {
       "PER": {
         "Hummin": "Chetter Hummin",
-        "Seldon": "Hari\nSeldon"
+        "Seldon": "Hari Seldon"
       },
       "LOC": {},
       "MISC": {
-        "Trantor": "Voyager\nsur Trantor"
+        "Trantor": "Voyager sur Trantor"
       }
     },
     "summary": {
@@ -530,7 +530,7 @@
         {
           "name": "Dors Venabili",
           "type": "PER",
-          "count": 3
+          "count": 2
         },
         {
           "name": "Empereur",
@@ -733,7 +733,6 @@
         "Hummin": "Chetter Hummin",
         "Chetter": "Chetter Hummin",
         "Venabili": "Dors Venabili",
-        "Dors": "Dors Venabili",
         "Seldon": "Hari Seldon",
         "Hari": "Hari Seldon"
       },
@@ -857,7 +856,7 @@
           "count": 4
         },
         {
-          "name": "Parlez-moi de frustration !\n",
+          "name": "Parlez-moi de frustration !",
           "type": "MISC",
           "count": 1
         },
@@ -923,10 +922,10 @@
         {
           "name": "Dors Venabili",
           "type": "PER",
-          "count": 6
+          "count": 4
         },
         {
-          "name": "Hari\nSeldon",
+          "name": "Hari Seldon",
           "type": "PER",
           "count": 18
         },
@@ -1000,7 +999,7 @@
           "count": 22
         },
         {
-          "name": "Excusez-moi...\nPuisque",
+          "name": "Excusez-moi... Puisque",
           "type": "MISC",
           "count": 1
         },
@@ -1035,11 +1034,10 @@
       "PER": {
         "Benastra": "Perplexité de Benastra",
         "Leggen": "Jenarr Leggen",
-        "Venabili": "Dors Venabili",
-        "Dors": "Dors Venabili",
         "Jenarr": "Jenarr Leggen",
-        "Seldon": "Hari\nSeldon",
-        "Hari": "Hari\nSeldon"
+        "Venabili": "Dors Venabili",
+        "Seldon": "Hari Seldon",
+        "Hari": "Hari Seldon"
       },
       "LOC": {},
       "MISC": {
@@ -1071,7 +1069,7 @@
         {
           "name": "Dors Venabili",
           "type": "PER",
-          "count": 4
+          "count": 1
         },
         {
           "name": "Eto Demerzel",
@@ -1140,11 +1138,6 @@
         }
       ],
       "LOC": [
-        {
-          "name": "Appelez",
-          "type": "LOC",
-          "count": 1
-        },
         {
           "name": "Enfouie",
           "type": "LOC",
@@ -1246,7 +1239,6 @@
     },
     "aliases": {
       "PER": {
-        "Dors": "Dors Venabili",
         "Demerzel": "Eto Demerzel",
         "Seldon": "Hari Seldon",
         "Hari": "Hari Seldon"
@@ -1256,7 +1248,7 @@
     },
     "summary": {
       "total_persons": 16,
-      "total_locations": 7,
+      "total_locations": 6,
       "total_misc": 13
     }
   },
@@ -1274,7 +1266,7 @@
         {
           "name": "Dors Venabili",
           "type": "PER",
-          "count": 3
+          "count": 1
         },
         {
           "name": "Endor Levanian",
@@ -1295,11 +1287,6 @@
           "name": "Hari Seldon",
           "type": "PER",
           "count": 39
-        },
-        {
-          "name": "Impossible",
-          "type": "PER",
-          "count": 1
         },
         {
           "name": "Mycogène",
@@ -1371,7 +1358,7 @@
           "count": 1
         },
         {
-          "name": "Fuite...\n                                  ENCYCLOPAEDIA GALACTICA",
+          "name": "Fuite... ENCYCLOPAEDIA GALACTICA",
           "type": "MISC",
           "count": 1
         },
@@ -1434,9 +1421,8 @@
     },
     "aliases": {
       "PER": {
-        "Levanian": "Endor Levanian",
         "Hummin": "Chetter Hummin",
-        "Dors": "Dors Venabili",
+        "Levanian": "Endor Levanian",
         "Seldon": "Hari Seldon",
         "Hari": "Hari Seldon"
       },
@@ -1444,7 +1430,7 @@
       "MISC": {}
     },
     "summary": {
-      "total_persons": 12,
+      "total_persons": 11,
       "total_locations": 4,
       "total_misc": 16
     }
@@ -1464,11 +1450,6 @@
           "name": "Chetter Hummin",
           "type": "PER",
           "count": 3
-        },
-        {
-          "name": "Dors",
-          "type": "PER",
-          "count": 1
         },
         {
           "name": "Frère",
@@ -1550,7 +1531,7 @@
           "count": 14
         },
         {
-          "name": "Dors du coin de\nl’œil",
+          "name": "Dors du coin de l’œil",
           "type": "MISC",
           "count": 1
         },
@@ -1615,7 +1596,7 @@
           "count": 1
         },
         {
-          "name": "Religieux ―     ",
+          "name": "Religieux ―",
           "type": "MISC",
           "count": 1
         },
@@ -1669,7 +1650,7 @@
       }
     },
     "summary": {
-      "total_persons": 10,
+      "total_persons": 9,
       "total_locations": 4,
       "total_misc": 25
     }
@@ -1681,14 +1662,9 @@
     "entities": {
       "PER": [
         {
-          "name": "Calmez",
-          "type": "PER",
-          "count": 1
-        },
-        {
           "name": "Dors Venabili",
           "type": "PER",
-          "count": 3
+          "count": 2
         },
         {
           "name": "Frère",
@@ -1835,7 +1811,7 @@
           "count": 1
         },
         {
-          "name": "― robots ‖.\n     ",
+          "name": "― robots ‖.",
           "type": "MISC",
           "count": 1
         }
@@ -1843,7 +1819,6 @@
     },
     "aliases": {
       "PER": {
-        "Dors": "Dors Venabili",
         "Seldon": "Hari Seldon",
         "Hari": "Hari Seldon"
       },
@@ -1855,7 +1830,7 @@
       }
     },
     "summary": {
-      "total_persons": 7,
+      "total_persons": 6,
       "total_locations": 3,
       "total_misc": 21
     }
@@ -1867,17 +1842,12 @@
     "entities": {
       "PER": [
         {
-          "name": "Dors\nVenabili",
-          "type": "PER",
-          "count": 2
-        },
-        {
           "name": "Dors Venabili",
           "type": "PER",
           "count": 1
         },
         {
-          "name": "Espérez",
+          "name": "Dors Venabili",
           "type": "PER",
           "count": 1
         },
@@ -1964,7 +1934,7 @@
           "count": 1
         },
         {
-          "name": "Palais\nimpérial",
+          "name": "Palais impérial",
           "type": "LOC",
           "count": 1
         },
@@ -2016,12 +1986,12 @@
           "count": 1
         },
         {
-          "name": "Dors\nVenabili",
+          "name": "Dors Venabili",
           "type": "MISC",
           "count": 1
         },
         {
-          "name": "Dors\net moi",
+          "name": "Dors et moi",
           "type": "MISC",
           "count": 1
         },
@@ -2031,7 +2001,7 @@
           "count": 22
         },
         {
-          "name": "Dors murmura :\n«",
+          "name": "Dors murmura : «",
           "type": "MISC",
           "count": 1
         },
@@ -2081,12 +2051,12 @@
           "count": 4
         },
         {
-          "name": "Livre\naussitôt que possible",
+          "name": "Livre aussitôt que possible",
           "type": "MISC",
           "count": 1
         },
         {
-          "name": "Livre au pied\nde la lettre",
+          "name": "Livre au pied de la lettre",
           "type": "MISC",
           "count": 1
         },
@@ -2139,7 +2109,6 @@
     },
     "aliases": {
       "PER": {
-        "Dors": "Dors\nVenabili",
         "Seldon": "Hari Seldon",
         "Hari": "Hari Seldon"
       },
@@ -2153,7 +2122,7 @@
       }
     },
     "summary": {
-      "total_persons": 15,
+      "total_persons": 14,
       "total_locations": 8,
       "total_misc": 30
     }
@@ -2177,7 +2146,7 @@
         {
           "name": "Dors Venabili",
           "type": "PER",
-          "count": 7
+          "count": 3
         },
         {
           "name": "Empereur",
@@ -2324,7 +2293,7 @@
           "count": 2
         },
         {
-          "name": "Livre\nsous le nom",
+          "name": "Livre sous le nom",
           "type": "MISC",
           "count": 1
         },
@@ -2334,7 +2303,7 @@
           "count": 1
         },
         {
-          "name": "Maître-du-Soleil\nQuatorze",
+          "name": "Maître-du-Soleil Quatorze",
           "type": "MISC",
           "count": 1
         },
@@ -2403,7 +2372,6 @@
     "aliases": {
       "PER": {
         "Venabili": "Dors Venabili",
-        "Dors": "Dors Venabili",
         "Demerzel": "Eto Demerzel",
         "Seldon": "Hari Seldon",
         "Hari": "Hari Seldon"
@@ -2459,7 +2427,7 @@
         {
           "name": "Dors Venabili",
           "type": "PER",
-          "count": 4
+          "count": 2
         },
         {
           "name": "Empereur",
@@ -2499,12 +2467,12 @@
         {
           "name": "Maîtresse Tisalver",
           "type": "PER",
-          "count": 21
+          "count": 20
         },
         {
           "name": "Maîtresse Venabili",
           "type": "PER",
-          "count": 2
+          "count": 3
         },
         {
           "name": "Mycogène",
@@ -2533,11 +2501,6 @@
         }
       ],
       "LOC": [
-        {
-          "name": "Admettez",
-          "type": "LOC",
-          "count": 1
-        },
         {
           "name": "Billibotton",
           "type": "LOC",
@@ -2656,7 +2619,7 @@
           "count": 3
         },
         {
-          "name": "Je suis\nlas des interrogatoires",
+          "name": "Je suis las des interrogatoires",
           "type": "MISC",
           "count": 1
         },
@@ -2724,11 +2687,10 @@
     },
     "aliases": {
       "PER": {
-        "Venabili": "Dors Venabili",
-        "Maîtresse": "Maîtresse Tisalver",
         "Tisalver": "Maîtresse Tisalver",
+        "Maîtresse": "Maîtresse Venabili",
+        "Venabili": "Dors Venabili",
         "Seldon": "Hari Seldon",
-        "Dors": "Dors Venabili",
         "Hari": "Hari Seldon",
         "Lindor": "Hano Lindor"
       },
@@ -2739,7 +2701,7 @@
     },
     "summary": {
       "total_persons": 21,
-      "total_locations": 9,
+      "total_locations": 8,
       "total_misc": 28
     }
   },
@@ -2767,10 +2729,10 @@
         {
           "name": "Dors Venabili",
           "type": "PER",
-          "count": 5
+          "count": 3
         },
         {
-          "name": "Hari\nSeldon",
+          "name": "Hari Seldon",
           "type": "PER",
           "count": 32
         },
@@ -2795,7 +2757,7 @@
           "count": 5
         },
         {
-          "name": "Maîtresse\nVenabili",
+          "name": "Maîtresse Venabili",
           "type": "PER",
           "count": 1
         },
@@ -2810,14 +2772,14 @@
           "count": 4
         },
         {
-          "name": "Mère\nRittah",
+          "name": "Mère Rittah",
           "type": "PER",
-          "count": 4
+          "count": 1
         },
         {
           "name": "Mère Rittah",
           "type": "PER",
-          "count": 9
+          "count": 12
         },
         {
           "name": "Raison",
@@ -2997,10 +2959,9 @@
     },
     "aliases": {
       "PER": {
-        "Seldon": "Hari\nSeldon",
-        "Dors": "Dors Venabili",
-        "Hari": "Hari\nSeldon",
-        "Mère": "Mère\nRittah"
+        "Seldon": "Hari Seldon",
+        "Hari": "Hari Seldon",
+        "Mère": "Mère Rittah"
       },
       "LOC": {},
       "MISC": {}
@@ -3030,7 +2991,7 @@
         {
           "name": "Dors Venabili",
           "type": "PER",
-          "count": 8
+          "count": 3
         },
         {
           "name": "Hari Seldon",
@@ -3058,19 +3019,19 @@
           "count": 4
         },
         {
-          "name": "Maîtresse\nTisalver",
+          "name": "Maîtresse Tisalver",
           "type": "PER",
           "count": 1
         },
         {
           "name": "Maîtresse Tisalver",
           "type": "PER",
-          "count": 2
+          "count": 1
         },
         {
           "name": "Maîtresse Venabili",
           "type": "PER",
-          "count": 1
+          "count": 2
         },
         {
           "name": "Merci",
@@ -3083,7 +3044,7 @@
           "count": 17
         },
         {
-          "name": "Yugo\nAmaryl",
+          "name": "Yugo Amaryl",
           "type": "PER",
           "count": 3
         }
@@ -3187,7 +3148,7 @@
           "count": 6
         },
         {
-          "name": "Vous êtes un scoop et moi j’essaie simplement de faire mon\nboulot",
+          "name": "Vous êtes un scoop et moi j’essaie simplement de faire mon boulot",
           "type": "MISC",
           "count": 1
         },
@@ -3206,12 +3167,11 @@
     "aliases": {
       "PER": {
         "Tisalver": "Maître Tisalver",
-        "Maîtresse": "Maîtresse Tisalver",
+        "Maîtresse": "Maîtresse Venabili",
         "Venabili": "Dors Venabili",
-        "Dors": "Dors Venabili",
         "Davan": "Maître Davan",
         "Seldon": "Hari Seldon",
-        "Amaryl": "Yugo\nAmaryl"
+        "Amaryl": "Yugo Amaryl"
       },
       "LOC": {},
       "MISC": {
@@ -3251,11 +3211,6 @@
           "count": 4
         },
         {
-          "name": "Dors",
-          "type": "PER",
-          "count": 2
-        },
-        {
           "name": "Dors Venabili de Cinna",
           "type": "PER",
           "count": 1
@@ -3266,7 +3221,7 @@
           "count": 1
         },
         {
-          "name": "Hari     Seldon",
+          "name": "Hari Seldon",
           "type": "PER",
           "count": 1
         },
@@ -3449,7 +3404,7 @@
       }
     },
     "summary": {
-      "total_persons": 19,
+      "total_persons": 18,
       "total_locations": 9,
       "total_misc": 12
     }
@@ -3460,11 +3415,6 @@
     "chapter_number": 16,
     "entities": {
       "PER": [
-        {
-          "name": "Attendez",
-          "type": "PER",
-          "count": 1
-        },
         {
           "name": "Chetter Hummin",
           "type": "PER",
@@ -3483,7 +3433,7 @@
         {
           "name": "Dors Venabili",
           "type": "PER",
-          "count": 7
+          "count": 4
         },
         {
           "name": "Emmer Thalus",
@@ -3496,9 +3446,9 @@
           "count": 2
         },
         {
-          "name": "Hari\nSeldon",
+          "name": "Hari Seldon",
           "type": "PER",
-          "count": 37
+          "count": 31
         },
         {
           "name": "Hari Seldon",
@@ -3508,7 +3458,7 @@
         {
           "name": "Hari amical",
           "type": "PER",
-          "count": 1
+          "count": 7
         },
         {
           "name": "Kan",
@@ -3704,19 +3654,18 @@
     "aliases": {
       "PER": {
         "Hummin": "Chetter Hummin",
-        "Seldon": "Hari\nSeldon",
+        "Seldon": "Hari Seldon",
         "Maître": "Maître Seldon",
         "Venabili": "Dors Venabili",
-        "Dors": "Dors Venabili",
         "Thalus": "Emmer Thalus",
-        "Hari": "Hari\nSeldon",
+        "Hari": "Hari amical",
         "Mannix": "Mannix IV"
       },
       "LOC": {},
       "MISC": {}
     },
     "summary": {
-      "total_persons": 20,
+      "total_persons": 19,
       "total_locations": 12,
       "total_misc": 15
     }
@@ -3750,7 +3699,7 @@
         {
           "name": "Dors Venabili",
           "type": "PER",
-          "count": 7
+          "count": 4
         },
         {
           "name": "Empereur",
@@ -3783,7 +3732,7 @@
           "count": 5
         },
         {
-          "name": "Maître\n",
+          "name": "Maître",
           "type": "PER",
           "count": 1
         },
@@ -3882,7 +3831,7 @@
           "count": 1
         },
         {
-          "name": "Garde pour toi tes astuces et tâche de\nne pas te",
+          "name": "Garde pour toi tes astuces et tâche de ne pas te",
           "type": "MISC",
           "count": 1
         },
@@ -3932,7 +3881,7 @@
           "count": 2
         },
         {
-          "name": "― lointains néants ‖.\n      « Ce",
+          "name": "― lointains néants ‖. « Ce",
           "type": "MISC",
           "count": 1
         }
@@ -3943,7 +3892,6 @@
         "Maire": "Madame le Maire",
         "Hummin": "Chetter Hummin",
         "Venabili": "Dors Venabili",
-        "Dors": "Dors Venabili",
         "Rachelle": "Rachelle Ire",
         "Mannix": "Mannix IV"
       },
@@ -3973,12 +3921,7 @@
           "count": 11
         },
         {
-          "name": "Dors",
-          "type": "PER",
-          "count": 1
-        },
-        {
-          "name": "Hari\nSeldon",
+          "name": "Hari Seldon",
           "type": "PER",
           "count": 25
         },
@@ -4008,7 +3951,7 @@
           "count": 2
         },
         {
-          "name": "Mère\nRittah",
+          "name": "Mère Rittah",
           "type": "PER",
           "count": 1
         },
@@ -4038,7 +3981,7 @@
           "count": 1
         },
         {
-          "name": "Yugo\nAmaryl",
+          "name": "Yugo Amaryl",
           "type": "PER",
           "count": 1
         }
@@ -4137,7 +4080,7 @@
           "count": 1
         },
         {
-          "name": "Maître-du-Soleil\nQuatorze",
+          "name": "Maître-du-Soleil Quatorze",
           "type": "MISC",
           "count": 1
         },
@@ -4167,7 +4110,7 @@
           "count": 1
         },
         {
-          "name": "― Loi\nZéro",
+          "name": "― Loi Zéro",
           "type": "MISC",
           "count": 1
         }
@@ -4175,9 +4118,9 @@
     },
     "aliases": {
       "PER": {
-        "Seldon": "Hari\nSeldon",
+        "Seldon": "Hari Seldon",
         "Raych": "Raych Seldon",
-        "Hari": "Hari\nSeldon"
+        "Hari": "Hari Seldon"
       },
       "LOC": {},
       "MISC": {
@@ -4185,7 +4128,7 @@
       }
     },
     "summary": {
-      "total_persons": 16,
+      "total_persons": 15,
       "total_locations": 6,
       "total_misc": 19
     }
@@ -4212,7 +4155,7 @@
           "count": 1
         },
         {
-          "name": "Robot Daneel\nOlivaw",
+          "name": "Robot Daneel Olivaw",
           "type": "PER",
           "count": 1
         },
@@ -4244,7 +4187,7 @@
       ],
       "LOC": [
         {
-          "name": "City\nHall Building",
+          "name": "City Hall Building",
           "type": "LOC",
           "count": 1
         },
@@ -4291,7 +4234,7 @@
           "count": 1
         },
         {
-          "name": "C. 7 !...\n     —",
+          "name": "C. 7 !... —",
           "type": "MISC",
           "count": 1
         },
@@ -4311,7 +4254,7 @@
           "count": 1
         },
         {
-          "name": "Impossible !\n     ",
+          "name": "Impossible !",
           "type": "MISC",
           "count": 1
         },
@@ -4474,12 +4417,12 @@
           "count": 2
         },
         {
-          "name": "Long\nIsland",
+          "name": "Long Island",
           "type": "LOC",
           "count": 1
         },
         {
-          "name": "Los\nAngeles",
+          "name": "Los Angeles",
           "type": "LOC",
           "count": 1
         },
@@ -4576,7 +4519,7 @@
           "count": 1
         },
         {
-          "name": "Parfait !\n     ",
+          "name": "Parfait !",
           "type": "MISC",
           "count": 1
         },
@@ -4667,7 +4610,7 @@
           "count": 1
         },
         {
-          "name": "Allons !\n",
+          "name": "Allons !",
           "type": "MISC",
           "count": 1
         },
@@ -4741,7 +4684,7 @@
           "count": 2
         },
         {
-          "name": "Daneel\nOlivaw",
+          "name": "Daneel Olivaw",
           "type": "PER",
           "count": 1
         },
@@ -4771,7 +4714,7 @@
           "count": 4
         },
         {
-          "name": "Julius\nEnderby",
+          "name": "Julius Enderby",
           "type": "PER",
           "count": 1
         },
@@ -4840,7 +4783,7 @@
           "count": 1
         },
         {
-          "name": "Attendez-moi\nlà !\n     ",
+          "name": "Attendez-moi là !",
           "type": "MISC",
           "count": 1
         },
@@ -4915,12 +4858,12 @@
           "count": 2
         },
         {
-          "name": "Papa ?\n     ",
+          "name": "Papa ?",
           "type": "MISC",
           "count": 1
         },
         {
-          "name": "Premier Livre\ndes Rois",
+          "name": "Premier Livre des Rois",
           "type": "MISC",
           "count": 1
         },
@@ -4958,10 +4901,10 @@
     },
     "aliases": {
       "PER": {
-        "Baley": "Lije Baley",
-        "Bentley": "Bentley Baley",
         "Olivaw": "Daneel Olivaw",
         "Daneel": "Daneel Olivaw",
+        "Baley": "Lije Baley",
+        "Bentley": "Bentley Baley",
         "Jéhu": "Jéhu galopa"
       },
       "LOC": {},
@@ -5063,7 +5006,7 @@
           "count": 2
         },
         {
-          "name": "Ah, la barbe !\n     ",
+          "name": "Ah, la barbe !",
           "type": "MISC",
           "count": 1
         },
@@ -5073,7 +5016,7 @@
           "count": 1
         },
         {
-          "name": "Ben !\n     Mais le garçon",
+          "name": "Ben ! Mais le garçon",
           "type": "MISC",
           "count": 1
         },
@@ -5385,7 +5328,7 @@
           "count": 7
         },
         {
-          "name": "Dr\nSarton",
+          "name": "Dr Sarton",
           "type": "PER",
           "count": 1
         },
@@ -5796,7 +5739,7 @@
           "count": 1
         },
         {
-          "name": "Cité de\nLondres",
+          "name": "Cité de Londres",
           "type": "LOC",
           "count": 3
         },
@@ -5831,7 +5774,7 @@
           "count": 1
         },
         {
-          "name": "Préfecture de\nPolice",
+          "name": "Préfecture de Police",
           "type": "LOC",
           "count": 1
         },
@@ -5923,7 +5866,7 @@
           "count": 1
         },
         {
-          "name": "Mondes\nExtérieurs",
+          "name": "Mondes Extérieurs",
           "type": "MISC",
           "count": 1
         },
@@ -5954,7 +5897,7 @@
         "Fastolfe": "Dr Fastolfe"
       },
       "LOC": {
-        "Londres": "Cité de\nLondres"
+        "Londres": "Cité de Londres"
       },
       "MISC": {}
     },
@@ -6003,7 +5946,7 @@
           "count": 1
         },
         {
-          "name": "Hôtel de\nVille",
+          "name": "Hôtel de Ville",
           "type": "LOC",
           "count": 1
         },
@@ -6040,7 +5983,7 @@
           "count": 1
         },
         {
-          "name": "Bonsoir, ma chérie !\n     ",
+          "name": "Bonsoir, ma chérie !",
           "type": "MISC",
           "count": 1
         },
@@ -6100,7 +6043,7 @@
           "count": 3
         },
         {
-          "name": "Ton ami...\n     ",
+          "name": "Ton ami...",
           "type": "MISC",
           "count": 1
         }
@@ -6146,7 +6089,7 @@
           "count": 1
         },
         {
-          "name": "Francis\nClousarr",
+          "name": "Francis Clousarr",
           "type": "PER",
           "count": 1
         },
@@ -6220,12 +6163,12 @@
           "count": 1
         },
         {
-          "name": "Asseyez-vous !\n     ",
+          "name": "Asseyez-vous !",
           "type": "MISC",
           "count": 1
         },
         {
-          "name": "Cité vous demande de\nl’oublier",
+          "name": "Cité vous demande de l’oublier",
           "type": "MISC",
           "count": 1
         },
@@ -6250,7 +6193,7 @@
           "count": 3
         },
         {
-          "name": "Fous le camp !\n     ",
+          "name": "Fous le camp !",
           "type": "MISC",
           "count": 1
         },
@@ -6305,7 +6248,7 @@
           "count": 1
         },
         {
-          "name": "Robotique, monsieur\nBaley",
+          "name": "Robotique, monsieur Baley",
           "type": "MISC",
           "count": 1
         },
@@ -6346,7 +6289,7 @@
           "count": 5
         },
         {
-          "name": "Dr\nFastolfe",
+          "name": "Dr Fastolfe",
           "type": "PER",
           "count": 1
         },
@@ -6475,7 +6418,7 @@
           "count": 2
         },
         {
-          "name": "Mange ton poulet et reprends tes\nesprits !",
+          "name": "Mange ton poulet et reprends tes esprits !",
           "type": "MISC",
           "count": 1
         },
@@ -6490,7 +6433,7 @@
           "count": 4
         },
         {
-          "name": "Première Loi !\n     ",
+          "name": "Première Loi !",
           "type": "MISC",
           "count": 1
         },
@@ -6500,7 +6443,7 @@
           "count": 1
         },
         {
-          "name": "Un       instant !",
+          "name": "Un instant !",
           "type": "MISC",
           "count": 1
         },
@@ -6688,8 +6631,8 @@
       },
       "LOC": {},
       "MISC": {
-        "Bible": "la Bible",
-        "Jessie": "Jessie !"
+        "Jessie": "Jessie !",
+        "Bible": "la Bible"
       }
     },
     "summary": {
@@ -7034,7 +6977,7 @@
           "count": 1
         },
         {
-          "name": "Où diable étiez-vous\ndonc ?",
+          "name": "Où diable étiez-vous donc ?",
           "type": "MISC",
           "count": 1
         },
@@ -7098,7 +7041,7 @@
           "count": 2
         },
         {
-          "name": "Francis\nClousarr",
+          "name": "Francis Clousarr",
           "type": "PER",
           "count": 1
         },
@@ -7224,11 +7167,6 @@
     "entities": {
       "PER": [
         {
-          "name": "Allez",
-          "type": "PER",
-          "count": 1
-        },
-        {
           "name": "Baley",
           "type": "PER",
           "count": 14
@@ -7244,9 +7182,9 @@
           "count": 17
         },
         {
-          "name": "Dr\nSarton",
+          "name": "Dr Sarton",
           "type": "PER",
-          "count": 3
+          "count": 1
         },
         {
           "name": "Dr Fastolfe",
@@ -7256,7 +7194,7 @@
         {
           "name": "Dr Sarton",
           "type": "PER",
-          "count": 13
+          "count": 15
         },
         {
           "name": "Jessie",
@@ -7398,7 +7336,7 @@
           "count": 1
         },
         {
-          "name": "Mondes\nExtérieurs",
+          "name": "Mondes Extérieurs",
           "type": "MISC",
           "count": 1
         },
@@ -7423,7 +7361,7 @@
           "count": 1
         },
         {
-          "name": "Rendez-moi votre insigne !\n     ",
+          "name": "Rendez-moi votre insigne !",
           "type": "MISC",
           "count": 1
         },
@@ -7448,7 +7386,7 @@
           "count": 1
         },
         {
-          "name": "la Cité !\n\nimmédiat et correct",
+          "name": "la Cité ! immédiat et correct",
           "type": "MISC",
           "count": 1
         }
@@ -7457,13 +7395,13 @@
     "aliases": {
       "PER": {
         "Enderby": "Julius Enderby",
-        "Sarton": "Dr\nSarton"
+        "Sarton": "Dr Sarton"
       },
       "LOC": {},
       "MISC": {}
     },
     "summary": {
-      "total_persons": 15,
+      "total_persons": 14,
       "total_locations": 8,
       "total_misc": 22
     }

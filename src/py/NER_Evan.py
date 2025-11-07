@@ -2,23 +2,12 @@ import re
 import fitz
 from collections import Counter
 from unidecode import unidecode
-
-def pdf_to_text(pdf_path):
-    """Extract text from a PDF file."""
-    text = ""
-    with fitz.open(pdf_path) as doc:
-        for page in doc:
-            text += page.get_textpage().extractText()
-    return text
+from utils import filter_antidict, pdf_to_text
 
 corpus = pdf_to_text("pdf/Fondation_sample.pdf")
 corpus = re.sub(r'\s+', ' ', corpus)
 tokens = re.findall(r"[A-Za-zÀ-ÖØ-öø-ÿ\-']+", corpus)
 
-def filter_antidict(file):
-    """Load anti-dictionary words from a file."""
-    with open(file, 'r', encoding='utf-8') as f:
-        return set(unidecode(line.strip()) for line in f)
 
 def generate_candidates(tokens):
     """Generate candidate words from tokens."""

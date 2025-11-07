@@ -8,6 +8,7 @@ Use this script to:
 
 import json
 from collections import defaultdict
+from utils import filter_antidict, clean_entity_name
 
 def load_aliases_report(filepath="./json/aliases_report.json"):
     """Load the generated alias report."""
@@ -15,9 +16,15 @@ def load_aliases_report(filepath="./json/aliases_report.json"):
         return json.load(f)
 
 def load_entities_output(filepath="./json/entities_output.json"):
-    """Load the entities file."""
+    """Load the entities file and clean entity names."""
     with open(filepath, 'r', encoding='utf-8') as f:
-        return json.load(f)
+        data = json.load(f)
+        # Clean all entity names in-place
+        for chapter in data:
+            for entity_type in ["PER", "LOC", "MISC"]:
+                for entity in chapter["entities"][entity_type]:
+                    entity["name"] = clean_entity_name(entity["name"])
+        return data
 
 def analyze_aliases(aliases_report):
     """Analyze and display detected aliases."""
@@ -76,7 +83,7 @@ def find_potential_errors(entities_output):
         for name, count in sorted(short_names.items(), key=lambda x: x[1], reverse=True):
             print(f"  - {name}: {count} occurrences")
 
-def generate_manual_suggestions(aliases_report):
+def generate_manual_suggestions():
     """
     Generate suggestions for the manual_aliases.json file
     based on detected patterns.
@@ -95,8 +102,8 @@ def generate_manual_suggestions(aliases_report):
     print(json.dumps(suggestions, ensure_ascii=False, indent=2))
     print("```")
 
-def show_entity_stats(entities_output):
-    """Affiche des statistiques sur les entités détectées."""
+def show_entity_stats(entities_output, antidict=None):
+    """Affiche des statistiques sur les entités détectées (hors antidictionnaire si fourni)."""
     print("\n" + "=" * 80)
     print("STATISTIQUES GLOBALES")
     print("=" * 80)
@@ -111,14 +118,17 @@ def show_entity_stats(entities_output):
     
     for chapter in entities_output:
         for entity in chapter["entities"]["PER"]:
-            total_per += entity["count"]
-            unique_per.add(entity["name"])
+            if not antidict or entity["name"].lower() not in antidict:
+                total_per += entity["count"]
+                unique_per.add(entity["name"])
         for entity in chapter["entities"]["LOC"]:
-            total_loc += entity["count"]
-            unique_loc.add(entity["name"])
+            if not antidict or entity["name"].lower() not in antidict:
+                total_loc += entity["count"]
+                unique_loc.add(entity["name"])
         for entity in chapter["entities"]["MISC"]:
-            total_misc += entity["count"]
-            unique_misc.add(entity["name"])
+            if not antidict or entity["name"].lower() not in antidict:
+                total_misc += entity["count"]
+                unique_misc.add(entity["name"])
     
     print(f"\nPersonnes (PER):")
     print(f"  - {len(unique_per)} entités uniques")
@@ -139,12 +149,13 @@ def main():
     try:
         aliases_report = load_aliases_report()
         entities_output = load_entities_output()
+        antidict = filter_antidict("fonctionnels_fr.txt")
         
         # Analyses
-        show_entity_stats(entities_output)
+        show_entity_stats(entities_output, antidict=antidict)
         analyze_aliases(aliases_report)
         find_potential_errors(entities_output)
-        generate_manual_suggestions(aliases_report)
+        generate_manual_suggestions()
         
         print("\n" + "=" * 80)
         print("✓ Analyse terminée !")

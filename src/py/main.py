@@ -1,20 +1,7 @@
 import spacy as sp
-import fitz
 import re
-import os
 from unidecode import unidecode
-
-
-
-#-----------------------------------FUNCTIONS---------------------------------------
-
-
-
-# Load the anti-dictionary
-def filter_antidict(file):
-    with open(file, 'r', encoding='utf-8') as f:
-        return set(unidecode(line.strip()) for line in f)
-
+from utils import filter_antidict
 
 
 #------------------------------TEXT PROCESSING---------------------------------

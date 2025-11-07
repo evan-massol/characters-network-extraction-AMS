@@ -1,11 +1,12 @@
-import spacy as sp
+import os
+import json
+import re
 import networkx as nx
 import pandas as pd
+import spacy as sp
 from unidecode import unidecode
-import os
-import re
-import json
 from collections import Counter
+from utils import clean_entity_name
 
 #-------------------------------------FUNCTIONS-------------------------------------
 
@@ -120,6 +121,9 @@ def merge_entity_counts(entities_list, alias_map):
 
 #------------------------------ENTITY EXTRACTION-------------------------------
 
+def _extract_num(fname):
+    m = re.search(r'\d+', fname)
+    return int(m.group()) if m else -1
 
 
 nlp = sp.load("fr_core_news_lg")
@@ -134,13 +138,13 @@ df_dict = {"ID": [], "graphml": []}
 entities_output = []  # List to store all extracted entities
 
 for code_book, filepath in books:
+
     files = [f for f in os.listdir(filepath) if f.endswith('.txt')] # Get all .txt files and sort by chapter number
-    files_sorted = sorted(files, key=lambda x: int(re.search(r'\d+', x).group())) # Sort files by the number in the name
+    files_sorted = sorted(files, key=lambda x: _extract_num(x)) # Sort files by the number in the name
     for file in files_sorted:
         chemin_complet = os.path.join(filepath, file)
-        num_chapter = int(re.search(r"\d+", file).group())-1
+        num_chapter = _extract_num(file)-1
         if os.path.isfile(chemin_complet) and file.endswith('.txt'):
-
             f = open(chemin_complet, 'r', encoding="utf-8")
             corpus = f.read()
             f.close()
@@ -163,24 +167,24 @@ for code_book, filepath in books:
             LP_counts = merge_entity_counts(LP, alias_map_PER)
             LM_counts = merge_entity_counts(LM, alias_map_MISC)
 
-            # Create a list of aliases used for this chapter (for traceability)
+            # Create a list of aliases used for this chapter (for traceability), en nettoyant les noms
             aliases_used = {
-                "PER": {alias: canonical for alias, canonical in alias_map_PER.items() 
+                "PER": {clean_entity_name(alias): clean_entity_name(canonical) for alias, canonical in alias_map_PER.items() 
                         if alias != canonical},
-                "MISC": {alias: canonical for alias, canonical in alias_map_MISC.items() 
+                "MISC": {clean_entity_name(alias): clean_entity_name(canonical) for alias, canonical in alias_map_MISC.items() 
                          if alias != canonical}
             }
 
-            # Create a dictionary for this chapter
+            # Clean entities and prepare output structure
             chapter_entities = {
                 "book_code": code_book,
                 "file": file,
                 "chapter_number": num_chapter,
                 "entities": {
-                    "PER": [{"name": name, "type": "PER", "count": count} 
+                    "PER": [{"name": clean_entity_name(name), "type": "PER", "count": count} 
                             for name, count in sorted(LP_counts.items())],
-                    "MISC": [{"name": name, "type": "MISC", "count": count} 
-                             for name, count in sorted(LM_counts.items())]
+                    "MISC": [{"name": clean_entity_name(name), "type": "MISC", "count": count} 
+                            for name, count in sorted(LM_counts.items())]
                 },
                 "aliases": aliases_used,  # Add aliases for transparency
                 "summary": {
@@ -188,7 +192,7 @@ for code_book, filepath in books:
                     "total_misc": len(LM_counts)
                 }
             }
-            
+
             entities_output.append(chapter_entities)
 
             # for ent in sorted(set(LP)):

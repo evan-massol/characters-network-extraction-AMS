@@ -3,3 +3,5 @@
 env
 
 *.pdf
+
+__pycache__/
