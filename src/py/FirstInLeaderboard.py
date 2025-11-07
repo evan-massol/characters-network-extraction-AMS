@@ -147,32 +147,25 @@ for code_book, filepath in books:
 
             doc = nlp(corpus)
             LP = []
-            LL = []
             LM = []
 
             for ent in doc.ents:           
                 if ent.label_ == "PER" and is_valid_entity(ent.text):
                     LP.append(ent)
-                elif ent.label_ == "LOC" and is_valid_entity(ent.text):
-                    LL.append(ent)
                 elif ent.label_ == "MISC":
                     LM.append(ent)
 
             # Build alias maps for each entity type
             alias_map_PER = build_entity_aliases(LP, entity_type="PER")
-            alias_map_LOC = build_entity_aliases(LL, entity_type="LOC")
             alias_map_MISC = build_entity_aliases(LM, entity_type="MISC")
 
             # Merge counts using aliases
             LP_counts = merge_entity_counts(LP, alias_map_PER)
-            LL_counts = merge_entity_counts(LL, alias_map_LOC)
             LM_counts = merge_entity_counts(LM, alias_map_MISC)
 
             # Create a list of aliases used for this chapter (for traceability)
             aliases_used = {
                 "PER": {alias: canonical for alias, canonical in alias_map_PER.items() 
-                        if alias != canonical},
-                "LOC": {alias: canonical for alias, canonical in alias_map_LOC.items() 
                         if alias != canonical},
                 "MISC": {alias: canonical for alias, canonical in alias_map_MISC.items() 
                          if alias != canonical}
@@ -186,15 +179,12 @@ for code_book, filepath in books:
                 "entities": {
                     "PER": [{"name": name, "type": "PER", "count": count} 
                             for name, count in sorted(LP_counts.items())],
-                    "LOC": [{"name": name, "type": "LOC", "count": count} 
-                            for name, count in sorted(LL_counts.items())],
                     "MISC": [{"name": name, "type": "MISC", "count": count} 
                              for name, count in sorted(LM_counts.items())]
                 },
                 "aliases": aliases_used,  # Add aliases for transparency
                 "summary": {
                     "total_persons": len(LP_counts),
-                    "total_locations": len(LL_counts),
                     "total_misc": len(LM_counts)
                 }
             }
@@ -206,14 +196,11 @@ for code_book, filepath in books:
 
             print(code_book, ", ", file, ", ", num_chapter)
             print("Number of detected characters : ", len(LP_counts))
-            print("Number of detected places : ", len(LL_counts))
             print("Number of uncategorized entities : ", len(LM_counts))
             
             # Display alias groupings
             if aliases_used["PER"]:
                 print(f"  → {len(aliases_used['PER'])} PER aliases detected")
-            if aliases_used["LOC"]:
-                print(f"  → {len(aliases_used['LOC'])} LOC aliases detected")
                 
             print('\n ---------------------------\n')
 
@@ -254,9 +241,9 @@ with open("./json/entities_output.json", "w", encoding="utf-8") as json_file:
     json.dump(entities_output, json_file, ensure_ascii=False, indent=2)
 
 # Create a comprehensive alias report
-all_aliases = {"PER": {}, "LOC": {}, "MISC": {}}
+all_aliases = {"PER": {}, "MISC": {}}
 for chapter in entities_output:
-    for entity_type in ["PER", "LOC", "MISC"]:
+    for entity_type in ["PER", "MISC"]:
         all_aliases[entity_type].update(chapter["aliases"][entity_type])
 
 # Export alias report to a json file
@@ -267,5 +254,4 @@ print("\nNamed entities exported to 'json/entities_output.json'")
 print(f"Total chapters processed: {len(entities_output)}")
 print(f"Alias report generated in 'json/aliases_report.json'")
 print(f"  - {len(all_aliases['PER'])} PER aliases detected")
-print(f"  - {len(all_aliases['LOC'])} LOC aliases detected")
 print(f"  - {len(all_aliases['MISC'])} MISC aliases detected")
