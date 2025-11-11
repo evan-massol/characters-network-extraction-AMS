@@ -7,6 +7,7 @@ import spacy as sp
 from unidecode import unidecode
 from collections import Counter
 from utils import clean_entity_name
+from collections import defaultdict
 
 #-------------------------------------FUNCTIONS-------------------------------------
 
@@ -108,7 +109,7 @@ def merge_entity_counts(entities_list, alias_map):
     
     Returns: Counter with grouped entities
     """
-    merged_counts = Counter()
+    merged_counts = Counter()    
     
     for entity in entities_list:
         # Get the canonical form
@@ -116,7 +117,42 @@ def merge_entity_counts(entities_list, alias_map):
         merged_counts[canonical] += 1
     
     return merged_counts
+
+
+def mapping_entity(entities_list, alias_map):
+    entity_map = {}
+    for entity in entities_list:    # Pour chaque entité
+        canonical = [alias_map[alias] for alias in alias_map.keys() if entity.text == alias]    #On cherche la forme cannonique
+        if not canonical:   #Msg si on ne trouve pas d'alias relatif à l'entité
+            print(f"Pb fct mapping_entity():\nAucun alias ne correspond à l'entité : {entity.text}")
+        else:               #Sinon, on sauvegarde l'entité et sa coordonnée ainsi que sa forme cannonique
+            entity_map[(entity.text, entity.start, entity.end)] = canonical
+    return entity_map
     
+def build_entity_relation(entity_map):
+    relations_map = defaultdict(int)
+    sorted_entities = sorted(entity_map.items(), key=lambda item: item[0][1])
+
+    for i, entity in enumerate(sorted_entities):
+        for neighbor in sorted_entities[i+1:]:
+            if neighbor[0][1] - entity[0][2] > 25:  # Si la distance entre les entités aiccède 25 tokens
+                break                               # On arrête la recherche de relation 
+            if entity[1][0] != neighbor[1][0]:      # Éviter les auto-relations
+                relations_map[(entity[1][0], neighbor[1][0])] += 1
+
+    to_delete = []
+    keys = list(relations_map.keys())
+    for i, relation in enumerate(keys):
+        for invert_relation in keys[i+1:]:
+            if relation[0] == invert_relation[1] and relation[1] == invert_relation[0]: # Pour chaque doublon de relation
+                relations_map[relation] += relations_map[invert_relation]   # On additionne leurs occurences
+                to_delete.append(invert_relation)
+                break
+
+    for key in to_delete:   # On supprime les doublons
+        del relations_map[key]
+
+    return relations_map
 
 
 #------------------------------ENTITY EXTRACTION-------------------------------
@@ -161,6 +197,8 @@ for code_book, filepath in books:
 
             # Build alias maps for each entity type
             alias_map_PER = build_entity_aliases(LP, entity_type="PER")
+            PER_map = mapping_entity(LP, alias_map_PER)
+            relations_PER = build_entity_relation(PER_map)
             alias_map_MISC = build_entity_aliases(LM, entity_type="MISC")
 
             # Merge counts using aliases
@@ -225,6 +263,8 @@ for code_book, filepath in books:
             for canonical_name in LP_counts.keys():
                 G.add_node(canonical_name)
                 G.nodes[canonical_name]["names"] = canonical_name
+            for key, value in relations_PER.items():
+                G.add_edge(key[0], key[1], weight=value)
 
             df_dict["ID"].append("{}{}".format(code_book, num_chapter))
             graphml = "".join(nx.generate_graphml(G))
@@ -259,3 +299,7 @@ print(f"Total chapters processed: {len(entities_output)}")
 print(f"Alias report generated in 'json/aliases_report.json'")
 print(f"  - {len(all_aliases['PER'])} PER aliases detected")
 print(f"  - {len(all_aliases['MISC'])} MISC aliases detected")
+
+
+print("\n -------------------- \n")
+print(PER_map)
