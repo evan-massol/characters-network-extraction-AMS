@@ -120,25 +120,32 @@ def merge_entity_counts(entities_list, alias_map):
 
 
 def mapping_entity(entities_list, alias_map):
+    '''
+    Returns a set (entityNamed_text, tokenNum_start, tokenNum_end):canonical_form
+    '''
     entity_map = {}
     for entity in entities_list:    # Pour chaque entité
         canonical = [alias_map[alias] for alias in alias_map.keys() if entity.text == alias]    #On cherche la forme cannonique
+        canonical = canonical[0]
         if not canonical:   #Msg si on ne trouve pas d'alias relatif à l'entité
             print(f"Pb fct mapping_entity():\nAucun alias ne correspond à l'entité : {entity.text}")
-        else:               #Sinon, on sauvegarde l'entité et sa coordonnée ainsi que sa forme cannonique
+        else:               #Sinon, on sauvegarde l'entité et ses coordonnées ainsi que sa forme cannonique
             entity_map[(entity.text, entity.start, entity.end)] = canonical
     return entity_map
     
 def build_entity_relation(entity_map):
+    '''
+    Returns a set (entityNamed_1, entityNamed_2):occurences_number
+    '''
     relations_map = defaultdict(int)
     sorted_entities = sorted(entity_map.items(), key=lambda item: item[0][1])
 
     for i, entity in enumerate(sorted_entities):
         for neighbor in sorted_entities[i+1:]:
-            if neighbor[0][1] - entity[0][2] > 25:  # Si la distance entre les entités aiccède 25 tokens
-                break                               # On arrête la recherche de relation 
-            if entity[1][0] != neighbor[1][0]:      # Éviter les auto-relations
-                relations_map[(entity[1][0], neighbor[1][0])] += 1
+            if neighbor[0][1] - entity[0][2] > 25:  # Si la distance entre les entités excède 25 tokens
+                break                               # On arrête la recherche de relation pour cette entité
+            if entity[1] != neighbor[1]:      # Éviter les auto-relations
+                relations_map[(entity[1], neighbor[1])] += 1
 
     to_delete = []
     keys = list(relations_map.keys())
