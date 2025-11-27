@@ -5,3 +5,8 @@ env
 *.pdf
 
 __pycache__/
+
+# Ignore location entities analysis results
+src/json/aliases_report.json
+src/json/entities_output.json
+src/EvanMASSOL_MartinGERIS.csv

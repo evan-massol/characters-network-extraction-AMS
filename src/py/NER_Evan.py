@@ -29,10 +29,6 @@ L = generate_candidates(tokens)
 L = Counter(L)
 LP = [word for word, count in L.items() if count > 2]
 
-def generate_entities(L):
-    """Filter out entities based on an anti-dictionary."""
-    return [token for token in L]
-
-LP = generate_entities(LP)
+LP = [entity for entity in LP]
 LP.sort()
-print(LP, len(LP))
+print(LP, "\n\n", len(LP))
