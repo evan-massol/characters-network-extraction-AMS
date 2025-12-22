@@ -1,0 +1,1800 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d3" for="edge" attr.name="weight" attr.type="long" />
+  <key id="d2" for="node" attr.name="chapters" attr.type="string" />
+  <key id="d1" for="node" attr.name="appearances" attr.type="long" />
+  <key id="d0" for="node" attr.name="count" attr.type="long" />
+  <graph edgedefault="undirected">
+    <node id="Cléon">
+      <data key="d0">35</data>
+      <data key="d1">6</data>
+      <data key="d2">[{"book": "paf", "chapter": 0, "count": 15}, {"book": "paf", "chapter": 3, "count": 8}, {"book": "paf", "chapter": 6, "count": 1}, {"book": "paf", "chapter": 12, "count": 9}, {"book": "paf", "chapter": 17, "count": 1}, {"book": "paf", "chapter": 18, "count": 1}]</data>
+    </node>
+    <node id="Empereur">
+      <data key="d0">14</data>
+      <data key="d1">7</data>
+      <data key="d2">[{"book": "paf", "chapter": 0, "count": 2}, {"book": "paf", "chapter": 3, "count": 3}, {"book": "paf", "chapter": 11, "count": 1}, {"book": "paf", "chapter": 12, "count": 4}, {"book": "paf", "chapter": 15, "count": 1}, {"book": "paf", "chapter": 16, "count": 2}, {"book": "paf", "chapter": 17, "count": 1}]</data>
+    </node>
+    <node id="Eto Demerzel">
+      <data key="d0">16</data>
+      <data key="d1">3</data>
+      <data key="d2">[{"book": "paf", "chapter": 0, "count": 11}, {"book": "paf", "chapter": 6, "count": 2}, {"book": "paf", "chapter": 11, "count": 3}]</data>
+    </node>
+    <node id="Hari Seldon">
+      <data key="d0">629</data>
+      <data key="d1">23</data>
+      <data key="d2">[{"book": "paf", "chapter": 0, "count": 38}, {"book": "paf", "chapter": 1, "count": 41}, {"book": "paf", "chapter": 2, "count": 1}, {"book": "paf", "chapter": 2, "count": 27}, {"book": "paf", "chapter": 3, "count": 38}, {"book": "paf", "chapter": 4, "count": 38}, {"book": "paf", "chapter": 5, "count": 1}, {"book": "paf", "chapter": 5, "count": 18}, {"book": "paf", "chapter": 6, "count": 34}, {"book": "paf", "chapter": 7, "count": 39}, {"book": "paf", "chapter": 8, "count": 37}, {"book": "paf", "chapter": 9, "count": 30}, {"book": "paf", "chapter": 10, "count": 45}, {"book": "paf", "chapter": 11, "count": 47}, {"book": "paf", "chapter": 12, "count": 43}, {"book": "paf", "chapter": 13, "count": 1}, {"book": "paf", "chapter": 13, "count": 33}, {"book": "paf", "chapter": 14, "count": 21}, {"book": "paf", "chapter": 15, "count": 1}, {"book": "paf", "chapter": 15, "count": 32}, {"book": "paf", "chapter": 16, "count": 1}, {"book": "paf", "chapter": 16, "count": 38}, {"book": "paf", "chapter": 18, "count": 25}]</data>
+    </node>
+    <node id="Hummin">
+      <data key="d0">87</data>
+      <data key="d1">11</data>
+      <data key="d2">[{"book": "paf", "chapter": 0, "count": 2}, {"book": "paf", "chapter": 1, "count": 24}, {"book": "paf", "chapter": 4, "count": 3}, {"book": "paf", "chapter": 6, "count": 22}, {"book": "paf", "chapter": 10, "count": 1}, {"book": "paf", "chapter": 11, "count": 18}, {"book": "paf", "chapter": 12, "count": 5}, {"book": "paf", "chapter": 13, "count": 2}, {"book": "paf", "chapter": 14, "count": 1}, {"book": "paf", "chapter": 15, "count": 2}, {"book": "paf", "chapter": 18, "count": 7}]</data>
+    </node>
+    <node id="Sire">
+      <data key="d0">20</data>
+      <data key="d1">3</data>
+      <data key="d2">[{"book": "paf", "chapter": 0, "count": 8}, {"book": "paf", "chapter": 3, "count": 6}, {"book": "paf", "chapter": 12, "count": 6}]</data>
+    </node>
+    <node id="Trantor">
+      <data key="d0">14</data>
+      <data key="d1">9</data>
+      <data key="d2">[{"book": "paf", "chapter": 0, "count": 1}, {"book": "paf", "chapter": 1, "count": 1}, {"book": "paf", "chapter": 2, "count": 2}, {"book": "paf", "chapter": 3, "count": 2}, {"book": "paf", "chapter": 4, "count": 2}, {"book": "paf", "chapter": 6, "count": 1}, {"book": "paf", "chapter": 12, "count": 2}, {"book": "paf", "chapter": 13, "count": 1}, {"book": "paf", "chapter": 16, "count": 2}]</data>
+    </node>
+    <node id="Alem">
+      <data key="d0">11</data>
+      <data key="d1">1</data>
+      <data key="d2">[{"book": "paf", "chapter": 1, "count": 11}]</data>
+    </node>
+    <node id="Demerzel">
+      <data key="d0">24</data>
+      <data key="d1">7</data>
+      <data key="d2">[{"book": "paf", "chapter": 1, "count": 3}, {"book": "paf", "chapter": 2, "count": 1}, {"book": "paf", "chapter": 3, "count": 8}, {"book": "paf", "chapter": 12, "count": 7}, {"book": "paf", "chapter": 13, "count": 1}, {"book": "paf", "chapter": 14, "count": 1}, {"book": "paf", "chapter": 17, "count": 3}]</data>
+    </node>
+    <node id="Héliconien">
+      <data key="d0">3</data>
+      <data key="d1">3</data>
+      <data key="d2">[{"book": "paf", "chapter": 1, "count": 1}, {"book": "paf", "chapter": 5, "count": 1}, {"book": "paf", "chapter": 9, "count": 1}]</data>
+    </node>
+    <node id="Trantorien">
+      <data key="d0">4</data>
+      <data key="d1">1</data>
+      <data key="d2">[{"book": "paf", "chapter": 1, "count": 4}]</data>
+    </node>
+    <node id="Chetter Hummin">
+      <data key="d0">42</data>
+      <data key="d1">6</data>
+      <data key="d2">[{"book": "paf", "chapter": 2, "count": 12}, {"book": "paf", "chapter": 3, "count": 12}, {"book": "paf", "chapter": 7, "count": 3}, {"book": "paf", "chapter": 8, "count": 3}, {"book": "paf", "chapter": 16, "count": 2}, {"book": "paf", "chapter": 17, "count": 10}]</data>
+    </node>
+    <node id="Dors Venabili">
+      <data key="d0">32</data>
+      <data key="d1">14</data>
+      <data key="d2">[{"book": "paf", "chapter": 3, "count": 2}, {"book": "paf", "chapter": 4, "count": 1}, {"book": "paf", "chapter": 5, "count": 4}, {"book": "paf", "chapter": 6, "count": 1}, {"book": "paf", "chapter": 7, "count": 1}, {"book": "paf", "chapter": 9, "count": 2}, {"book": "paf", "chapter": 10, "count": 1}, {"book": "paf", "chapter": 10, "count": 1}, {"book": "paf", "chapter": 11, "count": 3}, {"book": "paf", "chapter": 12, "count": 2}, {"book": "paf", "chapter": 13, "count": 3}, {"book": "paf", "chapter": 14, "count": 3}, {"book": "paf", "chapter": 16, "count": 4}, {"book": "paf", "chapter": 17, "count": 4}]</data>
+    </node>
+    <node id="Kan">
+      <data key="d0">48</data>
+      <data key="d1">6</data>
+      <data key="d2">[{"book": "paf", "chapter": 3, "count": 3}, {"book": "paf", "chapter": 6, "count": 4}, {"book": "paf", "chapter": 12, "count": 3}, {"book": "paf", "chapter": 15, "count": 13}, {"book": "paf", "chapter": 16, "count": 18}, {"book": "paf", "chapter": 17, "count": 7}]</data>
+    </node>
+    <node id="Clowzia">
+      <data key="d0">4</data>
+      <data key="d1">2</data>
+      <data key="d2">[{"book": "paf", "chapter": 4, "count": 2}, {"book": "paf", "chapter": 5, "count": 2}]</data>
+    </node>
+    <node id="Leggen">
+      <data key="d0">5</data>
+      <data key="d1">2</data>
+      <data key="d2">[{"book": "paf", "chapter": 4, "count": 3}, {"book": "paf", "chapter": 6, "count": 2}]</data>
+    </node>
+    <node id="Lisung Randa">
+      <data key="d0">8</data>
+      <data key="d1">1</data>
+      <data key="d2">[{"book": "paf", "chapter": 4, "count": 8}]</data>
+    </node>
+    <node id="Jenarr Leggen">
+      <data key="d0">13</data>
+      <data key="d1">1</data>
+      <data key="d2">[{"book": "paf", "chapter": 5, "count": 13}]</data>
+    </node>
+    <node id="Perplexité de Benastra">
+      <data key="d0">10</data>
+      <data key="d1">1</data>
+      <data key="d2">[{"book": "paf", "chapter": 5, "count": 10}]</data>
+    </node>
+    <node id="Mycogène">
+      <data key="d0">57</data>
+      <data key="d1">11</data>
+      <data key="d2">[{"book": "paf", "chapter": 6, "count": 6}, {"book": "paf", "chapter": 7, "count": 7}, {"book": "paf", "chapter": 8, "count": 8}, {"book": "paf", "chapter": 9, "count": 3}, {"book": "paf", "chapter": 10, "count": 8}, {"book": "paf", "chapter": 11, "count": 14}, {"book": "paf", "chapter": 12, "count": 7}, {"book": "paf", "chapter": 13, "count": 1}, {"book": "paf", "chapter": 15, "count": 1}, {"book": "paf", "chapter": 16, "count": 1}, {"book": "paf", "chapter": 17, "count": 1}]</data>
+    </node>
+    <node id="Mycogéniens">
+      <data key="d0">16</data>
+      <data key="d1">7</data>
+      <data key="d2">[{"book": "paf", "chapter": 6, "count": 3}, {"book": "paf", "chapter": 7, "count": 1}, {"book": "paf", "chapter": 8, "count": 1}, {"book": "paf", "chapter": 9, "count": 1}, {"book": "paf", "chapter": 10, "count": 4}, {"book": "paf", "chapter": 13, "count": 4}, {"book": "paf", "chapter": 18, "count": 2}]</data>
+    </node>
+    <node id="Randa">
+      <data key="d0">3</data>
+      <data key="d1">1</data>
+      <data key="d2">[{"book": "paf", "chapter": 6, "count": 3}]</data>
+    </node>
+    <node id="Endor Levanian">
+      <data key="d0">4</data>
+      <data key="d1">1</data>
+      <data key="d2">[{"book": "paf", "chapter": 7, "count": 4}]</data>
+    </node>
+    <node id="Frère">
+      <data key="d0">6</data>
+      <data key="d1">5</data>
+      <data key="d2">[{"book": "paf", "chapter": 7, "count": 1}, {"book": "paf", "chapter": 8, "count": 2}, {"book": "paf", "chapter": 9, "count": 1}, {"book": "paf", "chapter": 10, "count": 1}, {"book": "paf", "chapter": 11, "count": 1}]</data>
+    </node>
+    <node id="Grisnuage">
+      <data key="d0">7</data>
+      <data key="d1">2</data>
+      <data key="d2">[{"book": "paf", "chapter": 7, "count": 6}, {"book": "paf", "chapter": 8, "count": 1}]</data>
+    </node>
+    <node id="Sacratorium">
+      <data key="d0">5</data>
+      <data key="d1">2</data>
+      <data key="d2">[{"book": "paf", "chapter": 10, "count": 3}, {"book": "paf", "chapter": 11, "count": 2}]</data>
+    </node>
+    <node id="Amaryl">
+      <data key="d0">11</data>
+      <data key="d1">1</data>
+      <data key="d2">[{"book": "paf", "chapter": 12, "count": 11}]</data>
+    </node>
+    <node id="Casilia">
+      <data key="d0">7</data>
+      <data key="d1">3</data>
+      <data key="d2">[{"book": "paf", "chapter": 12, "count": 2}, {"book": "paf", "chapter": 13, "count": 4}, {"book": "paf", "chapter": 15, "count": 1}]</data>
+    </node>
+    <node id="Dahl">
+      <data key="d0">26</data>
+      <data key="d1">5</data>
+      <data key="d2">[{"book": "paf", "chapter": 12, "count": 11}, {"book": "paf", "chapter": 13, "count": 1}, {"book": "paf", "chapter": 14, "count": 3}, {"book": "paf", "chapter": 15, "count": 7}, {"book": "paf", "chapter": 16, "count": 4}]</data>
+    </node>
+    <node id="Hano Lindor">
+      <data key="d0">5</data>
+      <data key="d1">1</data>
+      <data key="d2">[{"book": "paf", "chapter": 12, "count": 5}]</data>
+    </node>
+    <node id="Maître Seldon">
+      <data key="d0">12</data>
+      <data key="d1">4</data>
+      <data key="d2">[{"book": "paf", "chapter": 12, "count": 3}, {"book": "paf", "chapter": 13, "count": 5}, {"book": "paf", "chapter": 15, "count": 2}, {"book": "paf", "chapter": 16, "count": 2}]</data>
+    </node>
+    <node id="Maîtresse Tisalver">
+      <data key="d0">28</data>
+      <data key="d1">4</data>
+      <data key="d2">[{"book": "paf", "chapter": 12, "count": 21}, {"book": "paf", "chapter": 14, "count": 1}, {"book": "paf", "chapter": 14, "count": 2}, {"book": "paf", "chapter": 15, "count": 4}]</data>
+    </node>
+    <node id="Maîtresse Venabili">
+      <data key="d0">4</data>
+      <data key="d1">3</data>
+      <data key="d2">[{"book": "paf", "chapter": 12, "count": 2}, {"book": "paf", "chapter": 13, "count": 1}, {"book": "paf", "chapter": 14, "count": 1}]</data>
+    </node>
+    <node id="Mère Rittah">
+      <data key="d0">18</data>
+      <data key="d1">5</data>
+      <data key="d2">[{"book": "paf", "chapter": 12, "count": 2}, {"book": "paf", "chapter": 13, "count": 1}, {"book": "paf", "chapter": 13, "count": 12}, {"book": "paf", "chapter": 18, "count": 1}, {"book": "paf", "chapter": 18, "count": 2}]</data>
+    </node>
+    <node id="Marron">
+      <data key="d0">4</data>
+      <data key="d1">2</data>
+      <data key="d2">[{"book": "paf", "chapter": 13, "count": 2}, {"book": "paf", "chapter": 15, "count": 2}]</data>
+    </node>
+    <node id="Raych">
+      <data key="d0">68</data>
+      <data key="d1">5</data>
+      <data key="d2">[{"book": "paf", "chapter": 13, "count": 3}, {"book": "paf", "chapter": 14, "count": 17}, {"book": "paf", "chapter": 15, "count": 12}, {"book": "paf", "chapter": 16, "count": 23}, {"book": "paf", "chapter": 17, "count": 13}]</data>
+    </node>
+    <node id="Tisalver">
+      <data key="d0">9</data>
+      <data key="d1">2</data>
+      <data key="d2">[{"book": "paf", "chapter": 13, "count": 8}, {"book": "paf", "chapter": 18, "count": 1}]</data>
+    </node>
+    <node id="Yugo Amaryl">
+      <data key="d0">6</data>
+      <data key="d1">4</data>
+      <data key="d2">[{"book": "paf", "chapter": 13, "count": 1}, {"book": "paf", "chapter": 14, "count": 3}, {"book": "paf", "chapter": 16, "count": 1}, {"book": "paf", "chapter": 18, "count": 1}]</data>
+    </node>
+    <node id="Maître Davan">
+      <data key="d0">4</data>
+      <data key="d1">1</data>
+      <data key="d2">[{"book": "paf", "chapter": 14, "count": 4}]</data>
+    </node>
+    <node id="Maître Tisalver">
+      <data key="d0">4</data>
+      <data key="d1">1</data>
+      <data key="d2">[{"book": "paf", "chapter": 14, "count": 4}]</data>
+    </node>
+    <node id="Astinwald">
+      <data key="d0">3</data>
+      <data key="d1">1</data>
+      <data key="d2">[{"book": "paf", "chapter": 15, "count": 3}]</data>
+    </node>
+    <node id="Davan">
+      <data key="d0">5</data>
+      <data key="d1">2</data>
+      <data key="d2">[{"book": "paf", "chapter": 15, "count": 4}, {"book": "paf", "chapter": 16, "count": 1}]</data>
+    </node>
+    <node id="Maire">
+      <data key="d0">3</data>
+      <data key="d1">2</data>
+      <data key="d2">[{"book": "paf", "chapter": 15, "count": 2}, {"book": "paf", "chapter": 18, "count": 1}]</data>
+    </node>
+    <node id="Emmer Thalus">
+      <data key="d0">6</data>
+      <data key="d1">1</data>
+      <data key="d2">[{"book": "paf", "chapter": 16, "count": 6}]</data>
+    </node>
+    <node id="Mannix IV">
+      <data key="d0">8</data>
+      <data key="d1">2</data>
+      <data key="d2">[{"book": "paf", "chapter": 16, "count": 3}, {"book": "paf", "chapter": 17, "count": 5}]</data>
+    </node>
+    <node id="Rachelle">
+      <data key="d0">20</data>
+      <data key="d1">2</data>
+      <data key="d2">[{"book": "paf", "chapter": 16, "count": 19}, {"book": "paf", "chapter": 18, "count": 1}]</data>
+    </node>
+    <node id="Sergent">
+      <data key="d0">4</data>
+      <data key="d1">2</data>
+      <data key="d2">[{"book": "paf", "chapter": 16, "count": 2}, {"book": "paf", "chapter": 17, "count": 2}]</data>
+    </node>
+    <node id="Rachelle Ire">
+      <data key="d0">16</data>
+      <data key="d1">1</data>
+      <data key="d2">[{"book": "paf", "chapter": 17, "count": 16}]</data>
+    </node>
+    <node id="Seldon">
+      <data key="d0">29</data>
+      <data key="d1">1</data>
+      <data key="d2">[{"book": "paf", "chapter": 17, "count": 29}]</data>
+    </node>
+    <node id="Daneel">
+      <data key="d0">11</data>
+      <data key="d1">1</data>
+      <data key="d2">[{"book": "paf", "chapter": 18, "count": 11}]</data>
+    </node>
+    <node id="Raych Seldon">
+      <data key="d0">3</data>
+      <data key="d1">1</data>
+      <data key="d2">[{"book": "paf", "chapter": 18, "count": 3}]</data>
+    </node>
+    <edge source="Cléon" target="Empereur">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Cléon" target="Eto Demerzel">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Cléon" target="Hari Seldon">
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Cléon" target="Hummin">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Cléon" target="Sire">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Cléon" target="Trantor">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Cléon" target="Demerzel">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Cléon" target="Chetter Hummin">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Cléon" target="Dors Venabili">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Cléon" target="Kan">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Cléon" target="Leggen">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Cléon" target="Mycogène">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Cléon" target="Mycogéniens">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Cléon" target="Randa">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Cléon" target="Amaryl">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Cléon" target="Casilia">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Cléon" target="Dahl">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Cléon" target="Hano Lindor">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Cléon" target="Maître Seldon">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Cléon" target="Maîtresse Tisalver">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Cléon" target="Maîtresse Venabili">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Cléon" target="Mère Rittah">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Cléon" target="Raych">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Cléon" target="Tisalver">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Cléon" target="Yugo Amaryl">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Cléon" target="Maire">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Cléon" target="Mannix IV">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Cléon" target="Rachelle">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Cléon" target="Sergent">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Cléon" target="Rachelle Ire">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Cléon" target="Seldon">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Cléon" target="Daneel">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Cléon" target="Raych Seldon">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Empereur" target="Eto Demerzel">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Empereur" target="Hari Seldon">
+      <data key="d3">6</data>
+    </edge>
+    <edge source="Empereur" target="Hummin">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Empereur" target="Sire">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Empereur" target="Trantor">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Empereur" target="Demerzel">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Empereur" target="Chetter Hummin">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Empereur" target="Dors Venabili">
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Empereur" target="Kan">
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Empereur" target="Mycogène">
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Empereur" target="Frère">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Empereur" target="Sacratorium">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Empereur" target="Amaryl">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Empereur" target="Casilia">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Empereur" target="Dahl">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Empereur" target="Hano Lindor">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Empereur" target="Maître Seldon">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Empereur" target="Maîtresse Tisalver">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Empereur" target="Maîtresse Venabili">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Empereur" target="Mère Rittah">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Empereur" target="Marron">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Empereur" target="Raych">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Empereur" target="Yugo Amaryl">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Empereur" target="Astinwald">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Empereur" target="Davan">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Empereur" target="Maire">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Empereur" target="Emmer Thalus">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Empereur" target="Mannix IV">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Empereur" target="Rachelle">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Empereur" target="Sergent">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Empereur" target="Rachelle Ire">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Empereur" target="Seldon">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Eto Demerzel" target="Hari Seldon">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Eto Demerzel" target="Hummin">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Eto Demerzel" target="Sire">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Eto Demerzel" target="Trantor">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Eto Demerzel" target="Dors Venabili">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Eto Demerzel" target="Kan">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Eto Demerzel" target="Leggen">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Eto Demerzel" target="Mycogène">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Eto Demerzel" target="Mycogéniens">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Eto Demerzel" target="Randa">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Eto Demerzel" target="Frère">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Eto Demerzel" target="Sacratorium">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hari Seldon" target="Hummin">
+      <data key="d3">11</data>
+    </edge>
+    <edge source="Hari Seldon" target="Sire">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Hari Seldon" target="Trantor">
+      <data key="d3">9</data>
+    </edge>
+    <edge source="Hari Seldon" target="Alem">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hari Seldon" target="Demerzel">
+      <data key="d3">6</data>
+    </edge>
+    <edge source="Hari Seldon" target="Héliconien">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Hari Seldon" target="Trantorien">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hari Seldon" target="Chetter Hummin">
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Hari Seldon" target="Dors Venabili">
+      <data key="d3">12</data>
+    </edge>
+    <edge source="Hari Seldon" target="Kan">
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Hari Seldon" target="Clowzia">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Hari Seldon" target="Leggen">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Hari Seldon" target="Lisung Randa">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hari Seldon" target="Jenarr Leggen">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hari Seldon" target="Perplexité de Benastra">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hari Seldon" target="Mycogène">
+      <data key="d3">10</data>
+    </edge>
+    <edge source="Hari Seldon" target="Mycogéniens">
+      <data key="d3">7</data>
+    </edge>
+    <edge source="Hari Seldon" target="Randa">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hari Seldon" target="Endor Levanian">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hari Seldon" target="Frère">
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Hari Seldon" target="Grisnuage">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Hari Seldon" target="Sacratorium">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Hari Seldon" target="Amaryl">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hari Seldon" target="Casilia">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Hari Seldon" target="Dahl">
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Hari Seldon" target="Hano Lindor">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hari Seldon" target="Maître Seldon">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Hari Seldon" target="Maîtresse Tisalver">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Hari Seldon" target="Maîtresse Venabili">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Hari Seldon" target="Mère Rittah">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Hari Seldon" target="Marron">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Hari Seldon" target="Raych">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Hari Seldon" target="Tisalver">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Hari Seldon" target="Yugo Amaryl">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Hari Seldon" target="Maître Davan">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hari Seldon" target="Maître Tisalver">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hari Seldon" target="Astinwald">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hari Seldon" target="Davan">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Hari Seldon" target="Maire">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Hari Seldon" target="Emmer Thalus">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hari Seldon" target="Mannix IV">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hari Seldon" target="Rachelle">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Hari Seldon" target="Sergent">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hari Seldon" target="Daneel">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hari Seldon" target="Raych Seldon">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hummin" target="Sire">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Hummin" target="Trantor">
+      <data key="d3">6</data>
+    </edge>
+    <edge source="Hummin" target="Alem">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hummin" target="Demerzel">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Hummin" target="Héliconien">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hummin" target="Trantorien">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hummin" target="Dors Venabili">
+      <data key="d3">7</data>
+    </edge>
+    <edge source="Hummin" target="Kan">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Hummin" target="Clowzia">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hummin" target="Leggen">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Hummin" target="Lisung Randa">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hummin" target="Mycogène">
+      <data key="d3">6</data>
+    </edge>
+    <edge source="Hummin" target="Mycogéniens">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Hummin" target="Randa">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hummin" target="Frère">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Hummin" target="Sacratorium">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Hummin" target="Amaryl">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hummin" target="Casilia">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Hummin" target="Dahl">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Hummin" target="Hano Lindor">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hummin" target="Maître Seldon">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Hummin" target="Maîtresse Tisalver">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Hummin" target="Maîtresse Venabili">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Hummin" target="Mère Rittah">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Hummin" target="Marron">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Hummin" target="Raych">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Hummin" target="Tisalver">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Hummin" target="Yugo Amaryl">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Hummin" target="Maître Davan">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hummin" target="Maître Tisalver">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hummin" target="Astinwald">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hummin" target="Davan">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hummin" target="Maire">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Hummin" target="Rachelle">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hummin" target="Daneel">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hummin" target="Raych Seldon">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Sire" target="Trantor">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Sire" target="Demerzel">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Sire" target="Chetter Hummin">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Sire" target="Dors Venabili">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Sire" target="Kan">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Sire" target="Mycogène">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Sire" target="Amaryl">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Sire" target="Casilia">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Sire" target="Dahl">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Sire" target="Hano Lindor">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Sire" target="Maître Seldon">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Sire" target="Maîtresse Tisalver">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Sire" target="Maîtresse Venabili">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Sire" target="Mère Rittah">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Trantor" target="Alem">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Trantor" target="Demerzel">
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Trantor" target="Héliconien">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Trantor" target="Trantorien">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Trantor" target="Chetter Hummin">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Trantor" target="Dors Venabili">
+      <data key="d3">6</data>
+    </edge>
+    <edge source="Trantor" target="Kan">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Trantor" target="Clowzia">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Trantor" target="Leggen">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Trantor" target="Lisung Randa">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Trantor" target="Mycogène">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Trantor" target="Mycogéniens">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Trantor" target="Randa">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Trantor" target="Amaryl">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Trantor" target="Casilia">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Trantor" target="Dahl">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Trantor" target="Hano Lindor">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Trantor" target="Maître Seldon">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Trantor" target="Maîtresse Tisalver">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Trantor" target="Maîtresse Venabili">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Trantor" target="Mère Rittah">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Trantor" target="Marron">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Trantor" target="Raych">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Trantor" target="Tisalver">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Trantor" target="Yugo Amaryl">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Trantor" target="Davan">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Trantor" target="Emmer Thalus">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Trantor" target="Mannix IV">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Trantor" target="Rachelle">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Trantor" target="Sergent">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Alem" target="Demerzel">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Alem" target="Héliconien">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Alem" target="Trantorien">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Demerzel" target="Héliconien">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Demerzel" target="Trantorien">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Demerzel" target="Chetter Hummin">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Demerzel" target="Dors Venabili">
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Demerzel" target="Kan">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Demerzel" target="Mycogène">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Demerzel" target="Mycogéniens">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Demerzel" target="Amaryl">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Demerzel" target="Casilia">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Demerzel" target="Dahl">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Demerzel" target="Hano Lindor">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Demerzel" target="Maître Seldon">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Demerzel" target="Maîtresse Tisalver">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Demerzel" target="Maîtresse Venabili">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Demerzel" target="Mère Rittah">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Demerzel" target="Marron">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Demerzel" target="Raych">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Demerzel" target="Tisalver">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Demerzel" target="Yugo Amaryl">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Demerzel" target="Maître Davan">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Demerzel" target="Maître Tisalver">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Demerzel" target="Mannix IV">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Demerzel" target="Sergent">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Demerzel" target="Rachelle Ire">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Demerzel" target="Seldon">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Héliconien" target="Trantorien">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Héliconien" target="Dors Venabili">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Héliconien" target="Clowzia">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Héliconien" target="Jenarr Leggen">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Héliconien" target="Perplexité de Benastra">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Héliconien" target="Mycogène">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Héliconien" target="Mycogéniens">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Héliconien" target="Frère">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Chetter Hummin" target="Dors Venabili">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Chetter Hummin" target="Kan">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Chetter Hummin" target="Mycogène">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Chetter Hummin" target="Mycogéniens">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Chetter Hummin" target="Endor Levanian">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Chetter Hummin" target="Frère">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Chetter Hummin" target="Grisnuage">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Chetter Hummin" target="Dahl">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Chetter Hummin" target="Maître Seldon">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Chetter Hummin" target="Raych">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Chetter Hummin" target="Yugo Amaryl">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Chetter Hummin" target="Davan">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Chetter Hummin" target="Emmer Thalus">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Chetter Hummin" target="Mannix IV">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Chetter Hummin" target="Rachelle">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Chetter Hummin" target="Sergent">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Chetter Hummin" target="Rachelle Ire">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Chetter Hummin" target="Seldon">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Dors Venabili" target="Kan">
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Dors Venabili" target="Clowzia">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Dors Venabili" target="Leggen">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Dors Venabili" target="Lisung Randa">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Dors Venabili" target="Jenarr Leggen">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Dors Venabili" target="Perplexité de Benastra">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Dors Venabili" target="Mycogène">
+      <data key="d3">9</data>
+    </edge>
+    <edge source="Dors Venabili" target="Mycogéniens">
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Dors Venabili" target="Randa">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Dors Venabili" target="Endor Levanian">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Dors Venabili" target="Frère">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Dors Venabili" target="Grisnuage">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Dors Venabili" target="Sacratorium">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Dors Venabili" target="Amaryl">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Dors Venabili" target="Casilia">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Dors Venabili" target="Dahl">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Dors Venabili" target="Hano Lindor">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Dors Venabili" target="Maître Seldon">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Dors Venabili" target="Maîtresse Tisalver">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Dors Venabili" target="Maîtresse Venabili">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Dors Venabili" target="Mère Rittah">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Dors Venabili" target="Marron">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Dors Venabili" target="Raych">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Dors Venabili" target="Tisalver">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Dors Venabili" target="Yugo Amaryl">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Dors Venabili" target="Maître Davan">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Dors Venabili" target="Maître Tisalver">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Dors Venabili" target="Davan">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Dors Venabili" target="Emmer Thalus">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Dors Venabili" target="Mannix IV">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Dors Venabili" target="Rachelle">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Dors Venabili" target="Sergent">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Dors Venabili" target="Rachelle Ire">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Dors Venabili" target="Seldon">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Kan" target="Leggen">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Kan" target="Mycogène">
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Kan" target="Mycogéniens">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Kan" target="Randa">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Kan" target="Amaryl">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Kan" target="Casilia">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Kan" target="Dahl">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Kan" target="Hano Lindor">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Kan" target="Maître Seldon">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Kan" target="Maîtresse Tisalver">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Kan" target="Maîtresse Venabili">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Kan" target="Mère Rittah">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Kan" target="Marron">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Kan" target="Raych">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Kan" target="Yugo Amaryl">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Kan" target="Astinwald">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Kan" target="Davan">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Kan" target="Maire">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Kan" target="Emmer Thalus">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Kan" target="Mannix IV">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Kan" target="Rachelle">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Kan" target="Sergent">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Kan" target="Rachelle Ire">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Kan" target="Seldon">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Clowzia" target="Leggen">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Clowzia" target="Lisung Randa">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Clowzia" target="Jenarr Leggen">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Clowzia" target="Perplexité de Benastra">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Leggen" target="Lisung Randa">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Leggen" target="Mycogène">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Leggen" target="Mycogéniens">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Leggen" target="Randa">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Jenarr Leggen" target="Perplexité de Benastra">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Mycogène" target="Mycogéniens">
+      <data key="d3">6</data>
+    </edge>
+    <edge source="Mycogène" target="Randa">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Mycogène" target="Endor Levanian">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Mycogène" target="Frère">
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Mycogène" target="Grisnuage">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Mycogène" target="Sacratorium">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Mycogène" target="Amaryl">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Mycogène" target="Casilia">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Mycogène" target="Dahl">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Mycogène" target="Hano Lindor">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Mycogène" target="Maître Seldon">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Mycogène" target="Maîtresse Tisalver">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Mycogène" target="Maîtresse Venabili">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Mycogène" target="Mère Rittah">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Mycogène" target="Marron">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Mycogène" target="Raych">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Mycogène" target="Tisalver">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Mycogène" target="Yugo Amaryl">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Mycogène" target="Astinwald">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Mycogène" target="Davan">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Mycogène" target="Maire">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Mycogène" target="Emmer Thalus">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Mycogène" target="Mannix IV">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Mycogène" target="Rachelle">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Mycogène" target="Sergent">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Mycogène" target="Rachelle Ire">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Mycogène" target="Seldon">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Mycogéniens" target="Randa">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Mycogéniens" target="Endor Levanian">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Mycogéniens" target="Frère">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Mycogéniens" target="Grisnuage">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Mycogéniens" target="Sacratorium">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Mycogéniens" target="Casilia">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Mycogéniens" target="Dahl">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Mycogéniens" target="Maître Seldon">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Mycogéniens" target="Maîtresse Venabili">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Mycogéniens" target="Mère Rittah">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Mycogéniens" target="Marron">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Mycogéniens" target="Raych">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Mycogéniens" target="Tisalver">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Mycogéniens" target="Yugo Amaryl">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Mycogéniens" target="Maire">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Mycogéniens" target="Rachelle">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Mycogéniens" target="Daneel">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Mycogéniens" target="Raych Seldon">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Endor Levanian" target="Frère">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Endor Levanian" target="Grisnuage">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Frère" target="Grisnuage">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Frère" target="Sacratorium">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Amaryl" target="Casilia">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Amaryl" target="Dahl">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Amaryl" target="Hano Lindor">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Amaryl" target="Maître Seldon">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Amaryl" target="Maîtresse Tisalver">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Amaryl" target="Maîtresse Venabili">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Amaryl" target="Mère Rittah">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Casilia" target="Dahl">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Casilia" target="Hano Lindor">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Casilia" target="Maître Seldon">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Casilia" target="Maîtresse Tisalver">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Casilia" target="Maîtresse Venabili">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Casilia" target="Mère Rittah">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Casilia" target="Marron">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Casilia" target="Raych">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Casilia" target="Tisalver">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Casilia" target="Yugo Amaryl">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Casilia" target="Astinwald">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Casilia" target="Davan">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Casilia" target="Maire">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Dahl" target="Hano Lindor">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Dahl" target="Maître Seldon">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Dahl" target="Maîtresse Tisalver">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Dahl" target="Maîtresse Venabili">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Dahl" target="Mère Rittah">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Dahl" target="Marron">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Dahl" target="Raych">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Dahl" target="Tisalver">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Dahl" target="Yugo Amaryl">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Dahl" target="Maître Davan">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Dahl" target="Maître Tisalver">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Dahl" target="Astinwald">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Dahl" target="Davan">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Dahl" target="Maire">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Dahl" target="Emmer Thalus">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Dahl" target="Mannix IV">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Dahl" target="Rachelle">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Dahl" target="Sergent">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hano Lindor" target="Maître Seldon">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hano Lindor" target="Maîtresse Tisalver">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hano Lindor" target="Maîtresse Venabili">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hano Lindor" target="Mère Rittah">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Maître Seldon" target="Maîtresse Tisalver">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Maître Seldon" target="Maîtresse Venabili">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Maître Seldon" target="Mère Rittah">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Maître Seldon" target="Marron">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Maître Seldon" target="Raych">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Maître Seldon" target="Tisalver">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Maître Seldon" target="Yugo Amaryl">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Maître Seldon" target="Astinwald">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Maître Seldon" target="Davan">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Maître Seldon" target="Maire">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Maître Seldon" target="Emmer Thalus">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Maître Seldon" target="Mannix IV">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Maître Seldon" target="Rachelle">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Maître Seldon" target="Sergent">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Maîtresse Tisalver" target="Maîtresse Venabili">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Maîtresse Tisalver" target="Mère Rittah">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Maîtresse Tisalver" target="Marron">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Maîtresse Tisalver" target="Raych">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Maîtresse Tisalver" target="Yugo Amaryl">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Maîtresse Tisalver" target="Maître Davan">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Maîtresse Tisalver" target="Maître Tisalver">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Maîtresse Tisalver" target="Astinwald">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Maîtresse Tisalver" target="Davan">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Maîtresse Tisalver" target="Maire">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Maîtresse Venabili" target="Mère Rittah">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Maîtresse Venabili" target="Marron">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Maîtresse Venabili" target="Raych">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Maîtresse Venabili" target="Tisalver">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Maîtresse Venabili" target="Yugo Amaryl">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Maîtresse Venabili" target="Maître Davan">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Maîtresse Venabili" target="Maître Tisalver">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Mère Rittah" target="Marron">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Mère Rittah" target="Raych">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Mère Rittah" target="Tisalver">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Mère Rittah" target="Yugo Amaryl">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Mère Rittah" target="Maire">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Mère Rittah" target="Rachelle">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Mère Rittah" target="Daneel">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Mère Rittah" target="Raych Seldon">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Marron" target="Raych">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Marron" target="Tisalver">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Marron" target="Yugo Amaryl">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Marron" target="Astinwald">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Marron" target="Davan">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Marron" target="Maire">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Raych" target="Tisalver">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Raych" target="Yugo Amaryl">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Raych" target="Maître Davan">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Raych" target="Maître Tisalver">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Raych" target="Astinwald">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Raych" target="Davan">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Raych" target="Maire">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Raych" target="Emmer Thalus">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Raych" target="Mannix IV">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Raych" target="Rachelle">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Raych" target="Sergent">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Raych" target="Rachelle Ire">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Raych" target="Seldon">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Tisalver" target="Yugo Amaryl">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Tisalver" target="Maire">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Tisalver" target="Rachelle">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Tisalver" target="Daneel">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Tisalver" target="Raych Seldon">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Yugo Amaryl" target="Maître Davan">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Yugo Amaryl" target="Maître Tisalver">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Yugo Amaryl" target="Davan">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Yugo Amaryl" target="Maire">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Yugo Amaryl" target="Emmer Thalus">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Yugo Amaryl" target="Mannix IV">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Yugo Amaryl" target="Rachelle">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Yugo Amaryl" target="Sergent">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Yugo Amaryl" target="Daneel">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Yugo Amaryl" target="Raych Seldon">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Maître Davan" target="Maître Tisalver">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Astinwald" target="Davan">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Astinwald" target="Maire">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Davan" target="Maire">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Davan" target="Emmer Thalus">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Davan" target="Mannix IV">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Davan" target="Rachelle">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Davan" target="Sergent">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Maire" target="Rachelle">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Maire" target="Daneel">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Maire" target="Raych Seldon">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Emmer Thalus" target="Mannix IV">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Emmer Thalus" target="Rachelle">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Emmer Thalus" target="Sergent">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Mannix IV" target="Rachelle">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Mannix IV" target="Sergent">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Mannix IV" target="Rachelle Ire">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Mannix IV" target="Seldon">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Rachelle" target="Sergent">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Rachelle" target="Daneel">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Rachelle" target="Raych Seldon">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Sergent" target="Rachelle Ire">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Sergent" target="Seldon">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Rachelle Ire" target="Seldon">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Daneel" target="Raych Seldon">
+      <data key="d3">1</data>
+    </edge>
+  </graph>
+</graphml>

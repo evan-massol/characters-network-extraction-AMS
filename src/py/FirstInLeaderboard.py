@@ -179,6 +179,7 @@ books = [('paf', './txt/prelude_a_fondation'),
 
 df_dict = {"ID": [], "graphml": []}
 entities_output = []  # List to store all extracted entities
+PER_map = {}  # To store the final PER mapping
 
 for code_book, filepath in books:
 

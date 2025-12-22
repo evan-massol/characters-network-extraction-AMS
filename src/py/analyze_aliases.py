@@ -111,7 +111,7 @@ def show_entity_stats(entities_output, antidict=None):
 
 def main():
     """Fonction principale."""
-    print("\n🔍 Analyse des alias détectés...\n")
+    print("\nAnalyse des alias détectés...\n")
     
     try:
         aliases_report = load_aliases_report()
@@ -124,15 +124,15 @@ def main():
         generate_manual_suggestions()
         
         print("\n" + "=" * 80)
-        print("✓ Analyse terminée !")
+        print("Analyse terminée !")
         print("=" * 80)
         print("\nConsultez manual_aliases.json pour ajouter vos corrections manuelles.")
         
     except FileNotFoundError as e:
-        print(f"❌ Erreur: Fichier non trouvé - {e}")
+        print(f"Erreur: Fichier non trouvé - {e}")
         print("   Assurez-vous d'avoir exécuté FirstInLeaderboard.py d'abord.")
     except Exception as e:
-        print(f"❌ Erreur: {e}")
+        print(f"Erreur: {e}")
 
 if __name__ == "__main__":
     main()
