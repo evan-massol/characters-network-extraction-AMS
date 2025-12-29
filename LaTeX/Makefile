@@ -1,4 +1,4 @@
- main: main.tex
+main: main.tex
 	mkdir -p obj/
 	xelatex -halt-on-error -output-directory obj/  main.tex
 	BSTINPUTS=IEEEtran/bibtex/:$$BSTINPUTS bibtex obj/main
