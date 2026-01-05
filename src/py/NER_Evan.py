@@ -1,5 +1,4 @@
 import re
-import fitz
 from collections import Counter
 from unidecode import unidecode
 from utils import filter_antidict, pdf_to_text

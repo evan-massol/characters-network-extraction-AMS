@@ -1,9 +1,7 @@
 import spacy as sp
-import re
 import networkx as nx
 import pandas as pd
-from unidecode import unidecode
-from utils import filter_antidict, is_valid_entity, build_entity_aliases, mapping_entity, build_entity_relation, merge_entity_counts
+from utils import is_valid_entity, build_entity_aliases, mapping_entity, build_entity_relation, merge_entity_counts
 
 
 #------------------------------TEXT PROCESSING---------------------------------

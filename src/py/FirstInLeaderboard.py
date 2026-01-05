@@ -4,7 +4,6 @@ import re
 import networkx as nx
 import pandas as pd
 import spacy as sp
-from unidecode import unidecode
 from utils import clean_entity_name
 from utils import filter_antidict, is_valid_entity, build_entity_aliases, mapping_entity, build_entity_relation, merge_entity_counts
 

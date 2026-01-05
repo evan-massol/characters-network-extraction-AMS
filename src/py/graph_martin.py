@@ -1,9 +1,7 @@
 import pandas as pd
 import networkx as nx
-import io
 import matplotlib.pyplot as plt
 from matplotlib.colors import Normalize
-from collections import Counter
 import math
 
 def load_graph_from_csv(csv_path, graph_id="Fondation"):
