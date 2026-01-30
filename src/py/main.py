@@ -2,7 +2,7 @@ import spacy as sp
 import networkx as nx
 import pandas as pd
 from collections import Counter
-from utils import is_valid_entity, build_entity_aliases, mapping_entity, build_entity_relation, merge_entity_counts
+from py.NER_processing.utils import is_valid_entity, build_entity_aliases, mapping_entity, build_entity_relation, merge_entity_counts
 
 
 #------------------------------TEXT PROCESSING---------------------------------

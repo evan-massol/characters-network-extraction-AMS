@@ -29,9 +29,6 @@ def load_graph_from_csv(csv_path, graph_id="Fondation"):
     # Récupération du GraphML (stocké comme string)
     graphml_str = df.loc[graph_id, "graphml"]
     
-    # Conversion string -> fichier mémoire
-    # graphml_io = io.StringIO(graphml_str)
-    
     # Reconstruction du graphe
     G = nx.parse_graphml(graphml_str)
     
@@ -58,7 +55,9 @@ def fix_graph_types(G):
                 pass
 
 def visualize_graph(G, title="Named entities graph", figsize=(16, 12), 
-                   node_size_multiplier=25, layout="kamada_kawai", font_size=7, edge_width_multiplier=15, node_border_width=1, use_sqrt_for_nodes=True):
+                   node_size_multiplier=25, layout="kamada_kawai", 
+                   font_size=7, edge_width_multiplier=15, 
+                   node_border_width=1, use_sqrt_for_nodes=True):
     """Visualize graph with matplotlib."""
     fig, ax = plt.subplots(figsize=figsize, facecolor='black')
     ax.set_facecolor('black')
@@ -172,5 +171,8 @@ graph = visualize_graph(
     layout="kamada_kawai",
     use_sqrt_for_nodes=True
 )
+output_path = "./graphs/ner_graph_fondation.png"
+graph.savefig(output_path, dpi=300, bbox_inches='tight')
+print(f"Graph saved: {output_path}")
 
 graph.show()

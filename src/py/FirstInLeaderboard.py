@@ -4,8 +4,8 @@ import re
 import networkx as nx
 import pandas as pd
 import spacy as sp
-from utils import clean_entity_name
-from utils import filter_antidict, is_valid_entity, build_entity_aliases, mapping_entity, build_entity_relation, merge_entity_counts
+from py.text_preprocessing.utils import clean_entity_name, filter_antidict
+from py.NER_processing.utils import is_valid_entity, build_entity_aliases, mapping_entity, build_entity_relation, merge_entity_counts
 
 
 #------------------------------ENTITY EXTRACTION-------------------------------

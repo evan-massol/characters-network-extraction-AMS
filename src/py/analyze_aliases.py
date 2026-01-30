@@ -1,6 +1,6 @@
 import json
 from collections import defaultdict
-from utils import filter_antidict, clean_entity_name
+from py.text_preprocessing.utils import filter_antidict, clean_entity_name
 
 def load_aliases_report(filepath="./json/aliases_report.json"):
     """Load the generated alias report."""

@@ -1,7 +1,7 @@
 import re
 from collections import Counter
 from unidecode import unidecode
-from utils import filter_antidict, pdf_to_text
+from py.text_preprocessing.utils import filter_antidict, pdf_to_text
 
 corpus = pdf_to_text("pdf/Fondation_sample.pdf")
 corpus = re.sub(r'\s+', ' ', corpus)
