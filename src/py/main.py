@@ -1,6 +1,7 @@
 import spacy as sp
 import networkx as nx
 import pandas as pd
+from collections import Counter
 from utils import is_valid_entity, build_entity_aliases, mapping_entity, build_entity_relation, merge_entity_counts
 
 
@@ -19,31 +20,37 @@ LP = []
 LM = []
 df_dict = {"ID": [], "graphml": []}
 
-for ent in doc.ents:            #For anti-dictionary: USE LEMMAS
+for ent in doc.ents:
     if ent.label_ == "PER" and is_valid_entity(ent.text):
         LP.append(ent)
     elif ent.label_ == "MISC":
         LM.append(ent)
 
-# Build maps
+LP_text = Counter(ent.text for ent in LP)
+LM_text = Counter(ent.text for ent in LM)
+
+for text, count in sorted(LP_text.items()):
+    print(f"{text:<30}{count}")
+print("\n------------------------------------------------------\n")
+for text, count in sorted(LM_text.items()):
+    print(f"{text:<30}{count}")
+print("\n------------------------------------------------------\n")
+print("Number of detected characters: ", len(set(LP)))
+print("Number of uncategorized entities: ", len(set(LM)))
+
+
+
+# Build maps PER
 alias_map_PER = build_entity_aliases(LP, entity_type="PER")
 PER_map = mapping_entity(LP, alias_map_PER)
 relations_PER = build_entity_relation(PER_map)
+
+# Build maps MISC
 alias_map_MISC = build_entity_aliases(LM, entity_type="MISC")
 
 # Merge counts using aliases
 LP_counts = merge_entity_counts(LP, alias_map_PER)
 LM_counts = merge_entity_counts(LM, alias_map_MISC)
-
-for ent in sorted(set(LP)):
-    print(f"{ent.text:<30}{LP.count(ent)}")
-print("\n------------------------------------------------------\n")
-for ent in set(LM):
-    print(f"{ent.text:<30}{LM.count(ent)}")
-print("\n------------------------------------------------------\n")
-print("Number of detected characters: ", len(set(LP)))
-print("Number of uncategorized entities: ", len(set(LM)))
-
 
 G = nx.Graph()
 # Use canonical forms for graph nodes
