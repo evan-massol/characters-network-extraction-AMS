@@ -176,7 +176,17 @@ def merge_entity_counts(entities_list, alias_map):
 
 def mapping_entity(entities_list, alias_map):
     '''
-    Returns a set (entityNamed_text, tokenNum_start, tokenNum_end):canonical_form
+    Build a map to link each occurrence of an entity named to its cannocical form. Load its 
+    start and end index in the token list.
+    Args:
+        entities_list (List) : 
+            Entities detected by the NER model.
+        alias_map (Map) : 
+
+
+    Returns:
+        Map [(entityNamed_text, tokenNum_start, tokenNum_end):canonical_form] : 
+            Map which link each entity named detected to its canonical form.
     '''
     entity_map = {}
     for entity in entities_list:    # Pour chaque entité
@@ -190,7 +200,14 @@ def mapping_entity(entities_list, alias_map):
     
 def build_entity_relation(entity_map):
     '''
-    Returns a set (entityNamed_1, entityNamed_2):occurences_number
+    Build a map to load the occurences of each relation between two entities.
+    Args:
+        entity_map (Map) : 
+            Map [(entityNamed_text, tokenNum_start, tokenNum_end):canonical_form] which link 
+            each entity named detected to its canonical form.
+    Returns:
+        Map [(entityNamed_1, entityNamed_2):occurences_number] : 
+            Map which link each couple of entities named detected to their number of occurences.
     '''
     relations_map = defaultdict(int)
     sorted_entities = sorted(entity_map.items(), key=lambda item: item[0][1])
