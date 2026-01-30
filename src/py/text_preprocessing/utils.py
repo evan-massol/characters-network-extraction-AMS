@@ -2,6 +2,7 @@ import fitz
 import re
 from unidecode import unidecode
 
+
 def filter_antidict(file : str) -> set:
     """Load anti-dictionary words from a file."""
     with open(file, 'r', encoding='utf-8') as f:
@@ -14,6 +15,7 @@ def pdf_to_text(pdf_path : str) -> str:
     with fitz.open(pdf_path) as doc:
         for page in doc:
             text += page.get_textpage().extractText()
+            text += " -_ENDPAGE_- "
     return text
 
 def clean_entity_name(name : str | list) -> str:
@@ -26,6 +28,7 @@ def clean_entity_name(name : str | list) -> str:
 
 # Remove incomplete sentences
 def supprCutSentences(texte : str) -> str:
+    print("Suppression des phrases incomplètes...")
     matches = list(re.finditer(r"( -_ENDPAGE_- )", texte))
     for match in reversed(matches):             #Start from the end to avoid disrupting indices
         avant = texte[:match.start()]
@@ -60,11 +63,13 @@ def supprCutSentences(texte : str) -> str:
 
 # Remove part titles
 def supprPartsTitle(texte : str) -> str:
-    texte = re.sub(r'\n[A-ZÈ]+ PART \n \n \n[A-ZÀÂÇÉÈÊËÎÏÔÙÛ ]+', '', texte)
+    print("Suppression des titres de parties...")
+    texte = re.sub(r'\n[A-ZÈ]+ PARTIE \n \n \n[A-ZÀÂÇÉÈÊËÎÏÔÙÛ ]+', '', texte)
     return texte
 
 # Remove chapter numbers
 def supprChapterNum(texte : str) -> str:
+    print("Suppression des numéros de chapitres...")
     texte = re.sub(r'\n\b[IVXLCDM]+(?!\')\b \n', '', texte)
     return texte
 
