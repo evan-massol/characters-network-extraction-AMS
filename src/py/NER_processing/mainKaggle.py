@@ -19,8 +19,8 @@ nlp = sp.load("fr_core_news_lg")
 
 anti_words = filter_antidict('fonctionnels_fr.txt')
 
-books = [('paf', './txt/prelude_a_fondation'),
-         ('lca', './txt/les_cavernes_d_acier')
+books = [('paf', './txt/corpus_kaggle/prelude_a_fondation/modify'),
+         ('lca', './txt/corpus_kaggle/les_cavernes_d_acier/modify')
         ]
 
 df_dict = {"ID": [], "graphml": []}
@@ -99,12 +99,6 @@ for code_book, filepath in books:
                 print(f"  → {len(aliases_used['PER'])} PER aliases detected")
                 
             print('\n ---------------------------\n')
-
-
-            # ADDITIONAL RELATIONSHIP EXTRACTION LOGIC HERE
-
-
-            # TEXT PREPROCESSING
 
 
 
