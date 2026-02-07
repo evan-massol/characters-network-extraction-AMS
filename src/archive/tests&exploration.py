@@ -1,0 +1,160 @@
+import spacy as sp
+from collections import defaultdict
+import os
+
+# f = open('txt/Fondation_sample.txt', 'r', encoding="utf-8")
+# texte = f.read()
+# f.close()
+
+# nlp = sp.load("fr_core_news_lg")
+# doc = nlp(texte)
+
+
+
+#------------------------------EXPLAIN FINE TAGS---------------------------------
+
+
+
+# tags_uniques = sorted(set([token.tag_ for token in doc]))
+
+# print("List of encountered tags and their explanations:\n")
+# for tag in tags_uniques:
+#     explanation = sp.explain(tag)
+#     if explanation is None:
+#         explanation = "No explanation available (fine morphology: " + tag + ")"
+#     print(f"{tag:25} -> {explanation}")
+
+
+
+#------------------------------SENTENCE ANALYZER---------------------------------
+
+
+
+# texte = '''Il cherche à récupérer son job, ou n’importe quelle autre place dans le Service. Pauvre gosse ! Il est désespéré ! Mais que voulais-tu que, moi, je lui dise ?... R. Sammy'''
+
+# nlp = sp.load("fr_core_news_sm")
+# doc = nlp(texte)
+# for token in doc:
+#     print(f"{token.text:<15}{token.lemma_:<15}{token.pos_:<10}{token.tag_:<10}{token.dep_:<10}{token.shape_:<10}{token.is_alpha:<10}{token.is_stop:<10}")
+
+
+
+#------------------------------TEXT'S CHAR ANALYZER--------------------------------
+
+
+
+# f = open('./txt/les_cavernes_d_acier/chapter_1.txt', 'r', encoding="utf-8")
+# corpus = f.read()
+# f.close()
+# for i, car in enumerate(corpus):
+#     if car == "—":
+#         print(corpus[i-50:i+50])
+#         print("\n---------------------\n")
+
+# compteur_lca = {}
+# repertoire = './txt/les_cavernes_d_acier/'
+# for nom_fichier in os.listdir(repertoire):
+#     chemin_fichier = os.path.join(repertoire, nom_fichier)
+#     f = open(chemin_fichier, 'r', encoding="utf-8")
+#     corpus = f.read()
+#     f.close()
+#     for caractere in corpus:
+#         if caractere in compteur_lca:
+#             compteur_lca[caractere] += 1
+#         else:
+#             compteur_lca[caractere] = 1
+
+# for caractere, nombre in compteur_lca.items():
+#     print(f"'{caractere}' : {nombre}")
+
+# print("\n---------------------\n")
+
+# compteur_paf = {}
+# repertoire = './txt/prelude_a_fondation/'
+# for nom_fichier in os.listdir(repertoire):
+#     chemin_fichier = os.path.join(repertoire, nom_fichier)
+#     f = open(chemin_fichier, 'r', encoding="utf-8")
+#     corpus = f.read()
+#     f.close()
+#     for caractere in corpus:
+#         if caractere in compteur_paf:
+#             compteur_paf[caractere] += 1
+#         else:
+#             compteur_paf[caractere] = 1
+
+# for caractere, nombre in compteur_paf.items():
+#     print(f"'{caractere}' : {nombre}")
+
+
+
+#------------------------------SPACY'S MISCS ANALYSE-----------------------------
+
+
+
+# nlp = sp.load("fr_core_news_sm")
+# repertoire = './txt/les_cavernes_d_acier/'
+
+# for nom_fichier in os.listdir(repertoire):
+#     chemin_fichier = os.path.join(repertoire, nom_fichier)
+#     f = open(chemin_fichier, 'r', encoding="utf-8")
+#     corpus = f.read()
+#     f.close()
+
+#     doc = nlp(corpus)
+#     LM = []
+#     for ent in doc.ents:
+#         if ent.label_ == "MISC":
+#             LM.append(ent)
+#             phrase = ent.sent.text
+#             print(f"{ent.text} : {phrase}")
+#             print("\n---------------------\n")
+
+# print("\n---------------------\n")
+# print("\n---------------------\n")
+# print("\n---------------------\n")
+
+# nlp = sp.load("fr_core_news_sm")
+# repertoire = './txt/prelude_a_fondation/'
+
+# for nom_fichier in os.listdir(repertoire):
+#     chemin_fichier = os.path.join(repertoire, nom_fichier)
+#     f = open(chemin_fichier, 'r', encoding="utf-8")
+#     corpus = f.read()
+#     f.close()
+
+#     doc = nlp(corpus)
+#     LM = []
+#     for ent in doc.ents:
+#         if ent.label_ == "MISC":
+#             LM.append(ent)
+#             phrase = ent.sent.text
+#             print(f"{ent.text} : {phrase}")
+#             print("\n---------------------\n")
+
+
+
+#------------------------------SPACY'S MISCS ANALYSE-----------------------------
+
+
+
+nlp = sp.load("fr_core_news_lg")
+repertoire = './txt/corpus_kaggle/les_cavernes_d_acier/modify'
+LM = []
+LP = []
+
+for nom_fichier in os.listdir(repertoire):
+    chemin_fichier = os.path.join(repertoire, nom_fichier)
+    f = open(chemin_fichier, 'r', encoding="utf-8")
+    corpus = f.read()
+    f.close()
+
+    doc = nlp(corpus)
+    for ent in doc.ents:
+        if ent.label_ == "MISC":
+            LM.append(ent)
+        if ent.label_ == "PER":
+            LP.append(ent)
+    
+print("PER : ", len(LP))
+print("MISC : ", len(LM))
+
