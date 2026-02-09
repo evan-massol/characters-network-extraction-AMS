@@ -15,7 +15,9 @@ for file in os.listdir(origin_folder):
 
     corpus = re.sub(r'\n', ' ', corpus)
     corpus = re.sub(r'’', '\'', corpus)
-    corpus = re.sub(r' {2,}', '', corpus)
+    corpus = re.sub(r'—', ' ', corpus)
+    corpus = re.sub(r'‖', ' ', corpus)
+    corpus = re.sub(r' {2,}', ' ', corpus)
 
     f = open(modify_file, 'w', encoding="utf-8")
     f.write(corpus)
