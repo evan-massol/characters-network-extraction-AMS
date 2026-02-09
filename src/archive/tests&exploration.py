@@ -30,12 +30,15 @@ import os
 
 
 
-# texte = '''Il cherche à récupérer son job, ou n’importe quelle autre place dans le Service. Pauvre gosse ! Il est désespéré ! Mais que voulais-tu que, moi, je lui dise ?... R. Sammy'''
+texte = ''' Salut, ça va ? Pour dire la vérité, répondit Evan, vous parlerez.'''
 
-# nlp = sp.load("fr_core_news_sm")
-# doc = nlp(texte)
-# for token in doc:
-#     print(f"{token.text:<15}{token.lemma_:<15}{token.pos_:<10}{token.tag_:<10}{token.dep_:<10}{token.shape_:<10}{token.is_alpha:<10}{token.is_stop:<10}")
+nlp = sp.load("fr_core_news_lg")
+doc = nlp(texte)
+for token in doc:
+    print(f"{token.text:<15}{token.lemma_:<15}{token.pos_:<10}{token.tag_:<10}{token.dep_:<10}{token.shape_:<10}{token.is_alpha:<10}{token.is_stop:<10}")
+print("\n---------------------\n")
+for en in doc.ents:
+    print(f"{en.text} : {en.label_}")
 
 
 
@@ -43,16 +46,35 @@ import os
 
 
 
-# f = open('./txt/les_cavernes_d_acier/chapter_1.txt', 'r', encoding="utf-8")
-# corpus = f.read()
-# f.close()
-# for i, car in enumerate(corpus):
-#     if car == "—":
-#         print(corpus[i-50:i+50])
-#         print("\n---------------------\n")
+# char = "-"
+# repertoire = './txt/corpus_kaggle/les_cavernes_d_acier/modify/'
+# for nom_fichier in os.listdir(repertoire):
+#     chemin_fichier = os.path.join(repertoire, nom_fichier)
+#     f = open(chemin_fichier, 'r', encoding="utf-8")
+#     corpus = f.read()
+#     f.close()
+#     for i, car in enumerate(corpus):
+#         if car == char:
+#             print(corpus[i-50:i+50])
+#             print("\n---------------------\n")
+
+# print("###########################\n")
+# print("###########################\n")
+# print("###########################\n")
+
+# repertoire = './txt/corpus_kaggle/prelude_a_fondation/modify/'
+# for nom_fichier in os.listdir(repertoire):
+#     chemin_fichier = os.path.join(repertoire, nom_fichier)
+#     f = open(chemin_fichier, 'r', encoding="utf-8")
+#     corpus = f.read()
+#     f.close()
+#     for i, car in enumerate(corpus):
+#         if car == char:
+#             print(corpus[i-50:i+50])
+#             print("\n---------------------\n")
 
 # compteur_lca = {}
-# repertoire = './txt/les_cavernes_d_acier/'
+# repertoire = './txt/corpus_kaggle/les_cavernes_d_acier/modify/'
 # for nom_fichier in os.listdir(repertoire):
 #     chemin_fichier = os.path.join(repertoire, nom_fichier)
 #     f = open(chemin_fichier, 'r', encoding="utf-8")
@@ -70,7 +92,7 @@ import os
 # print("\n---------------------\n")
 
 # compteur_paf = {}
-# repertoire = './txt/prelude_a_fondation/'
+# repertoire = './txt/corpus_kaggle/prelude_a_fondation/modify/'
 # for nom_fichier in os.listdir(repertoire):
 #     chemin_fichier = os.path.join(repertoire, nom_fichier)
 #     f = open(chemin_fichier, 'r', encoding="utf-8")
@@ -92,7 +114,7 @@ import os
 
 
 # nlp = sp.load("fr_core_news_sm")
-# repertoire = './txt/les_cavernes_d_acier/'
+# repertoire = './txt/corpus_kaggle/les_cavernes_d_acier/modify'
 
 # for nom_fichier in os.listdir(repertoire):
 #     chemin_fichier = os.path.join(repertoire, nom_fichier)
@@ -114,7 +136,7 @@ import os
 # print("\n---------------------\n")
 
 # nlp = sp.load("fr_core_news_sm")
-# repertoire = './txt/prelude_a_fondation/'
+# repertoire = './txt/corpus_kaggle/prelude_a_fondation/modify'
 
 # for nom_fichier in os.listdir(repertoire):
 #     chemin_fichier = os.path.join(repertoire, nom_fichier)
@@ -133,28 +155,28 @@ import os
 
 
 
-#------------------------------SPACY'S MISCS ANALYSE-----------------------------
+#-------------------------------SPACY'S EN ANALYSE-------------------------------
 
 
 
-nlp = sp.load("fr_core_news_lg")
-repertoire = './txt/corpus_kaggle/les_cavernes_d_acier/modify'
-LM = []
-LP = []
+# nlp = sp.load("fr_core_news_lg")
+# repertoire = './txt/corpus_kaggle/les_cavernes_d_acier/modify'
+# LM = []
+# LP = []
 
-for nom_fichier in os.listdir(repertoire):
-    chemin_fichier = os.path.join(repertoire, nom_fichier)
-    f = open(chemin_fichier, 'r', encoding="utf-8")
-    corpus = f.read()
-    f.close()
+# for nom_fichier in os.listdir(repertoire):
+#     chemin_fichier = os.path.join(repertoire, nom_fichier)
+#     f = open(chemin_fichier, 'r', encoding="utf-8")
+#     corpus = f.read()
+#     f.close()
 
-    doc = nlp(corpus)
-    for ent in doc.ents:
-        if ent.label_ == "MISC":
-            LM.append(ent)
-        if ent.label_ == "PER":
-            LP.append(ent)
+#     doc = nlp(corpus)
+#     for ent in doc.ents:
+#         if ent.label_ == "MISC":
+#             LM.append(ent)
+#         if ent.label_ == "PER":
+#             LP.append(ent)
     
-print("PER : ", len(LP))
-print("MISC : ", len(LM))
+# print("PER : ", len(LP))
+# print("MISC : ", len(LM))
 
