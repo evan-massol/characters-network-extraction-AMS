@@ -30,15 +30,15 @@ import os
 
 
 
-texte = ''' Salut, ça va ? Pour dire la vérité, répondit Evan, vous parlerez.'''
+# texte = ''' Salut, ça va ? Pour dire la vérité, répondit Evan, vous parlerez.'''
 
-nlp = sp.load("fr_core_news_lg")
-doc = nlp(texte)
-for token in doc:
-    print(f"{token.text:<15}{token.lemma_:<15}{token.pos_:<10}{token.tag_:<10}{token.dep_:<10}{token.shape_:<10}{token.is_alpha:<10}{token.is_stop:<10}")
-print("\n---------------------\n")
-for en in doc.ents:
-    print(f"{en.text} : {en.label_}")
+# nlp = sp.load("fr_core_news_lg")
+# doc = nlp(texte)
+# for token in doc:
+#     print(f"{token.text:<15}{token.lemma_:<15}{token.pos_:<10}{token.tag_:<10}{token.dep_:<10}{token.shape_:<10}{token.is_alpha:<10}{token.is_stop:<10}")
+# print("\n---------------------\n")
+# for en in doc.ents:
+#     print(f"{en.text} : {en.label_}")
 
 
 
@@ -46,32 +46,32 @@ for en in doc.ents:
 
 
 
-# char = "-"
-# repertoire = './txt/corpus_kaggle/les_cavernes_d_acier/modify/'
-# for nom_fichier in os.listdir(repertoire):
-#     chemin_fichier = os.path.join(repertoire, nom_fichier)
-#     f = open(chemin_fichier, 'r', encoding="utf-8")
-#     corpus = f.read()
-#     f.close()
-#     for i, car in enumerate(corpus):
-#         if car == char:
-#             print(corpus[i-50:i+50])
-#             print("\n---------------------\n")
+char = "―"
+repertoire = './txt/corpus_kaggle/les_cavernes_d_acier/modify/'
+for nom_fichier in os.listdir(repertoire):
+    chemin_fichier = os.path.join(repertoire, nom_fichier)
+    f = open(chemin_fichier, 'r', encoding="utf-8")
+    corpus = f.read()
+    f.close()
+    for i, car in enumerate(corpus):
+        if car == char:
+            print(corpus[i-50:i+50])
+            print("\n---------------------\n")
 
-# print("###########################\n")
-# print("###########################\n")
-# print("###########################\n")
+print("###########################\n")
+print("###########################\n")
+print("###########################\n")
 
-# repertoire = './txt/corpus_kaggle/prelude_a_fondation/modify/'
-# for nom_fichier in os.listdir(repertoire):
-#     chemin_fichier = os.path.join(repertoire, nom_fichier)
-#     f = open(chemin_fichier, 'r', encoding="utf-8")
-#     corpus = f.read()
-#     f.close()
-#     for i, car in enumerate(corpus):
-#         if car == char:
-#             print(corpus[i-50:i+50])
-#             print("\n---------------------\n")
+repertoire = './txt/corpus_kaggle/prelude_a_fondation/modify/'
+for nom_fichier in os.listdir(repertoire):
+    chemin_fichier = os.path.join(repertoire, nom_fichier)
+    f = open(chemin_fichier, 'r', encoding="utf-8")
+    corpus = f.read()
+    f.close()
+    for i, car in enumerate(corpus):
+        if car == char:
+            print(corpus[i-50:i+50])
+            print("\n---------------------\n")
 
 # compteur_lca = {}
 # repertoire = './txt/corpus_kaggle/les_cavernes_d_acier/modify/'
@@ -131,9 +131,9 @@ for en in doc.ents:
 #             print(f"{ent.text} : {phrase}")
 #             print("\n---------------------\n")
 
-# print("\n---------------------\n")
-# print("\n---------------------\n")
-# print("\n---------------------\n")
+# print("\n\n---------------------\n")
+# print("---------------------\n")
+# print("---------------------\n\n")
 
 # nlp = sp.load("fr_core_news_sm")
 # repertoire = './txt/corpus_kaggle/prelude_a_fondation/modify'

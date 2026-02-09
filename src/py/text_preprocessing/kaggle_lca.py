@@ -15,7 +15,8 @@ for file in os.listdir(origin_folder):
 
     corpus = re.sub(r'\n', ' ', corpus)
     corpus = re.sub(r'’', '\'', corpus)
-    corpus = re.sub(r'—', ' ', corpus)
+    corpus = re.sub(r'—', ' ', corpus)      # traitement U+2014
+    corpus = re.sub(r'―', ' ', corpus)      # traitement U+2015
     corpus = re.sub(r'‖', ' ', corpus)
     corpus = re.sub(r' {2,}', ' ', corpus)
 
