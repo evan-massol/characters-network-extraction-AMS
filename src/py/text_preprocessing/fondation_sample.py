@@ -18,6 +18,6 @@ corpus = re.sub(r'\s+', ' ', corpus)                    #Remplace '/n', '/t', ' 
 
 
 
-f = open('./txt/Fondation_sample.txt', 'w', encoding="utf-8")
+f = open('./txt/corpus_classique/Fondation_sample.txt', 'w', encoding="utf-8")
 f.write(corpus)
 f.close()

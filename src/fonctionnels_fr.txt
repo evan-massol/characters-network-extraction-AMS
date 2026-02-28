@@ -83,6 +83,7 @@ ci
 clic
 clac
 cocorico
+coincez
 combien
 comme
 comment

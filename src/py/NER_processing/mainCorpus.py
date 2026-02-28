@@ -9,7 +9,7 @@ from py.NER_processing.utils import is_valid_entity, build_entity_aliases, mappi
 
 
 
-f = open('txt/Fondation_sample.txt', 'r', encoding="utf-8")
+f = open('txt/corpus_classique/Fondation_sample.txt', 'r', encoding="utf-8")
 corpus = f.read()
 f.close()
 

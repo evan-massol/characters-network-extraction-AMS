@@ -1,4 +1,3 @@
-import fitz
 import os
 import re
 import json
@@ -30,6 +29,21 @@ def is_valid_entity(text : str) -> bool:
         return False
     return True
 
+def _normalize_manual_aliases(raw_aliases):
+    """Normalize manual alias definitions to the alias->canonical mapping."""
+    normalized = {}
+    for key, value in raw_aliases.items():
+        if isinstance(value, list):
+            canonical = key
+            # Ensure canonical name maps to itself for downstream lookups
+            normalized.setdefault(canonical, canonical)
+            for alias in value:
+                normalized[alias] = canonical
+        else:
+            normalized[key] = value
+    return normalized
+
+
 def build_entity_aliases(entities_list, entity_type="PER", manual_aliases_file="./json/manual_aliases.json"):
     """
     Builds a dictionary of aliases to group variants of the same entity.
@@ -48,7 +62,7 @@ def build_entity_aliases(entities_list, entity_type="PER", manual_aliases_file="
         try:
             with open(manual_aliases_file, 'r', encoding='utf-8') as f:
                 all_manual = json.load(f)
-                manual_aliases = all_manual.get(entity_type, {})
+                manual_aliases = _normalize_manual_aliases(all_manual.get(entity_type, {}))
         except Exception as e:
             print(f"Warning: unable to load {manual_aliases_file}: {e}")
     
