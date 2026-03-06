@@ -3,7 +3,7 @@
 \usepackage{INTERSPEECH_v2}
 
 \title{Character Network Extraction from Asimov's Works: \\
-A Natural Language Processing Approach}
+A Natural Language Processing Approach - Current Progress Report}
 \name{Martin GERIS$^1$, Evan MASSOL$^2$}
 \address{
   $^1$University of Avignon, France\\
@@ -15,321 +15,122 @@ A Natural Language Processing Approach}
 \maketitle
 
 \begin{abstract}
-This report presents our methodology and results for extracting character networks from Isaac 
-Asimov's literary works. Natural Language Processing (NLP) techniques, particularly Named Entity 
-Recognition (NER) and relation analysis, were applied to automatically identify characters and their 
-interactions. The project addressed key challenges including character alias management, relationship 
-extraction, and text preprocessing specific to literary corpus analysis. Results demonstrate the 
-effectiveness of combining state-of-the-art NLP tools with domain-specific preprocessing for analyzing 
-narrative structures and character dynamics in science fiction literature.
+This report presents our current progress on a project focused on automatic extraction of character networks from Isaac Asimov's literary works.
+Natural Language Processing techniques, especially Named Entity Recognition and relation analysis, are used to identify characters and their interactions. 
+The project currently addresses key challenges such as alias disambiguation and automatic identification of relation types.
 \end{abstract}
 
 \section{Context}
 
-Natural Language Processing (NLP) is a field of computer science and computational linguistics that 
-aims to enable machines to understand, analyze, and generate human language. Among its numerous 
-applications, extracting character networks from narrative texts constitutes a particular challenge, 
-combining Named Entity Recognition (NER) and analysis of relationships between these entities. These 
-techniques allow representing character interactions in graph form, providing a powerful tool for 
-literary analysis, plot study, and visualization of narrative dynamics.
+Natural Language Processing (NLP) is a field of computer science and computational linguistics that aims to enable machines to understand, analyze, and generate human language. Among its many applications, extracting character networks from narrative texts is a specific challenge that combines Named Entity Recognition (NER) and relation analysis. These techniques make it possible to represent interactions between characters as graphs, which is useful for literary analysis, plot study, and visualization of narrative dynamics.
 
-Within this project, we focused on different corpora from Isaac Asimov's works. The proposed 
-challenge consists of automatically extracting characters and identifying their relationships. This 
-broad framework reveals numerous complex aspects, particularly related to the narrative and stylistic 
-nature of the studied texts.
+In this project, we focused on several corpora taken from Isaac Asimov's works. The proposed challenge is to automatically extract characters, handle alias-related issues, identify relationships between characters, and characterize the nature of those relationships. This broad framework reveals many complex aspects, especially those related to the narrative and stylistic nature of the studied texts.
 
-Several major difficulties were identified from the initial analyses. The first concerns named entity 
-recognition. NLP must correctly distinguish characters from other types of entities, such as 
-organizations, places, or concepts, which can prove delicate due to ambiguous formulations, honorific 
-titles, or compound names. The second difficulty lies in alias management, that is, the different ways 
-the same character may be designated in the narrative. The variability of first names, last names or 
-nicknames and cases where multiple characters share similar names constitute an additional obstacle to 
-automatic extraction.
+Several major difficulties were identified through our analyses. The first concerns named entity recognition. NLP tools must correctly distinguish characters from other entity types such as organizations, locations, or concepts, which can be difficult because of ambiguous wording, honorific titles, or compound names. The second difficulty lies in alias management, meaning the different ways the same character can be referred to in the narrative. Variation in first names, last names, nicknames, and cases where multiple characters share similar names creates an additional obstacle to automatic extraction.
 
-This report aims to present our methodology and results within this project framework. It details 
-the technical choices made for text preprocessing, implementation of character recognition algorithms, 
-construction of relationship graphs, and specific adjustments to handle aliases and interactions. The 
-objective is also to highlight current limitations of our approach, as well as improvement paths 
-identified for future project phases.
+This report presents our methodology and current progress in this project. It details the technical choices made for text preprocessing, implementation of character recognition algorithms, alias resolution, and relation detection and classification. It also highlights current limitations and improvement directions identified for future phases.
 
-For more details and to access the code developed within this project framework, the GitHub 
-repository is available at: evan-massol/characters-network-extraction-AMS
+For more details and access to the code developed in this project, a GitHub repository is available at the following address: https://github.com/evan-massol/characters-network-extraction-AMS. If you need an authorization to access the repository, please contact us by email or during class.
 
-\section{State of the Art}
+\section{Current State}
 
-Since the first formal attempts, character network extraction has predominantly relied on a pipeline 
-approach, structured in several successive stages: text segmentation into relevant units (chapters), 
-detection and normalization of entities corresponding to characters, alias and coreference 
-resolution, and finally construction and weighting of the final graph. The foundational work of Elson, 
-Dames and McKeown (2010) illustrates this approach, particularly through the use of simple heuristics 
-such as character co-occurrence in the same scene or dialogue identification to infer direct interactions.
+This section presents the main stages of the current pipeline and summarizes the current progress for each stage.
 
-These heuristic methods have the advantage of being robust and relatively simple to implement, 
-particularly on well-structured corpora. However, they rely on the assumption that textual proximity 
-reflects a real social relationship, which frequently leads to approximations or artificial relations, 
-especially in complex literary texts where narration can be indirect or fragmented.
+\subsection{Text Preprocessing}
 
-A major challenge in character network construction lies in reliable recognition of fictional entities. 
-This task primarily relies on Named Entity Recognition (NER). Classical approaches, based on 
-statistical models or LSTM recurrent neural networks, have shown good performance on journalistic 
-texts, but their effectiveness diminishes significantly in the literary context. This limitation is 
-explained by the stylistic diversity of works, frequent use of nicknames, periphrases or indirect 
-references to characters.
+In his works, Isaac Asimov uses specific linguistic devices, such as intentionally truncated words, to immerse readers in the atmosphere of ancient manuscripts or incomplete narratives. While these stylistic choices enrich narrative depth, they also create significant obstacles for automatic text analysis. Additional difficulties include elements external to the narrative, such as page numbers, incorrectly interpreted characters during extraction, and the systematic absence of every other page because of copyright constraints.
 
-Recent advances are based on the integration of pre-trained Transformer language models, such as 
-BERT (Devlin et al., 2019), which allow better context consideration and improve character detection 
-in complex narrative texts. Nevertheless, entity recognition alone is insufficient without effective 
-coreference resolution. The latter aims to group different linguistic mentions (proper names, pronouns, 
-nominal descriptions) referring to the same character. The work of Lee et al. (2017) proposed 
-end-to-end neural models for coreference resolution, now widely adopted and adapted to literary 
-corpora, as they directly condition the structural coherence of the extracted network.
+To address these issues, we integrated a preprocessing stage in our pipeline. Its objective is to remove or transform problematic elements to ensure reliable downstream processing.
 
-Once characters are identified and normalized, relation extraction constitutes another central 
-problem. The simplest methods rely on co-occurrence in the same textual unit, a widely used but 
-limited hypothesis, as it does not distinguish the nature, intensity or direction of relationships. 
-More advanced approaches seek to exploit dialogues, communication verbs or syntactic structures to 
-extract more semantic relations, such as family, hierarchical or conflictual links.
+The available PDF files must first be converted into TXT files. This operation still preserves noisy elements such as page numbers, section titles, and chapter headings. These are removed using regular expressions.
 
-Recent trends show evolution toward hybrid pipelines that combine robust heuristics and neural 
-modules, as well as integration of specialized pre-trained models (BERT, SpanBERT) for NER, 
-coreference and relation extraction. Sims and Bamman (2020) notably propose methods exploiting graphs 
-to model information propagation and temporal dynamics of character interactions. Furthermore, the 
-emergence of Graph Neural Networks opens new perspectives to refine the final relational structure and 
-capture network evolution throughout the narrative.
+A major issue is that provided corpora contain only one page out of two. This fragments many sentences, leaving some without beginnings and others without endings. These incomplete segments, often lacking a subject or a verb, are difficult to analyze automatically and can degrade output quality. At this stage, we chose to remove these fragments rather than preserve them.
 
-In summary, automatic character network extraction is a complex task, requiring the integration of 
-several NLP subtasks. Despite significant advances, particularly thanks to pre-trained language 
-models, many challenges persist, fully justifying current research and the development of new systems 
-better adapted to the specificities of literary texts.
+We also observed better results on the Kaggle corpus when removing line breaks and replacing non-standard apostrophe variants with the standard apostrophe. After applying this modification to all files in that corpus, our Kaggle score increased from 0.41 to 0.50.
 
-\section{NLP Tools}
+So far, only one corpus has undergone full preprocessing: the Sample Foundation corpus. Each corpus appears to follow its own logic, both in page organization and in regular expressions needed to identify page numbers, chapters, or sections. Preprocessing scripts must therefore be adapted corpus by corpus.
 
-NLP tools are based on complex architectures, most often founded on deep neural networks requiring 
-significant volumes of training data. The design and training of such models constitute considerable 
-work that could alone justify a complete research project. However, given the objectives pursued in 
-this project, it appeared more relevant to reuse existing libraries rather than develop specific 
-algorithms.
+\subsection{NER}
 
-In this perspective, we compared two libraries recognized for their performance, offering a complete 
-processing chain from tokenization (extraction of textual units like words or punctuation) to named 
-entity recognition (NER). To evaluate the effectiveness of spaCy (Explosion AI, 2024) and Stanza 
-(Qi et al., 2020), we developed a short story of about ten lines, integrating direct and indirect 
-dialogues. This text was then processed independently by each of the two libraries. The obtained 
-results are presented in part in Figure 1 and analyzed below.
+NLP tools rely on complex architectures, most of them based on deep neural networks requiring large amounts of training data. Designing and training such models is substantial work. Given the objectives of this project, we chose to reuse existing libraries rather than train custom models.
 
-The analysis reveals generally more precise tokenization with spaCy. Conversely, Stanza tends to 
-group multiple textual elements within the same token, generating notable errors. These imprecisions 
-seem mainly linked to imperfect punctuation handling. Differences also appear in character 
-recognition: for example, spaCy classifies the expression "minister of Health" as an organization 
-rather than as a character. While this error is debatable, it remains marginal compared to the 
-tokenization problems observed with Stanza. Thus, spaCy proved more adapted to this project's needs 
-and was retained for subsequent work.
+In this perspective, we used spaCy, which provides a complete processing pipeline from tokenization to Named Entity Recognition.
 
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=0.45\textwidth]{figures/spacy_stanza_comparison.png}
-    \caption{Comparison of tokenization and named entity recognition results between spaCy (top) 
-    and Stanza (bottom) on a short story.}
-    \label{fig:spacy_stanza_comparison}
-\end{figure}
-
-On reduced-size corpora, the spaCy library proves particularly performant and generates few 
-manifestly inconsistent errors, such as identifying a verb as a character. Nevertheless, when 
-processing longer texts — particularly within Isaac Asimov's corpora — certain anomalies appear. 
-To limit these errors, a text preprocessing step proves indispensable; it will be detailed 
-subsequently. However, this preprocessing is not always sufficient alone.
-
-This is where anti-dictionaries come into play. These are lists of terms explicitly excluded from 
-recognition as characters. These dictionaries are progressively enriched during program development, 
-as new errors are identified. Nevertheless, their use must remain measured and targeted, as nothing 
-guarantees that an author adopts classical naming conventions for their characters. Isaac Asimov 
-provides an emblematic example by naming one of his characters "Dors," a term that, out of context, 
-could be interpreted as a common noun.
-
-\section{Text Preprocessing}
-
-In his works, Isaac Asimov employs particular linguistic processes, such as the intentional use of 
-truncated words, to immerse the reader in the atmosphere of ancient manuscripts or incomplete 
-narratives. While these stylistic choices enrich the narrative dimension, they constitute a 
-significant obstacle for automatic text analysis. Added to these specificities are other 
-difficulties that complicate automatic natural language processing. These notably include the 
-presence of elements external to the narrative — such as page numbers —, characters misinterpreted 
-during extraction, or the systematic absence of every other page due to copyright constraints.
-
-In this context, it appears indispensable to rework the initial textual material to obtain a more 
-homogeneous corpus, approaching standard language and thus more easily exploitable by NLP tools. To 
-address this challenge, a preprocessing step was integrated into our pipeline. This aims to remove or 
-transform identified problematic elements, with the objective of guaranteeing the most reliable 
-subsequent processing possible.
-
-The .pdf format files at our disposal must first be converted to .txt files. This operation 
-nevertheless preserves various parasitic elements, such as page numbers, section titles, and chapter 
-headings. These can be removed effectively using regular expressions (regex).
-
-A particularly determining aspect of preprocessing concerns the structure of the provided corpora 
-themselves, which contain only every other page. This constraint causes fragmentation of certain 
-sentences that find themselves deprived of their beginning, others of their ending. These incomplete 
-textual segments, often lacking subject or verb, are difficult to analyze automatically and can alter 
-result quality. Therefore, a methodological choice is imposed: should we preserve these truncated 
-sentences to preserve maximum data, or on the contrary remove them to exclude lower-quality text 
-portions? Given our still limited mastery of NLP tools, we opted, at this project stage, for 
-removing these fragments.
-
-Currently, only one of the provided corpora has undergone complete preprocessing: the Foundation 
-corpus. Each corpus indeed seems to follow its own logic, both in page organization and in regular 
-expressions necessary for identifying numbers, chapters, or sections. It will therefore be necessary 
-to adapt preprocessing scripts to each of the studied corpora.
-
-Finally, preprocessing appears as crucial a step as natural language processing itself, insofar as 
-the latter cannot be conducted effectively without adequate data preparation. Its improvement is thus 
-part of an iterative approach, evolving jointly with advances made in NLP methods.
-
-\section{Alias Management}
-
-In a narrative, the same character can be designated in multiple ways; these different appellations 
-are commonly grouped under the term alias. Identifying these appellations and the characters to which 
-they are linked constitutes one of the major challenges of automatic character network extraction 
-from narrative texts. At this stage of our experiments, it appeared that the spaCy library did not 
-offer a satisfactory solution for managing these aliases. To compensate for this limitation, we 
-developed specific algorithms dedicated to their handling.
-
-Within our pipeline, we construct a dictionary named aliases\_map, in which each key corresponds 
-to an identified character, and each value to one of their aliases. In the current state of our 
-implementation, only so-called "obvious" aliases are considered, namely those corresponding 
-exclusively to the character's family name, first name, or combination of both.
-
-This voluntarily simplified approach presents limitations and will need future enrichment. 
-Indeed, several complex cases are not yet covered: the presence of characters sharing 
-the same first name or same last name, situations where a character possesses multiple first names 
-or multiple last names, as well as aliases not based on usual anthroponyms. These configurations, 
-frequent in literary works, will require more advanced disambiguation strategies.
-
-\section{Relationship Management}
-
-The second major objective of character network extraction lies in identifying relationships between 
-different entities. This task proves just as complex as character identification itself. Nevertheless, 
-the guidelines defined within the project framework allow simplifying the approach. Indeed, these 
-establish that a relationship is determined solely by the proximity of two named entities within the 
-narrative. More precisely, two characters are considered to be in relationship as soon as one of 
-their respective occurrences in the corpus is separated by 25 tokens or fewer. While this heuristic 
-rule may be disputed in certain situations — particularly when textual proximity does not reflect 
-real narrative interaction — it constitutes an acceptable compromise within this work framework.
-
-To model relationships between identified characters, we construct, within our pipeline, a dictionary 
-entitled relations\_map. In this structure, each key corresponds to a character pair, while the 
-associated value represents the number of relationship identification occurrences involving them.
-
-\section{Results}
-
-During the major part of the time devoted to this project, our work mainly focused on the corpora 
-used for the leaderboard. This focus allowed us to obtain the results presented in Figure 2. Analysis 
-of this visualization shows that the more an entity is distant from the graph center, the more reduced 
-the number of chapters in which it appears. Inversely, the most central characters correspond to those 
-whose presence is most recurrent in the narrative. Unsurprisingly, the work's main protagonist, 
-Harry Seldon, occupies the central position of the graph. On the contrary to what was initially 
-expected, the edges don't reflect the number of co-occurrences between characters, but rather the number 
-of relationships identified according to the amount of times two characters are found within a same
-chapter. This is bound to change in future versions of the project.
-
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=0.45\textwidth]{figures/foundation_graph.png}
-    \caption{Character network extracted from the Foundation corpus. Node size reflects the 
-    number of chapters in which the character appears; edge thickness indicates the number of identified 
-    relationships between characters.}
-    \label{fig:foundation_graph}
-\end{figure}
-
-\section{Improvement Directions}
-
-The project is still only in its beginnings and numerous improvements can be brought to it in the 
-future. In this section, we review each major step presented previously and discuss possible 
-improvement paths.
-
-\subsection{Preprocessing}
-
-To date, certain problems identified previously have not yet been addressed. For example, we have not 
-yet tackled processing expressions voluntarily truncated by the author. Nevertheless, we think it 
-would be possible, using an appropriate library, to attempt reconstructing these truncated words 
-based on the few available letters and their position in the word.
-
-We also observed that certain manifest NLP errors can be attributed to the imperative structure of 
-certain sentences, direct discourse, or use of particular characters such as dashes. No solution has 
-yet been implemented to correct these cases. Several approaches are conceivable. The simplest solution 
-would consist of removing these problematic segments. However, more sophisticated treatments, allowing 
-preservation of narrative content from concerned excerpts, would be preferable. For example, for 
-imperative sentences, it might be useful to add a subject to facilitate their automatic analysis.
+On small corpora, spaCy performs very well and produces few clearly inconsistent errors. However, on longer texts, especially Asimov corpora, anomalies appear. To limit these errors, we use an anti-dictionary: a list of terms explicitly excluded from character recognition. This dictionary is progressively enriched during development as new unexpected words are identified. Its use must remain targeted, because authors do not always follow standard naming conventions. Asimov provides a notable example with the character name "Dors," which can be interpreted out of context as a common verb ("dors" is the third person singular of "dormir" in French). This creates a significant risk of false positives if the anti-dictionary is not used.
 
 \subsection{Alias Management}
 
-Alias management seems to us the most dizzying challenge of this project. According to our research, 
-solutions proposed in the literature show that no isolated strategy allows satisfactorily resolving 
-all alias phenomena in narrative context. The most robust approaches generally rely on a combination 
-of linguistic rules, contextual disambiguation, and constraints derived from the character network 
-structure itself. In this perspective, our work is inscribed as a first voluntarily simplified step, 
-opening the way to progressive integration of these more advanced methods using appropriate libraries.
+In a narrative, the same character can be referred to in multiple ways. These forms are grouped under the term alias. Identifying these forms and linking them to the correct character is one of the main challenges of automatic character network extraction.
+
+At this stage, spaCy alone did not provide a satisfactory alias-handling solution. To address this limitation, we developed dedicated algorithms. In our pipeline, we build a dictionary named aliases\_map, where each key corresponds to an identified character and each value corresponds to one alias.
+
+In the current implementation, only obvious aliases are considered: first name, last name, or a combination of both. This intentionally simplified approach has clear limitations. It does not yet handle cases such as characters sharing names, characters with multiple first or last names, and aliases not based on standard anthroponyms.
 
 \subsection{Relationship Management}
 
-Given the guidelines simplifying the approach to this problem, we do not judge it necessary to 
-deeply rework our existing algorithms, beyond some minor logical adjustments. On the other hand, 
-evaluating the nature of relationships between characters seems to constitute a relatively accessible 
-evolution perspective.
+The second major objective is to identify relationships between entities. This task is as complex as character identification itself. However, project guidelines simplify the approach by defining a relationship based on textual proximity.
 
-In a narrative, relationships between characters can take various forms — romantic, familial, 
-professional, among others. By reducing this diversity to a unidimensional scale ranging from friendly 
-relationship to hostile relationship, it would become possible to represent these interactions 
-synthetically within produced graphs.
+Two characters are considered related when one occurrence of each is separated by 25 tokens or fewer. Although this heuristic can be debated, it is an acceptable compromise in this work.
 
-To study this dimension, we envision identifying semantic values associated with words appearing in 
-the textual interval defining a relationship using an appropriate library. The studied interval will 
-constitute the text portion between occurrences of the first and second character. If this approach 
-proved insufficient, it might also be relevant to extend analysis to terms located in immediate 
-proximity to citations of concerned characters, introducing a parameter defining an analysis radius 
-around occurrences.
+To model relationships between identified characters, we build a dictionary named relations\_map. Each key corresponds to a pair of characters, and each value stores the number of detected relationship occurrences involving that pair.
+
+\section{Future Steps}
+
+This section presents improvements we plan to implement to strengthen our solution.
+
+For obvious reasons, these improvements might change over time, depending on the results obtained and the difficulties encountered during implementation. They are therefore presented in a non-exhaustive manner, as a list of possible directions rather than a fixed roadmap.
+
+\subsection{Alias Management}
+
+Current alias handling relies on simple rules based on first and last names. To go beyond these limits, we plan a graph-based approach for modeling detected named entities.
+
+Each named entity detected by the NER module will be represented as a node in a graph. For each pair of entities, we will compute two similarity dimensions.
+
+The first is orthographic similarity, based on standard string distance or similarity metrics. This captures obvious cases, such as "Hari Seldon" and "Seldon," as well as small surface variations.
+
+The second is contextual similarity, based on the linguistic contexts in which entities appear. Context windows around occurrences will be vectorized. Entities with similar contexts, for example co-occurring with similar verbs, places, or other characters, will have a higher probability of referring to the same individual.
+
+After building the graph, we will identify clusters (strongly connected subsets). Each cluster will represent one character and aggregate corresponding aliases. This should provide better robustness for complex cases, especially when lexical variants are only indirectly connected.
+
+Threshold values will be required both for edge creation and for deciding whether a cluster represents a single character. These thresholds will be set through empirical experiments.
+
+From a technical perspective, graph construction can rely on NetworkX, clustering on Louvain-based community detection, textual similarity on RapidFuzz, and contextual similarity on SentenceTransformers.
+
+\subsection{Relationship Management}
+
+A relevant improvement is to introduce relation types (family, hierarchical, conflictual, collaborative, etc.) and automatically classify each detected relation.
+
+We plan to define prototype sentences for each relation type. These manually built prototypes will represent characteristic interactions (for example: "X is the father of Y," "X ordered Y," "X fought Y"). For each category, prototype sentences will be vectorized and averaged to produce a central vector representation.
+
+When a potential relation is detected with the 25-token rule, the corresponding sentence or sentences will be vectorized and compared to category mean vectors using cosine similarity. The relation will be assigned to the most similar category.
+
+We may also define a neutral category for uncertain cases, which would require setting a similarity threshold.
+
+This approach is relatively simple to implement while leveraging pre-trained semantic models. Its main limitation is possible bias due to a limited set of prototypes. Robustness will therefore need empirical evaluation, especially for indirect or implicit formulations common in literary texts.
+
+Technically, SentenceTransformers will be used for vectorization, and public datasets may be used to collect prototype sentences.
 
 \section{Conclusion}
 
-This project enabled exploring and implementing a pipeline for automatic character network extraction 
-from narrative texts, based on corpora from Isaac Asimov's works. We presented key steps, from text 
-preprocessing to relationship graph construction, through named entity recognition, alias management, 
-and identification of character interactions.
+This progress report presented the main stages of the pipeline developed for automatic extraction of character networks from Isaac Asimov's works. Initial results show that text preprocessing is essential for improving analysis quality, while existing NLP tools such as spaCy allow effective identification of part of the named entities.
 
-Our results show that the chosen approach, combining use of performant libraries such as spaCy with 
-specific treatments adapted to literary corpora, allows obtaining coherent graphs in which main 
-characters and their interactions are correctly highlighted. Conducted analyses confirm the importance 
-of preprocessing and textual data normalization, as well as the crucial role of alias management for 
-ensuring reliability of extracted networks.
+However, important limitations remain, especially in alias handling and precise relationship identification, which currently rely on simple heuristics. A graph-based approach for alias disambiguation and semantic representations for relation classification should improve robustness.
 
-However, this work still constitutes a first step. Numerous limitations persist, particularly in 
-managing complex aliases, reconstructing truncated words, semantic analysis of relationships, and 
-considering fragmented or atypical sentences. These challenges open interesting perspectives for 
-future project evolutions, such as contextual analysis of relationships.
+Next steps are to implement these methods, adapt preprocessing to each corpus, and evaluate the impact of these improvements on global extraction quality.
 
 \begin{thebibliography}{9}
 
-\bibitem{devlin2019}
-Devlin, J., Chang, M.-W., Lee, K., \& Toutanova, K. (2019). BERT: Pre-training of deep 
-bidirectional transformers for language understanding. Proceedings of NAACL-HLT 2019.
+\bibitem{networkx}
+NetworkX -- NetworkX documentation. (s. d.). https://networkx.org/en/
 
-\bibitem{elson2010}
-Elson, D. K., Dames, N., \& McKeown, K. R. (2010). Extracting social networks from literary fiction. Proceedings of the 48th Annual Meeting of the Association for Computational Linguistics.
+\bibitem{rapidfuzz}
+RapidFuzz 3.14.3 documentation. (s. d.). https://rapidfuzz.github.io/RapidFuzz/
 
-\bibitem{spacy2024}
-Explosion AI. (2024). spaCy (version 3.7) [Software]. https://spacy.io
+\bibitem{sentence_transformers}
+SentenceTransformers Documentation -- Sentence Transformers documentation. (s. d.). https://www.sbert.net/
 
-\bibitem{labatut2019}
-Labatut, V., \& Bost, X. (2019). Extraction and analysis of fictional character networks: A survey. arXiv:1907.02704.
-
-\bibitem{lee2017}
-Lee, K., He, L., Lewis, M., \& Zettlemoyer, L. (2017). End-to-end neural coreference resolution. Proceedings of EMNLP 2017.
-
-\bibitem{stanza2020}
-Qi, P., Zhang, Y., Zhang, Y., Bolton, J., \& Manning, C. D. (2020). Stanza (version 1.6) 
-[Software]. https://stanfordnlp.github.io/stanza/
-
-\bibitem{sims2020}
-Sims, M., \& Bamman, D. (2020). Measuring information propagation in literary social networks. Proceedings of ACL 2020.
+\bibitem{taynaud}
+Taynaud. (s. d.)
 
 \end{thebibliography}
 
