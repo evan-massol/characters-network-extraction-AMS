@@ -1,18 +1,21 @@
 \documentclass[a4paper]{article}
 
 \usepackage{INTERSPEECH_v2}
+\usepackage[colorlinks=true,urlcolor=blue]{hyperref}
 
 \title{Character Network Extraction from Asimov's Works: \\
 A Natural Language Processing Approach - Current Progress Report}
-\name{Martin GERIS$^1$, Evan MASSOL$^2$}
+\name{Martin GERIS$^1$, Evan MASSOL$^1$}
 \address{
-  $^1$University of Avignon, France\\
-  $^2$University of Avignon, France}
+  $^1$University of Avignon, France
+}
 \email{martin.geris@alumni.univ-avignon.fr, evan.massol@alumni.univ-avignon.fr}
 
 \begin{document}
 
 \maketitle
+\pagestyle{plain}
+\thispagestyle{plain}
 
 \begin{abstract}
 This report presents our current progress on a project focused on automatic extraction of character networks from Isaac Asimov's literary works.
@@ -30,7 +33,8 @@ Several major difficulties were identified through our analyses. The first conce
 
 This report presents our methodology and current progress in this project. It details the technical choices made for text preprocessing, implementation of character recognition algorithms, alias resolution, and relation detection and classification. It also highlights current limitations and improvement directions identified for future phases.
 
-For more details and access to the code developed in this project, a GitHub repository is available at the following address: https://github.com/evan-massol/characters-network-extraction-AMS. If you need an authorization to access the repository, please contact us by email or during class.
+For more details and access to the code developed in this project, a GitHub repository is available at the following address: 
+\url{https://github.com/evan-massol/characters-network-extraction-AMS}. If you need an authorization to access the repository, please contact us by email or during class.
 
 \section{Current State}
 
@@ -52,11 +56,9 @@ So far, only one corpus has undergone full preprocessing: the Sample Foundation 
 
 \subsection{NER}
 
-NLP tools rely on complex architectures, most of them based on deep neural networks requiring large amounts of training data. Designing and training such models is substantial work. Given the objectives of this project, we chose to reuse existing libraries rather than train custom models.
+NLP tools are based on complex architectures, most of them relying on deep neural networks that require large volumes of training data. Designing and training such models is a substantial effort that could, by itself, justify a complete research project. However, considering the objectives of this work, it was more relevant to reuse existing libraries than to develop dedicated models. In this context, we used a well-established library known for its performance, offering a complete processing pipeline from tokenization (extracting textual units such as words and punctuation) to Named Entity Recognition (NER).
 
-In this perspective, we used spaCy, which provides a complete processing pipeline from tokenization to Named Entity Recognition.
-
-On small corpora, spaCy performs very well and produces few clearly inconsistent errors. However, on longer texts, especially Asimov corpora, anomalies appear. To limit these errors, we use an anti-dictionary: a list of terms explicitly excluded from character recognition. This dictionary is progressively enriched during development as new unexpected words are identified. Its use must remain targeted, because authors do not always follow standard naming conventions. Asimov provides a notable example with the character name "Dors," which can be interpreted out of context as a common verb ("dors" is the third person singular of "dormir" in French). This creates a significant risk of false positives if the anti-dictionary is not used.
+On small corpora, spaCy (Explosion AI, 2024) performs particularly well and produces few clearly inconsistent errors, such as identifying a verb as a character. Nevertheless, when processing longer texts, especially within Asimov corpora, anomalies appear. To reduce these errors, we use an anti-dictionary: a list of terms explicitly excluded from character recognition. This dictionary is progressively enriched during program development as new errors are identified. Its use, however, must remain measured and targeted, since there is no guarantee that an author follows standard naming conventions for characters. Isaac Asimov provides an emblematic example by naming one of his characters "Dors," a term that, out of context, may be interpreted as a common noun in English or a verb in French.
 
 \subsection{Alias Management}
 
@@ -86,7 +88,7 @@ Current alias handling relies on simple rules based on first and last names. To 
 
 Each named entity detected by the NER module will be represented as a node in a graph. For each pair of entities, we will compute two similarity dimensions.
 
-The first is orthographic similarity, based on standard string distance or similarity metrics. This captures obvious cases, such as "Hari Seldon" and "Seldon," as well as small surface variations.
+The first is orthographic similarity, based on standard string distance or similarity metrics. This captures obvious cases, such as "Hari Seldon" and "Seldon", as well as small surface variations.
 
 The second is contextual similarity, based on the linguistic contexts in which entities appear. Context windows around occurrences will be vectorized. Entities with similar contexts, for example co-occurring with similar verbs, places, or other characters, will have a higher probability of referring to the same individual.
 
@@ -119,6 +121,9 @@ However, important limitations remain, especially in alias handling and precise 
 Next steps are to implement these methods, adapt preprocessing to each corpus, and evaluate the impact of these improvements on global extraction quality.
 
 \begin{thebibliography}{9}
+
+\bibitem{spacy}
+Explosion AI. (2024). spaCy (version 3.7) [Software]. https://spacy.io
 
 \bibitem{networkx}
 NetworkX -- NetworkX documentation. (s. d.). https://networkx.org/en/
