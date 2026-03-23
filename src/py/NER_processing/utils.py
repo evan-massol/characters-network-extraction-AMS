@@ -2,10 +2,33 @@ import os
 import re
 import json
 from unidecode import unidecode
+from itertools import combinations
+from rapidfuzz import fuzz
 from collections import Counter, defaultdict
+import networkx as nx
 from py.text_preprocessing.utils import ANTI_DICT
 
 ###FUNCTIONS
+
+def receiveSentence(text: str, start: int, end: int) -> str:
+
+    sentence_separators = ".!?"
+
+    # Chercher le début de la phrase
+    left = start
+    while left > 0 and text[left] not in sentence_separators:
+        left -= 1
+    if left != 0:
+        left += 1
+
+    # Chercher la fin de la phrase
+    right = end
+    while right < len(text) and text[right] not in sentence_separators:
+        right += 1
+    if right < len(text):
+        right += 1
+
+    return text[left:right].strip()
 
 def is_valid_entity(text : str) -> bool:
     """Strict filter to eliminate PDF extraction artifacts, including Unicode dashes"""
@@ -181,3 +204,48 @@ def build_entity_relation(entity_map):
 
     return relations_map
 
+
+# ------------------------------------------------------------------------------ S2 METHOD
+
+def mappingAliasesWithGraph(text, st, entities_list):
+    G = nx.Graph()
+    entities_map = {}
+
+    for ent in entities_list:
+        id = ent.start
+        G.add_node(id, span=ent)
+
+    for n1, n2 in combinations(G.nodes, 2):
+
+        ent1 = G.nodes[n1]["span"]
+        ent2 = G.nodes[n2]["span"]
+
+        # CALCUL CONTEXTUEL RATIO
+        s1 = receiveSentence(text, ent1.start_char, ent1.end_char)
+        s2 = receiveSentence(text, ent2.start_char, ent2.end_char)
+        emb1 = st.encode(s1)
+        emb2 = st.encode(s2)
+        contextuel_ratio = st.similarity(emb1, emb2).item()*100
+        contextuel_ratio = round(contextuel_ratio, 3)
+        
+        # CALCUL TEXTUEL RATIO
+        textuel_ratio = fuzz.partial_token_set_ratio(ent1.text, ent2.text)
+        textuel_ratio = round(textuel_ratio, 3)
+
+        # CALCUL FINAL RATIO
+
+        final_ration = 0.5*textuel_ratio + 0.5*contextuel_ratio
+
+        if (final_ration>=40):
+            G.add_edge(n1, n2, weight=final_ration)
+
+    entities_communities = nx.community.louvain_communities(G, seed=42) #On identifie les clusters
+
+    for community in entities_communities:
+        entities = [G.nodes[n]["span"].text for n in community]
+        entities = list(set(entities))
+        canonical = max(entities, key=len)
+        for entity in entities:
+            entities_map[entity] = canonical
+
+    return entities_map

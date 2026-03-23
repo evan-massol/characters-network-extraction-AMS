@@ -46,17 +46,21 @@ import os
 
 
 
-char = "―"
+char = "- "
 repertoire = './txt/corpus_kaggle/les_cavernes_d_acier/modify/'
 for nom_fichier in os.listdir(repertoire):
     chemin_fichier = os.path.join(repertoire, nom_fichier)
     f = open(chemin_fichier, 'r', encoding="utf-8")
     corpus = f.read()
     f.close()
-    for i, car in enumerate(corpus):
-        if car == char:
-            print(corpus[i-50:i+50])
-            print("\n---------------------\n")
+    pos = 0
+    while True:
+        pos = corpus.find(char, pos)
+        if pos == -1:
+            break
+        print(corpus[max(0, pos-50): pos+50+len(char)])
+        print("\n---------------------\n")
+        pos += len(char)
 
 print("###########################\n")
 print("###########################\n")
@@ -68,10 +72,14 @@ for nom_fichier in os.listdir(repertoire):
     f = open(chemin_fichier, 'r', encoding="utf-8")
     corpus = f.read()
     f.close()
-    for i, car in enumerate(corpus):
-        if car == char:
-            print(corpus[i-50:i+50])
-            print("\n---------------------\n")
+    pos = 0
+    while True:
+        pos = corpus.find(char, pos)
+        if pos == -1:
+            break
+        print(corpus[max(0, pos-50): pos+50+len(char)])
+        print("\n---------------------\n")
+        pos += len(char)
 
 # compteur_lca = {}
 # repertoire = './txt/corpus_kaggle/les_cavernes_d_acier/modify/'

@@ -1,11 +1,13 @@
 import os
 import json
 import re
+from tqdm import tqdm 
 import networkx as nx
 import pandas as pd
 import spacy as sp
+from sentence_transformers import SentenceTransformer
 from py.text_preprocessing.utils import clean_entity_name, filter_antidict
-from py.NER_processing.utils import is_valid_entity, build_entity_aliases, mapping_entity, build_entity_relation, merge_entity_counts
+from py.NER_processing.utils import is_valid_entity, build_entity_aliases, mapping_entity, build_entity_relation, merge_entity_counts, mappingAliasesWithGraph
 
 
 #------------------------------ENTITY EXTRACTION-------------------------------
@@ -15,6 +17,7 @@ def _extract_num(fname):
     return int(m.group()) if m else -1
 
 
+st = SentenceTransformer("dangvantuan/sentence-camembert-large")
 nlp = sp.load("fr_core_news_lg")
 
 anti_words = filter_antidict('fonctionnels_fr.txt')
@@ -31,7 +34,7 @@ for code_book, filepath in books:
 
     files = [f for f in os.listdir(filepath) if f.endswith('.txt')] # Get all .txt files and sort by chapter number
     files_sorted = sorted(files, key=lambda x: _extract_num(x)) # Sort files by the number in the name
-    for file in files_sorted:
+    for file in tqdm(files_sorted, desc="Traitement des chapitres"):
         chemin_complet = os.path.join(filepath, file)
         num_chapter = _extract_num(file)-1
         if os.path.isfile(chemin_complet) and file.endswith('.txt'):
@@ -50,7 +53,7 @@ for code_book, filepath in books:
                     LM.append(ent)
 
             # Build alias maps for each entity type
-            alias_map_PER = build_entity_aliases(LP, entity_type="PER")
+            alias_map_PER = mappingAliasesWithGraph(corpus, st, LP) #build_entity_aliases(LP, entity_type="PER")
             PER_map = mapping_entity(LP, alias_map_PER)
             relations_PER = build_entity_relation(PER_map)
             alias_map_MISC = build_entity_aliases(LM, entity_type="MISC")

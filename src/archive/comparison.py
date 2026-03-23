@@ -13,8 +13,10 @@ N’oubliez pas d’envoyer le courriel à Sophie avant vendredi.
 Le professeur Martin affirma que ses recherches en linguistique computationnelle commenceraient en janvier 2024.
 « Faites attention aux détails », répéta-t-il calmement.
 """
-text = re.sub(r'[\r\n]+', '', text)
-text = re.sub(r'[\r-]+', ' ', text)
+# text = re.sub(r'[’]+', '\'', text)
+text = re.sub(r'[\n]+', ' ', text)
+text = re.sub(r'[\s]+', ' ', text)
+print(text)
 
 #------------------------------SPACY PROCESSING---------------------------------
 
@@ -26,7 +28,7 @@ spacy_persons = [ent.text for ent in doc_spacy.ents if ent.label_ == "PER"]
 
 print("=== spaCy : ENTITÉS NOMMÉES ===")
 for ent in doc_spacy.ents:
-    if ent.label == "PER":
+    if ent.label_ == "PER":
         print(f"{ent.text:<20}{ent.label_:<5}")
 
 print("\n=== spaCy : TOKENS / POS ===")
