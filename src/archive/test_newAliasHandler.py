@@ -73,11 +73,11 @@ def embeddedMainTokens(sentence, model):
     return np.mean(embeddings, axis=0)
 
 
-f = open('txt/corpus_classique/Fondation_sample.txt', 'r', encoding="utf-8")
-text = f.read()
-f.close()
+# f = open('txt/corpus_classique/Fondation_sample.txt', 'r', encoding="utf-8")
+# text = f.read()
+# f.close()
 
-# text="Dans la ville de Riverton, la tension montait. Alexander Drake, ou simplement Alex, était déjà sur le pont, observant la rivière. Certains l'appelaient aussi le Stratège, à cause de ses plans toujours impeccables. Non loin de là, Beatrice Lemoine, connue sous le surnom de Bea, préparait une potion dans son laboratoire. Ses amis intimes l'appelaient parfois la Chimiste, tandis que les moins proches murmuraient la Sorcière de Riverton lorsqu'ils passaient près de chez elle. Pendant ce temps, Charles Monroe ou “Charlie” traînait dans les ruelles, évitant les gardes. Ses anciens compagnons de voyage le surnommaient Le Faucon, pour son habileté à disparaître en un clin d'œil, ou encore Monsieur M., quand il voulait rester discret. Dans le quartier général de la milice, Diana Velasquez, dite Di, supervisait les patrouilles. On la connaissait également sous le nom de l'Oeil de Riverton, en raison de sa vigilance inégalée, et certains soldats l'appelaient D.V., avec un respect mêlé de crainte. Enfin, dans les tavernes de la ville, Edward Chen ou “Eddie” racontait ses aventures. Ses surnoms étaient nombreux : le Voyageur, pour ses récits de contrées lointaines, ou E.C., lorsqu'il voulait garder l'anonymat."
+text="Dans la ville de Riverton, la tension montait. Alexander Drake, ou simplement Alex, était déjà sur le pont, observant la rivière. Certains l'appelaient aussi le Stratège, à cause de ses plans toujours impeccables. Non loin de là, Beatrice Lemoine, connue sous le surnom de Bea, préparait une potion dans son laboratoire. Ses amis intimes l'appelaient parfois la Chimiste, tandis que les moins proches murmuraient la Sorcière de Riverton lorsqu'ils passaient près de chez elle. Pendant ce temps, Charles Monroe ou “Charlie” traînait dans les ruelles, évitant les gardes. Ses anciens compagnons de voyage le surnommaient Le Faucon, pour son habileté à disparaître en un clin d'œil, ou encore Monsieur M., quand il voulait rester discret. Dans le quartier général de la milice, Diana Velasquez, dite Di, supervisait les patrouilles. On la connaissait également sous le nom de l'Oeil de Riverton, en raison de sa vigilance inégalée, et certains soldats l'appelaient D.V., avec un respect mêlé de crainte. Enfin, dans les tavernes de la ville, Edward Chen ou “Eddie” racontait ses aventures. Ses surnoms étaient nombreux : le Voyageur, pour ses récits de contrées lointaines, ou E.C., lorsqu'il voulait garder l'anonymat."
 personnages = {
     "Alexander Drake" : ["Alexander Drake", "Alex", "Stratège"],
     "Beatrice Lemoine" : ["Bea", "Chimiste", "Sorcière de Riverton"],
@@ -158,6 +158,8 @@ for community in entities_communities:
 
 
 
+
+
 #########################
 #     AFFICHAGE
 #########################
@@ -188,4 +190,4 @@ nx.draw(
     edge_color='gray'
 )
 
-plt.show()
+# plt.show()
