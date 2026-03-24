@@ -354,6 +354,8 @@ def mappingAliasesWithGraphV2(doc, model, entities_list, params):
     p_wt = params["weight_textuel"]
     p_wc = params["weight_contextuel"]
     p_mtf = params["minThreshold_final"]
+    p_mtc = params["minThreshold_contextuel"]
+    p_lr = params["louvain_resolution"]
 
     for ent in tqdm(entities_list, desc="Embedding des Aliases"):
         id = ent.start
@@ -373,6 +375,7 @@ def mappingAliasesWithGraphV2(doc, model, entities_list, params):
         emb2 = G.nodes[n2]["embedding"]
         isEmbeddings = emb1 is not None and emb2 is not None
 
+        contextuel_ratio = 100
         if isEmbeddings:
             contextuel_ratio = model.similarity(emb1, emb2).item()*100
             contextuel_ratio = round(contextuel_ratio, 3)
@@ -381,7 +384,7 @@ def mappingAliasesWithGraphV2(doc, model, entities_list, params):
         textuel_ratio = fuzz.partial_token_set_ratio(ent1.text, ent2.text)
         textuel_ratio = round(textuel_ratio, 3)
 
-        if (textuel_ratio >= p_mtt):
+        if (textuel_ratio >= p_mtt and contextuel_ratio >= p_mtc):
 
             # CALCUL FINAL RATIO
 
@@ -393,7 +396,7 @@ def mappingAliasesWithGraphV2(doc, model, entities_list, params):
             if (final_ratio>=p_mtf):
                 G.add_edge(n1, n2, weight=final_ratio)
 
-    entities_communities = nx.community.louvain_communities(G, seed=42)
+    entities_communities = nx.community.louvain_communities(G, resolution=p_lr, seed=42)
 
     for community in entities_communities:
         entities = [G.nodes[n]["span"].text for n in community]

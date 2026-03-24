@@ -20,10 +20,11 @@ def _extract_num(fname):
 
 params = {
     "minThreshold_textuel": 0,
-    # "minThreshold_contextuel": 50,
+    "minThreshold_contextuel": 0,
     "minThreshold_final": 80,
-    "weight_textuel": 0.4,
-    "weight_contextuel": 0.6,
+    "weight_textuel": 0.5,
+    "weight_contextuel": 0.5,
+    "louvain_resolution": 1.15,
 }
 
 st = SentenceTransformer("dangvantuan/sentence-camembert-large")

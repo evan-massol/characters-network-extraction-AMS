@@ -8,6 +8,7 @@ Algo : V1
    minThreshold_final: 40
    weight_textuel: 0.5
    weight_contextuel: 0.5
+   louvain_resolution: 1
 
      Résultat :
    Score: 36
@@ -20,6 +21,7 @@ Algo : V1
    minThreshold_final: 40
    weight_textuel: 0.4
    weight_contextuel: 0.6
+   louvain_resolution: 1
 
      Résultat :
    Score: 42
@@ -32,6 +34,7 @@ Algo : V1
    minThreshold_final: 40
    weight_textuel: 0.3
    weight_contextuel: 0.7
+   louvain_resolution: 1
 
      Résultat :
    Score: 41
@@ -44,6 +47,7 @@ Algo : V1
    minThreshold_final: 30
    weight_textuel: 0.3
    weight_contextuel: 0.7
+   louvain_resolution: 1
 
      Résultat :
    Score: 35
@@ -56,6 +60,7 @@ Algo : V2
    minThreshold_final: 70
    weight_textuel: 0.5
    weight_contextuel: 0.5
+   louvain_resolution: 1
 
      Résultat :
    Score: 52
@@ -68,6 +73,7 @@ Algo : V1
    minThreshold_final: 70
    weight_textuel: 0.5
    weight_contextuel: 0.5
+   louvain_resolution: 1
 
      Résultat :
    Score: 46
@@ -80,6 +86,7 @@ Algo : V2
    minThreshold_final: 70
    weight_textuel: 0.4
    weight_contextuel: 0.6
+   louvain_resolution: 1
 
      Résultat :
    Score: 48
@@ -92,20 +99,255 @@ Algo : V2
    minThreshold_final: 80
    weight_textuel: 0.4
    weight_contextuel: 0.6
+   louvain_resolution: 1
 
      Résultat :
    Score: 49
 
-
-
-
-
-################# AFAIRE
-
+T9 : 24/03
+Algo : V2
+     Weight :
+   minThreshold_textuel: 0
+   minThreshold_contextuel: X
    minThreshold_final: 70
-   weight_textuel: 0.6
-   weight_contextuel: 0.4
+   weight_textuel: 0.4
+   weight_contextuel: 0.6
+   louvain_resolution: 1
 
+     Résultat :
+   Score: 44
+
+T9 : 24/03
+Algo : V2
+     Weight :
+   minThreshold_textuel: 0
+   minThreshold_contextuel: X
    minThreshold_final: 80
    weight_textuel: 0.5
    weight_contextuel: 0.5
+   louvain_resolution: 1
+
+     Résultat :
+   Score: 55
+
+T10 : 24/03
+Algo : V2
+     Weight :
+   minThreshold_textuel: 0
+   minThreshold_contextuel: X
+   minThreshold_final: 80
+   weight_textuel: 0.6
+   weight_contextuel: 0.4
+   louvain_resolution: 1
+
+     Résultat :
+   Score: 54
+
+T11 : 24/03
+Algo : V2
+     Weight :
+   minThreshold_textuel: 0
+   minThreshold_contextuel: X
+   minThreshold_final: 75
+   weight_textuel: 0.5
+   weight_contextuel: 0.5
+   louvain_resolution: 1
+
+     Résultat :
+   Score: 49
+
+T12 : 24/03
+Algo : V2
+     Weight :
+   minThreshold_textuel: 0
+   minThreshold_contextuel: X
+   minThreshold_final: 85
+   weight_textuel: 0.5
+   weight_contextuel: 0.5
+   louvain_resolution: 1
+
+     Résultat :
+   Score: 49
+
+T13 : 24/03
+Algo : V2
+     Weight :
+   minThreshold_textuel: 25
+   minThreshold_contextuel: X
+   minThreshold_final: 80
+   weight_textuel: 0.5
+   weight_contextuel: 0.5
+   louvain_resolution: 1
+
+     Résultat :
+   Score: 55
+
+T14 : 24/03
+Algo : V2
+     Weight :
+   minThreshold_textuel: 40
+   minThreshold_contextuel: X
+   minThreshold_final: 80
+   weight_textuel: 0.5
+   weight_contextuel: 0.5
+   louvain_resolution: 1
+
+     Résultat :
+   Score: 55
+
+T15 : 24/03
+Algo : V2
+     Weight :
+   minThreshold_textuel: 55
+   minThreshold_contextuel: X
+   minThreshold_final: 80
+   weight_textuel: 0.5
+   weight_contextuel: 0.5
+   louvain_resolution: 1
+
+     Résultat :
+   Score: 55
+
+T16 : 24/03
+Algo : V2
+     Weight :
+   minThreshold_textuel: 70
+   minThreshold_contextuel: X
+   minThreshold_final: 80
+   weight_textuel: 0.5
+   weight_contextuel: 0.5
+   louvain_resolution: 1
+
+     Résultat :
+   Score: 54
+
+T17 : 24/03
+Algo : V2
+     Weight :
+   minThreshold_textuel: 55
+   minThreshold_contextuel: 55
+   minThreshold_final: 80
+   weight_textuel: 0.5
+   weight_contextuel: 0.5
+   louvain_resolution: 1
+
+     Résultat :
+   Score: 55
+
+T18 : 24/03
+Algo : V2
+     Weight :
+   minThreshold_textuel: 0
+   minThreshold_contextuel: 55
+   minThreshold_final: 80
+   weight_textuel: 0.5
+   weight_contextuel: 0.5
+   louvain_resolution: 1
+
+     Résultat :
+   Score: 55
+
+T19 : 24/03
+Algo : V2
+     Weight :
+   minThreshold_textuel: 0
+   minThreshold_contextuel: 0
+   minThreshold_final: 80
+   weight_textuel: 0.5
+   weight_contextuel: 0.5
+   louvain_resolution: 0.8
+
+     Résultat :
+   Score: 57
+
+
+T20 : 24/03
+Algo : V2
+     Weight :
+   minThreshold_textuel: 0
+   minThreshold_contextuel: 0
+   minThreshold_final: 80
+   weight_textuel: 0.5
+   weight_contextuel: 0.5
+   louvain_resolution: 0.6
+
+     Résultat :
+   Score: 52
+
+T21 : 24/03
+Algo : V2
+     Weight :
+   minThreshold_textuel: 0
+   minThreshold_contextuel: 0
+   minThreshold_final: 80
+   weight_textuel: 0.5
+   weight_contextuel: 0.5
+   louvain_resolution: 1.2
+
+     Résultat :
+   Score: 55
+
+T22 : 24/03
+Algo : V2
+     Weight :
+   minThreshold_textuel: 0
+   minThreshold_contextuel: 0
+   minThreshold_final: 80
+   weight_textuel: 0.5
+   weight_contextuel: 0.5
+   louvain_resolution: 0.9
+
+     Résultat :
+   Score: 55
+
+T23 : 24/03
+Algo : V2
+     Weight :
+   minThreshold_textuel: 0
+   minThreshold_contextuel: 0
+   minThreshold_final: 80
+   weight_textuel: 0.5
+   weight_contextuel: 0.5
+   louvain_resolution: 0.85
+
+     Résultat :
+   Score: 55
+
+T24 : 24/03
+Algo : V2
+     Weight :
+   minThreshold_textuel: 0
+   minThreshold_contextuel: 0
+   minThreshold_final: 80
+   weight_textuel: 0.5
+   weight_contextuel: 0.5
+   louvain_resolution: 0.75
+
+     Résultat :
+   Score: 55
+
+T25 : 24/03
+Algo : V2
+     Weight :
+   minThreshold_textuel: 0
+   minThreshold_contextuel: 0
+   minThreshold_final: 80
+   weight_textuel: 0.5
+   weight_contextuel: 0.5
+   louvain_resolution: 1.1
+
+     Résultat :
+   Score: 57
+
+T25 : 24/03
+Algo : V2
+     Weight :
+   minThreshold_textuel: 0
+   minThreshold_contextuel: 0
+   minThreshold_final: 80
+   weight_textuel: 0.5
+   weight_contextuel: 0.5
+   louvain_resolution: 1.15
+
+     Résultat :
+   Score: 55
