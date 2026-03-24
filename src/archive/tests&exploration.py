@@ -46,40 +46,40 @@ import os
 
 
 
-char = "- "
-repertoire = './txt/corpus_kaggle/les_cavernes_d_acier/modify/'
-for nom_fichier in os.listdir(repertoire):
-    chemin_fichier = os.path.join(repertoire, nom_fichier)
-    f = open(chemin_fichier, 'r', encoding="utf-8")
-    corpus = f.read()
-    f.close()
-    pos = 0
-    while True:
-        pos = corpus.find(char, pos)
-        if pos == -1:
-            break
-        print(corpus[max(0, pos-50): pos+50+len(char)])
-        print("\n---------------------\n")
-        pos += len(char)
+# char = "- "
+# repertoire = './txt/corpus_kaggle/les_cavernes_d_acier/modify/'
+# for nom_fichier in os.listdir(repertoire):
+#     chemin_fichier = os.path.join(repertoire, nom_fichier)
+#     f = open(chemin_fichier, 'r', encoding="utf-8")
+#     corpus = f.read()
+#     f.close()
+#     pos = 0
+#     while True:
+#         pos = corpus.find(char, pos)
+#         if pos == -1:
+#             break
+#         print(corpus[max(0, pos-50): pos+50+len(char)])
+#         print("\n---------------------\n")
+#         pos += len(char)
 
-print("###########################\n")
-print("###########################\n")
-print("###########################\n")
+# print("###########################\n")
+# print("###########################\n")
+# print("###########################\n")
 
-repertoire = './txt/corpus_kaggle/prelude_a_fondation/modify/'
-for nom_fichier in os.listdir(repertoire):
-    chemin_fichier = os.path.join(repertoire, nom_fichier)
-    f = open(chemin_fichier, 'r', encoding="utf-8")
-    corpus = f.read()
-    f.close()
-    pos = 0
-    while True:
-        pos = corpus.find(char, pos)
-        if pos == -1:
-            break
-        print(corpus[max(0, pos-50): pos+50+len(char)])
-        print("\n---------------------\n")
-        pos += len(char)
+# repertoire = './txt/corpus_kaggle/prelude_a_fondation/modify/'
+# for nom_fichier in os.listdir(repertoire):
+#     chemin_fichier = os.path.join(repertoire, nom_fichier)
+#     f = open(chemin_fichier, 'r', encoding="utf-8")
+#     corpus = f.read()
+#     f.close()
+#     pos = 0
+#     while True:
+#         pos = corpus.find(char, pos)
+#         if pos == -1:
+#             break
+#         print(corpus[max(0, pos-50): pos+50+len(char)])
+#         print("\n---------------------\n")
+#         pos += len(char)
 
 # compteur_lca = {}
 # repertoire = './txt/corpus_kaggle/les_cavernes_d_acier/modify/'
@@ -167,24 +167,39 @@ for nom_fichier in os.listdir(repertoire):
 
 
 
-# nlp = sp.load("fr_core_news_lg")
-# repertoire = './txt/corpus_kaggle/les_cavernes_d_acier/modify'
-# LM = []
-# LP = []
+nlp = sp.load("fr_core_news_lg")
+repertoire = './txt/corpus_classique/'
+LM = []
+LP = []
 
-# for nom_fichier in os.listdir(repertoire):
-#     chemin_fichier = os.path.join(repertoire, nom_fichier)
-#     f = open(chemin_fichier, 'r', encoding="utf-8")
-#     corpus = f.read()
-#     f.close()
+for file in os.listdir(repertoire):
+    if file.endswith(".txt"):
+        print(f"Processing {file}...")
 
-#     doc = nlp(corpus)
-#     for ent in doc.ents:
-#         if ent.label_ == "MISC":
-#             LM.append(ent)
-#         if ent.label_ == "PER":
-#             LP.append(ent)
+        chemin_fichier = os.path.join(repertoire, file)
+        f = open(chemin_fichier, 'r', encoding="utf-8")
+        corpus = f.read()
+        f.close()
+
+        doc = nlp(corpus)
+        for ent in doc.ents:
+            if ent.label_ == "MISC":
+                LM.append(ent)
+            if ent.label_ == "PER":
+                LP.append(ent)
+
+        # for ent in LP:
+        #     phrase = ent.sent.text
+        #     print(f"{ent.text} : {phrase}")
+        #     print("\n---------------------\n")
+
+        # print("\n\n##########################################\n##########################################\n\n")
+
+        # for ent in LM:
+        #     phrase = ent.sent.text
+        #     print(f"{ent.text} : {phrase}")
+        #     print("\n---------------------\n")
     
-# print("PER : ", len(LP))
-# print("MISC : ", len(LM))
+        print("PER : ", len(LP))
+        print("MISC : ", len(LM))
 

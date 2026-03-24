@@ -25,6 +25,11 @@ def clean_entity_name(name : str | list) -> str:
         return val
     return ' '.join(name.replace('\n', ' ').split())
 
+def supprPageNum(texte : str) -> str:
+    print("Suppression des numéros de pages...")
+    texte = re.sub(r'\ufffd\s*\d+\s*\ufffd', ' ', texte)
+    texte = re.sub(r'- *\d -', ' ', texte)
+    return texte
 
 # Remove incomplete sentences
 def supprCutSentences(texte : str) -> str:
@@ -71,6 +76,16 @@ def supprPartsTitle(texte : str) -> str:
 def supprChapterNum(texte : str) -> str:
     print("Suppression des numéros de chapitres...")
     texte = re.sub(r'\n\b[IVXLCDM]+(?!\')\b \n', '', texte)
+    return texte
+
+def removeChar(texte : str) -> str:
+    texte = re.sub(r'\n', ' ', texte)
+    texte = re.sub(r'’', '\'', texte)
+    texte = re.sub(r'—', ' ', texte)      # traitement U+2014
+    texte = re.sub(r'―', ' ', texte)      # traitement U+2015
+    texte = re.sub(r'‖', ' ', texte)
+    texte = re.sub(r' - ', ' ', texte)
+    texte = re.sub(r' {2,}', ' ', texte)
     return texte
 
 

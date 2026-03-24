@@ -981,7 +981,6 @@ calculez
 cigare
 continuez
 egalitaire
-frere
 fils
 lumiere
 marcher
@@ -993,6 +992,7 @@ prudent
 raison
 redites
 remarquable
+niez
 respirez
 ridicule
 sage
@@ -1000,22 +1000,23 @@ sergent
 souvenez
 surnaturaliste
 taciturne
-terrien
-trantorien
-heliconien
 voyons
 viens
-empereur
-empereurs
-sire
-maire
 kanite
 dahlite
-mycogenien
-mycogeniens
 controverse leggen
 perplexite de benastra
 soupir de seldon
 secteur de mycogene
 hari amical
 dieu du ciel
+mycogenien
+mycogeniens
+empereur
+empereurs
+sire
+maire
+terrien
+trantorien
+heliconien
+frere
