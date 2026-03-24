@@ -406,3 +406,28 @@ def mappingAliasesWithGraphV2(doc, model, entities_list, params):
             entities_map[entity] = canonical
 
     return entities_map
+
+def build_entity_relation_with_context(doc, entity_map):
+    '''
+    Build a map to load different contextual sentences of each relation between two entities.
+    Args:
+        entity_map (Map) : 
+            Map [(entityNamed_text, tokenNum_start, tokenNum_end):canonical_form] which link 
+            each entity named detected to its canonical form.
+    Returns:
+        Map [(entityNamed_1, entityNamed_2):sentences_list] : 
+            Map which link each couple of entities named detected to their contextual sentences.
+    '''
+    relations_map = defaultdict(list)
+    sorted_entities = sorted(entity_map.items(), key=lambda item: item[0][1])
+
+    for i, entity in enumerate(sorted_entities):
+        for neighbor in sorted_entities[i+1:]:
+            if neighbor[0][1] - entity[0][2] > 25:  # Si la distance entre les entités excède 25 tokens
+                break                               # On arrête la recherche de relation pour cette entité
+            if entity[1] != neighbor[1]:      # Éviter les auto-relations
+                # TODO Extraire le contexte
+                context = receiveSentenceTokenized(doc, entity[0][1], neighbor[0][2])
+                relations_map[(entity[0], neighbor[0])].append(context)
+
+    return relations_map
