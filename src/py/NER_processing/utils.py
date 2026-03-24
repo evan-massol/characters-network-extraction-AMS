@@ -3,32 +3,14 @@ import re
 import json
 from unidecode import unidecode
 from itertools import combinations
+import numpy as np
 from rapidfuzz import fuzz
 from collections import Counter, defaultdict
 import networkx as nx
+from tqdm import tqdm 
 from py.text_preprocessing.utils import ANTI_DICT
 
 ###FUNCTIONS
-
-def receiveSentence(text: str, start: int, end: int) -> str:
-
-    sentence_separators = ".!?"
-
-    # Chercher le début de la phrase
-    left = start
-    while left > 0 and text[left] not in sentence_separators:
-        left -= 1
-    if left != 0:
-        left += 1
-
-    # Chercher la fin de la phrase
-    right = end
-    while right < len(text) and text[right] not in sentence_separators:
-        right += 1
-    if right < len(text):
-        right += 1
-
-    return text[left:right].strip()
 
 def is_valid_entity(text : str) -> bool:
     """Strict filter to eliminate PDF extraction artifacts, including Unicode dashes"""
@@ -207,25 +189,125 @@ def build_entity_relation(entity_map):
 
 # ------------------------------------------------------------------------------ S2 METHOD
 
-def mappingAliasesWithGraph(text, st, entities_list):
+def receiveSentence(text: str, start: int, end: int) -> str:
+    """
+    Detect the start and the end of sentences on based of boundaries.
+    
+    Args:
+      doc: Original string where detected entities
+      start: Index of the first boundary
+      end: Index of the last boundary
+    
+    Returns: String
+    """
+    sentence_separators = ".!?"
+
+    left = start
+    while left > 0 and text[left] not in sentence_separators:
+        left -= 1
+    if left != 0:
+        left += 1
+
+    right = end
+    while right < len(text) and text[right] not in sentence_separators:
+        right += 1
+    if right < len(text):
+        right += 1
+
+    return text[left:right].strip()
+
+def receiveSentenceTokenized(doc, start, end):
+    """
+    Detect the start and the end of sentences on based of boundaries.
+    Use token of SpaCy.
+    
+    Args:
+      doc: Original Span build by SpaCy
+      start: Index of the first boundary
+      end: Index of the last boundary
+    
+    Returns: Span
+    """
+    sentence_separators = {".", "!", "?"}
+
+    left = start
+    while left > 0 and doc[left].text not in sentence_separators:
+        left -= 1
+    if left != 0:
+        left += 1
+
+    right = end
+    while right < len(doc) and doc[right].text not in sentence_separators:
+        right += 1
+    if right < len(doc):
+        right += 1
+    
+    return doc[left:right]
+
+def embeddedMainTokens(sentence, model):
+    """
+    Collect meaningful words in a sentence. Use token of SpaCy. 
+    Then, embedded these words and calcul their average.
+    
+    Args:
+      sentence: Span of SpaCy
+      model: Sentence transformer model
+    
+    Returns: Vector ?
+    """
+    main_words=[]
+    for word in sentence:
+        if word.pos_ in ["ADJ", "VERB", "NOUN"]:
+            main_words.append(word.text)
+    if not main_words:
+        print("RENVOIE NUL")
+        return None
+        
+    embeddings = model.encode(main_words)
+        
+    return np.mean(embeddings, axis=0)  # On peut aussi remplacer mean par sum mais ca a pas l'air ouf
+
+def mappingAliasesWithGraph(text, model, entities_list, params):
+    """
+    Builds a dictionary of aliases to group variants of the same entity.
+    Start by creating an alias graph. The links are calculated based on 
+    textual and contextual similarity. The contextual similarity is based
+    on the entities' sentences Use a Louvin clustering algorithm to detect 
+    clusters of aliases.
+    
+    Args:
+      text: Original string where detected entities
+      model: sentence transformer model
+      entities_list: List of entities to process
+      params: Maps of weights and thresholds
+    
+    Returns: dict {alias -> canonical_form}
+    """
     G = nx.Graph()
     entities_map = {}
 
-    for ent in entities_list:
-        id = ent.start
-        G.add_node(id, span=ent)
+    p_mtt = params["minThreshold_textuel"]
+    p_wt = params["weight_textuel"]
+    p_wc = params["weight_contextuel"]
+    p_mtf = params["minThreshold_final"]
 
-    for n1, n2 in combinations(G.nodes, 2):
+    for ent in tqdm(entities_list, desc="Embedding des Aliases"):
+        id = ent.start
+        G.add_node(
+            id,
+            span=ent,
+            embedding=model.encode(receiveSentence(text, ent.start_char, ent.end_char))
+        )
+
+    for n1, n2 in tqdm(combinations(G.nodes, 2), desc="Comparaisons des Aliases"):
 
         ent1 = G.nodes[n1]["span"]
         ent2 = G.nodes[n2]["span"]
 
         # CALCUL CONTEXTUEL RATIO
-        s1 = receiveSentence(text, ent1.start_char, ent1.end_char)
-        s2 = receiveSentence(text, ent2.start_char, ent2.end_char)
-        emb1 = st.encode(s1)
-        emb2 = st.encode(s2)
-        contextuel_ratio = st.similarity(emb1, emb2).item()*100
+        emb1 = G.nodes[n1]["embedding"]
+        emb2 = G.nodes[n2]["embedding"]
+        contextuel_ratio = model.similarity(emb1, emb2).item()*100
         contextuel_ratio = round(contextuel_ratio, 3)
         
         # CALCUL TEXTUEL RATIO
@@ -234,12 +316,84 @@ def mappingAliasesWithGraph(text, st, entities_list):
 
         # CALCUL FINAL RATIO
 
-        final_ration = 0.5*textuel_ratio + 0.5*contextuel_ratio
+        final_ratio = p_wt*textuel_ratio + p_wc*contextuel_ratio
 
-        if (final_ration>=40):
-            G.add_edge(n1, n2, weight=final_ration)
+        if (final_ratio>=p_mtf):
+            G.add_edge(n1, n2, weight=final_ratio)
 
     entities_communities = nx.community.louvain_communities(G, seed=42) #On identifie les clusters
+
+    for community in entities_communities:
+        entities = [G.nodes[n]["span"].text for n in community]
+        entities = list(set(entities))
+        canonical = max(entities, key=len)
+        for entity in entities:
+            entities_map[entity] = canonical
+
+    return entities_map
+
+def mappingAliasesWithGraphV2(doc, model, entities_list, params):
+    """
+    Builds a dictionary of aliases to group variants of the same entity.
+    Start by creating an alias graph. The links are calculated based on 
+    textual and contextual similarity. Contextual similarity is based on 
+    the meaningful words in the entities' sentences. Use a Louvin 
+    clustering algorithm to detect clusters of aliases.
+    
+    Args:
+      text: Original string where detected entities
+      model: sentence transformer model
+      entities_list: List of entities to process
+      params: Maps of weights and thresholds
+    
+    Returns: dict {alias -> canonical_form}
+    """
+    G = nx.Graph()
+    entities_map = {}
+    p_mtt = params["minThreshold_textuel"]
+    p_wt = params["weight_textuel"]
+    p_wc = params["weight_contextuel"]
+    p_mtf = params["minThreshold_final"]
+
+    for ent in tqdm(entities_list, desc="Embedding des Aliases"):
+        id = ent.start
+        G.add_node(
+            id, 
+            span=ent,
+            embedding=embeddedMainTokens(receiveSentenceTokenized(doc, ent.start, ent.end), model)
+        )
+
+    for n1, n2 in tqdm(combinations(G.nodes, 2), desc="Comparaisons des Aliases"):
+
+        ent1 = G.nodes[n1]["span"]
+        ent2 = G.nodes[n2]["span"]
+
+        # CALCUL CONTEXTUEL RATIO
+        emb1 = G.nodes[n1]["embedding"]
+        emb2 = G.nodes[n2]["embedding"]
+        isEmbeddings = emb1 is not None and emb2 is not None
+
+        if isEmbeddings:
+            contextuel_ratio = model.similarity(emb1, emb2).item()*100
+            contextuel_ratio = round(contextuel_ratio, 3)
+
+        # CALCUL TEXTUEL RATIO
+        textuel_ratio = fuzz.partial_token_set_ratio(ent1.text, ent2.text)
+        textuel_ratio = round(textuel_ratio, 3)
+
+        if (textuel_ratio >= p_mtt):
+
+            # CALCUL FINAL RATIO
+
+            if (isEmbeddings):
+                final_ratio = p_wt*textuel_ratio + p_wc*contextuel_ratio
+            else:
+                final_ratio=textuel_ratio
+
+            if (final_ratio>=p_mtf):
+                G.add_edge(n1, n2, weight=final_ratio)
+
+    entities_communities = nx.community.louvain_communities(G, seed=42)
 
     for community in entities_communities:
         entities = [G.nodes[n]["span"].text for n in community]

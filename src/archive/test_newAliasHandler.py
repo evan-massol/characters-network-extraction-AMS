@@ -5,10 +5,12 @@
 
 import spacy as sp
 import networkx as nx
+from tqdm import tqdm
 from itertools import combinations
 import matplotlib.pyplot as plt
 from rapidfuzz import fuzz
 from sentence_transformers import SentenceTransformer
+import numpy as np
 
 
 
@@ -35,6 +37,41 @@ def receiveSentence(text: str, start: int, end: int) -> str:
         right += 1
 
     return text[left:right].strip()
+
+def receiveSentenceTokenized(doc, start, end):
+
+    sentence_separators = {".", "!", "?"}
+
+    left = start
+    while left > 0 and doc[left].text not in sentence_separators:
+        left -= 1
+    if left != 0:
+        left += 1
+
+    right = end
+    while right < len(doc) and doc[right].text not in sentence_separators:
+        right += 1
+    if right < len(doc):
+        right += 1
+    
+    return doc[left:right]
+
+def embeddedMainTokens(sentence, model):
+    main_words=[]
+    for word in sentence:
+        if word.pos_ in ["ADJ", "VERB", "NOUN"]:
+            main_words.append(word.text)
+            # print(word, " : \n", word.pos_, word.text)
+            # print("----------")
+    if not main_words:
+        print("RENVOIE NUL")
+        return None
+        
+    embeddings = model.encode(main_words)
+    # print("Embedding : ", embeddings, "\n")
+        
+    return np.mean(embeddings, axis=0)
+
 
 f = open('txt/corpus_classique/Fondation_sample.txt', 'r', encoding="utf-8")
 text = f.read()
@@ -68,24 +105,29 @@ for ent in doc.ents:
 
 G = nx.Graph()
 
-for ent in LP:
+for ent in tqdm(LP, desc="Embedding des Aliases"):
+    # print("\n", ent.text, "(", ent.start, ", ", ent.end, ") : ", receiveSentenceTokenized(doc, ent.start, ent.end))
     id = ent.start
-    G.add_node(id, span=ent)
-    # print(ent.text, "(", ent.start_char, ", ", ent.end_char, ") : ", receiveSentence(text, ent.start_char, ent.end_char))
+    G.add_node(
+        id, 
+        span=ent,
+        # embedding=st.encode(receiveSentence(text, ent.start_char, ent.end_char))
+        embedding=embeddedMainTokens(receiveSentenceTokenized(doc, ent.start, ent.end), st)
+    )
 
-for n1, n2 in combinations(G.nodes, 2):
+for n1, n2 in tqdm(combinations(G.nodes, 2), desc="Comparaisons des Aliases"):
 
     ent1 = G.nodes[n1]["span"]
     ent2 = G.nodes[n2]["span"]
 
     # CALCUL CONTEXTUEL RATIO
+    emb1 = G.nodes[n1]["embedding"]
+    emb2 = G.nodes[n2]["embedding"]
+    isEmbeddings = emb1 is not None and emb2 is not None
 
-    s1 = receiveSentence(text, ent1.start_char, ent1.end_char)
-    s2 = receiveSentence(text, ent2.start_char, ent2.end_char)
-    emb1 = st.encode(s1)
-    emb2 = st.encode(s2)
-    contextuel_ratio = st.similarity(emb1, emb2).item()*100
-    contextuel_ratio = round(contextuel_ratio, 3)
+    if isEmbeddings:
+        contextuel_ratio = st.similarity(emb1, emb2).item()*100
+        contextuel_ratio = round(contextuel_ratio, 3)
 
     # CALCUL TEXTUEL RATIO
 
@@ -94,11 +136,16 @@ for n1, n2 in combinations(G.nodes, 2):
 
     # CALCUL FINAL RATIO
 
-    final_ration = 0.5*textuel_ratio + 0.5*contextuel_ratio
+    if (isEmbeddings):
+        final_ratio = 0.5*textuel_ratio + 0.5*contextuel_ratio
+    else:
+        final_ratio=textuel_ratio
 
-    print(ent1.text, " - ", ent2.text, " : ", final_ration)
-    if (textuel_ratio>=80):
-        G.add_edge(n1, n2, weight=textuel_ratio)
+    print(ent1.text, " - ", ent2.text, " : \nTR :", textuel_ratio, "\nCR :", contextuel_ratio, "\nFR :", final_ratio)
+    if (final_ratio>=70):
+        G.add_edge(n1, n2, weight=final_ratio)
+
+    print("-------------------------")
 
 entities_communities = nx.community.louvain_communities(G, seed=42)
 

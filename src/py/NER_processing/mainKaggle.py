@@ -7,7 +7,7 @@ import pandas as pd
 import spacy as sp
 from sentence_transformers import SentenceTransformer
 from py.text_preprocessing.utils import clean_entity_name, filter_antidict
-from py.NER_processing.utils import is_valid_entity, build_entity_aliases, mapping_entity, build_entity_relation, merge_entity_counts, mappingAliasesWithGraph
+from py.NER_processing.utils import is_valid_entity, build_entity_aliases, mapping_entity, build_entity_relation, merge_entity_counts, mappingAliasesWithGraph, mappingAliasesWithGraphV2
 
 
 #------------------------------ENTITY EXTRACTION-------------------------------
@@ -16,6 +16,15 @@ def _extract_num(fname):
     m = re.search(r'\d+', fname)
     return int(m.group()) if m else -1
 
+
+
+params = {
+    "minThreshold_textuel": 0,
+    # "minThreshold_contextuel": 50,
+    "minThreshold_final": 80,
+    "weight_textuel": 0.4,
+    "weight_contextuel": 0.6,
+}
 
 st = SentenceTransformer("dangvantuan/sentence-camembert-large")
 nlp = sp.load("fr_core_news_lg")
@@ -34,7 +43,7 @@ for code_book, filepath in books:
 
     files = [f for f in os.listdir(filepath) if f.endswith('.txt')] # Get all .txt files and sort by chapter number
     files_sorted = sorted(files, key=lambda x: _extract_num(x)) # Sort files by the number in the name
-    for file in tqdm(files_sorted, desc="Traitement des chapitres"):
+    for file in files_sorted:
         chemin_complet = os.path.join(filepath, file)
         num_chapter = _extract_num(file)-1
         if os.path.isfile(chemin_complet) and file.endswith('.txt'):
@@ -53,7 +62,7 @@ for code_book, filepath in books:
                     LM.append(ent)
 
             # Build alias maps for each entity type
-            alias_map_PER = mappingAliasesWithGraph(corpus, st, LP) #build_entity_aliases(LP, entity_type="PER")
+            alias_map_PER = mappingAliasesWithGraphV2(doc, st, LP, params) #build_entity_aliases(LP, entity_type="PER")
             PER_map = mapping_entity(LP, alias_map_PER)
             relations_PER = build_entity_relation(PER_map)
             alias_map_MISC = build_entity_aliases(LM, entity_type="MISC")

@@ -1,0 +1,12 @@
+KAGGLE :
+
+T1 : 23/03
+     Weight :
+   minThreshold_textuel: X
+   minThreshold_contextuel: X
+   minThreshold_final: 40
+   weight_textuel: 0.5
+   weight_contextuel: 0.5
+
+     Résultat :
+   Score: 36
