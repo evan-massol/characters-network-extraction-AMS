@@ -1,6 +1,7 @@
 KAGGLE :
 
 T1 : 23/03
+Algo : V1
      Weight :
    minThreshold_textuel: X
    minThreshold_contextuel: X
@@ -10,3 +11,101 @@ T1 : 23/03
 
      Résultat :
    Score: 36
+
+T2 : 23/03
+Algo : V1
+     Weight :
+   minThreshold_textuel: X
+   minThreshold_contextuel: X
+   minThreshold_final: 40
+   weight_textuel: 0.4
+   weight_contextuel: 0.6
+
+     Résultat :
+   Score: 42
+
+T3 : 23/03
+Algo : V1
+     Weight :
+   minThreshold_textuel: X
+   minThreshold_contextuel: X
+   minThreshold_final: 40
+   weight_textuel: 0.3
+   weight_contextuel: 0.7
+
+     Résultat :
+   Score: 41
+
+T4 : 23/03
+Algo : V1
+     Weight :
+   minThreshold_textuel: X
+   minThreshold_contextuel: X
+   minThreshold_final: 30
+   weight_textuel: 0.3
+   weight_contextuel: 0.7
+
+     Résultat :
+   Score: 35
+
+T5 : 23/03
+Algo : V2
+     Weight :
+   minThreshold_textuel: X
+   minThreshold_contextuel: X
+   minThreshold_final: 70
+   weight_textuel: 0.5
+   weight_contextuel: 0.5
+
+     Résultat :
+   Score: 52
+
+T6 : 23/03
+Algo : V1
+     Weight :
+   minThreshold_textuel: X
+   minThreshold_contextuel: X
+   minThreshold_final: 70
+   weight_textuel: 0.5
+   weight_contextuel: 0.5
+
+     Résultat :
+   Score: 46
+
+T7 : 23/03
+Algo : V2
+     Weight :
+   minThreshold_textuel: 0
+   minThreshold_contextuel: X
+   minThreshold_final: 70
+   weight_textuel: 0.4
+   weight_contextuel: 0.6
+
+     Résultat :
+   Score: 48
+
+T8 : 23/03
+Algo : V2
+     Weight :
+   minThreshold_textuel: 0
+   minThreshold_contextuel: X
+   minThreshold_final: 80
+   weight_textuel: 0.4
+   weight_contextuel: 0.6
+
+     Résultat :
+   Score: 49
+
+
+
+
+
+################# AFAIRE
+
+   minThreshold_final: 70
+   weight_textuel: 0.6
+   weight_contextuel: 0.4
+
+   minThreshold_final: 80
+   weight_textuel: 0.5
+   weight_contextuel: 0.5
