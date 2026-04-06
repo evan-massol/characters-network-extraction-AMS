@@ -7,6 +7,7 @@ import numpy as np
 from rapidfuzz import fuzz
 from collections import Counter, defaultdict
 import networkx as nx
+import spacy as sp
 from tqdm import tqdm 
 from py.text_preprocessing.utils import ANTI_DICT
 
@@ -265,7 +266,7 @@ def embeddedMainTokens(sentence, model):
         
     embeddings = model.encode(main_words)
         
-    return np.mean(embeddings, axis=0)  # On peut aussi remplacer mean par sum mais ca a pas l'air ouf
+    return np.mean(embeddings, axis=0)  # On peut aussi remplacer mean par sum mais ca a pas l'air aussi puissant
 
 def mappingAliasesWithGraph(text, model, entities_list, params):
     """
@@ -407,7 +408,7 @@ def mappingAliasesWithGraphV2(doc, model, entities_list, params):
 
     return entities_map
 
-def build_entity_relation_with_context(doc, entity_map):
+def build_entity_relation_with_context(doc, model, entity_map):
     '''
     Build a map to load different contextual sentences of each relation between two entities.
     Args:
@@ -419,15 +420,15 @@ def build_entity_relation_with_context(doc, entity_map):
             Map which link each couple of entities named detected to their contextual sentences.
     '''
     relations_map = defaultdict(list)
-    sorted_entities = sorted(entity_map.items(), key=lambda item: item[0][1])
+    sorted_entities = sorted(entity_map.items(), key=lambda item: item[0][1]) # On tri par l'indexe de début de l'entité
 
-    for i, entity in enumerate(sorted_entities):
+    for i, entity in tqdm(enumerate(sorted_entities), desc="Embedding des contexts de relation"):
         for neighbor in sorted_entities[i+1:]:
             if neighbor[0][1] - entity[0][2] > 25:  # Si la distance entre les entités excède 25 tokens
                 break                               # On arrête la recherche de relation pour cette entité
             if entity[1] != neighbor[1]:      # Éviter les auto-relations
-                # TODO Extraire le contexte
-                context = receiveSentenceTokenized(doc, entity[0][1], neighbor[0][2])
-                relations_map[(entity[0], neighbor[0])].append(context)
+                context = receiveSentenceTokenized(doc, entity[0][1], neighbor[0][2]) #Extraction du context (phrase de la première entité + de la dernière + celle entre les deux entités)
+                embedded_context = embeddedMainTokens(context, model)
+                relations_map[(entity[0], neighbor[0])].append(embedded_context)
 
     return relations_map

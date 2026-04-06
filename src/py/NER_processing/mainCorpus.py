@@ -1,5 +1,6 @@
 import os
 from collections import Counter
+import json
 
 import networkx as nx
 import pandas as pd
@@ -67,18 +68,14 @@ for file in os.listdir(repertoire):
         for ent in doc.ents:
             if ent.label_ == "PER" and is_valid_entity(ent.text):
                 LP.append(ent)
+                print(ent.text)
 
         # Aliases handling
-        alias_map_PER = build_entity_aliases(LP, entity_type="PER")
-        PER_map = mapping_entity(LP, alias_map_PER)
-
-
-        #########################
-        # LA SUITE EST A MODIFIER
-        #########################
+        alias_map_PER = build_entity_aliases(LP, entity_type="PER") # à remplacer par mappingAliasesWithGraphV2(doc, st, LP, params)
 
         # Relation handling
-        relations_PER = build_entity_relation_with_context(PER_map) #LA FONCTION N'EST PAS FINI
+        relations_PER = build_entity_relation_with_context(doc, st, PER_map)
+        print("BLA BLA : build_entity_relation_with_context terminé")
 
         # Merge counts using aliases
         LP_counts = merge_entity_counts(LP, alias_map_PER)
@@ -89,7 +86,8 @@ for file in os.listdir(repertoire):
             G.add_node(canonical_name)
             G.nodes[canonical_name]["names"] = canonical_name
         for key, value in relations_PER.items():
-            G.add_edge(key[0], key[1], weight=value)
+            G.add_edge(key[0], key[1], weight=len(value))
+            G.edges[key[0], key[1]]["context"] = json.dumps([vec.tolist() for vec in value])
 
         df_dict["ID"].append("Fondation")
         graphml = "".join(nx.generate_graphml(G))
@@ -97,4 +95,4 @@ for file in os.listdir(repertoire):
 
         df = pd.DataFrame(df_dict)
         df.set_index("ID", inplace=True)
-        df.to_csv("./EvanMASSOL_MartinGERIS_Fondation.csv")
+        df.to_csv(f"./csv/{file}.csv")
