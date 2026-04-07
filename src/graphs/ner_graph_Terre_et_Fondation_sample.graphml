@@ -1,0 +1,299 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d3" for="edge" attr.name="weight" attr.type="long" />
+  <key id="d2" for="node" attr.name="chapters" attr.type="string" />
+  <key id="d1" for="node" attr.name="appearances" attr.type="long" />
+  <key id="d0" for="node" attr.name="count" attr.type="long" />
+  <graph edgedefault="undirected">
+    <node id="Gaïa">
+      <data key="d0">164</data>
+      <data key="d1">31</data>
+      <data key="d2">[1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 18, 19, 23, 26, 27, 28, 29, 30, 31, 32, 37, 38, 39, 40, 41, 42]</data>
+    </node>
+    <node id="Ni Pelorat">
+      <data key="d0">176</data>
+      <data key="d1">40</data>
+      <data key="d2">[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 42]</data>
+    </node>
+    <node id="Sieur Golan Trevize">
+      <data key="d0">327</data>
+      <data key="d1">42</data>
+      <data key="d2">[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42]</data>
+    </node>
+    <node id="Janov Pelorat">
+      <data key="d0">78</data>
+      <data key="d1">32</data>
+      <data key="d2">[1, 2, 3, 4, 5, 7, 9, 12, 14, 15, 17, 18, 19, 20, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 34, 35, 36, 37, 38, 39, 40, 42]</data>
+    </node>
+    <node id="Joie">
+      <data key="d0">30</data>
+      <data key="d1">20</data>
+      <data key="d2">[2, 3, 4, 7, 12, 13, 14, 16, 17, 22, 24, 27, 30, 31, 35, 36, 37, 38, 39, 42]</data>
+    </node>
+    <node id="Branno">
+      <data key="d0">3</data>
+      <data key="d1">3</data>
+      <data key="d2">[3, 14, 39]</data>
+    </node>
+    <node id="Pel">
+      <data key="d0">31</data>
+      <data key="d1">17</data>
+      <data key="d2">[3, 5, 7, 14, 16, 19, 21, 24, 28, 30, 31, 33, 34, 35, 38, 39, 42]</data>
+    </node>
+    <node id="Comporellon">
+      <data key="d0">55</data>
+      <data key="d1">15</data>
+      <data key="d2">[4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 26, 34, 37]</data>
+    </node>
+    <node id="Hari Seldon">
+      <data key="d0">9</data>
+      <data key="d1">5</data>
+      <data key="d2">[6, 7, 15, 20, 25]</data>
+    </node>
+    <node id="Kendray">
+      <data key="d0">12</data>
+      <data key="d1">4</data>
+      <data key="d2">[6, 7, 8, 9]</data>
+    </node>
+    <node id="Mitza Lizalor">
+      <data key="d0">18</data>
+      <data key="d1">6</data>
+      <data key="d2">[8, 10, 11, 12, 13, 37]</data>
+    </node>
+    <node id="Vasil Deniador">
+      <data key="d0">15</data>
+      <data key="d1">5</data>
+      <data key="d2">[11, 12, 13, 14, 15]</data>
+    </node>
+    <node id="Sarton Bander">
+      <data key="d0">59</data>
+      <data key="d1">7</data>
+      <data key="d2">[20, 21, 22, 23, 25, 27, 38]</data>
+    </node>
+    <node id="Maître Fallom">
+      <data key="d0">29</data>
+      <data key="d1">12</data>
+      <data key="d2">[24, 25, 27, 30, 32, 33, 35, 36, 38, 39, 40, 42]</data>
+    </node>
+    <node id="Jemby">
+      <data key="d0">11</data>
+      <data key="d1">5</data>
+      <data key="d2">[24, 28, 36, 38, 42]</data>
+    </node>
+    <node id="Melpomenia">
+      <data key="d0">8</data>
+      <data key="d1">5</data>
+      <data key="d2">[29, 30, 31, 34, 35]</data>
+    </node>
+    <node id="Alpha">
+      <data key="d0">9</data>
+      <data key="d1">5</data>
+      <data key="d2">[31, 33, 34, 36, 37]</data>
+    </node>
+    <node id="Hiroko">
+      <data key="d0">45</data>
+      <data key="d1">5</data>
+      <data key="d2">[33, 34, 36, 37, 40]</data>
+    </node>
+    <node id="Daneel Olivaw">
+      <data key="d0">22</data>
+      <data key="d1">3</data>
+      <data key="d2">[40, 41, 42]</data>
+    </node>
+    <edge source="Gaïa" target="Sieur Golan Trevize">
+      <data key="d3">25</data>
+    </edge>
+    <edge source="Gaïa" target="Janov Pelorat">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Gaïa" target="Joie">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Gaïa" target="Ni Pelorat">
+      <data key="d3">6</data>
+    </edge>
+    <edge source="Gaïa" target="Pel">
+      <data key="d3">6</data>
+    </edge>
+    <edge source="Gaïa" target="Comporellon">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Gaïa" target="Alpha">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Gaïa" target="Daneel Olivaw">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Ni Pelorat" target="Sieur Golan Trevize">
+      <data key="d3">29</data>
+    </edge>
+    <edge source="Ni Pelorat" target="Janov Pelorat">
+      <data key="d3">17</data>
+    </edge>
+    <edge source="Ni Pelorat" target="Pel">
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Ni Pelorat" target="Comporellon">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Ni Pelorat" target="Vasil Deniador">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Ni Pelorat" target="Hari Seldon">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Ni Pelorat" target="Joie">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Ni Pelorat" target="Sarton Bander">
+      <data key="d3">11</data>
+    </edge>
+    <edge source="Ni Pelorat" target="Maître Fallom">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Ni Pelorat" target="Melpomenia">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Ni Pelorat" target="Alpha">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Ni Pelorat" target="Hiroko">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Ni Pelorat" target="Daneel Olivaw">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Sieur Golan Trevize" target="Janov Pelorat">
+      <data key="d3">26</data>
+    </edge>
+    <edge source="Sieur Golan Trevize" target="Comporellon">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Sieur Golan Trevize" target="Kendray">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Sieur Golan Trevize" target="Joie">
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Sieur Golan Trevize" target="Mitza Lizalor">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Sieur Golan Trevize" target="Vasil Deniador">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Sieur Golan Trevize" target="Pel">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Sieur Golan Trevize" target="Sarton Bander">
+      <data key="d3">8</data>
+    </edge>
+    <edge source="Sieur Golan Trevize" target="Maître Fallom">
+      <data key="d3">8</data>
+    </edge>
+    <edge source="Sieur Golan Trevize" target="Hari Seldon">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Sieur Golan Trevize" target="Jemby">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Sieur Golan Trevize" target="Melpomenia">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Sieur Golan Trevize" target="Hiroko">
+      <data key="d3">15</data>
+    </edge>
+    <edge source="Sieur Golan Trevize" target="Alpha">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Sieur Golan Trevize" target="Daneel Olivaw">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Janov Pelorat" target="Comporellon">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Janov Pelorat" target="Pel">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Janov Pelorat" target="Kendray">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Janov Pelorat" target="Sarton Bander">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Janov Pelorat" target="Melpomenia">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Janov Pelorat" target="Hiroko">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Joie" target="Comporellon">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Joie" target="Sarton Bander">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Joie" target="Maître Fallom">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Joie" target="Hiroko">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Joie" target="Daneel Olivaw">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Pel" target="Kendray">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Pel" target="Sarton Bander">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Pel" target="Jemby">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Pel" target="Maître Fallom">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Comporellon" target="Mitza Lizalor">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Comporellon" target="Vasil Deniador">
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Comporellon" target="Melpomenia">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Comporellon" target="Hiroko">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Mitza Lizalor" target="Vasil Deniador">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Mitza Lizalor" target="Alpha">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Mitza Lizalor" target="Hiroko">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Sarton Bander" target="Maître Fallom">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Sarton Bander" target="Jemby">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Maître Fallom" target="Hiroko">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Maître Fallom" target="Jemby">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Maître Fallom" target="Daneel Olivaw">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Jemby" target="Hiroko">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Jemby" target="Daneel Olivaw">
+      <data key="d3">2</data>
+    </edge>
+  </graph>
+</graphml>

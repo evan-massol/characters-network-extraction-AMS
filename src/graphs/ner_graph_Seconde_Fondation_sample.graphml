@@ -1,0 +1,264 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d3" for="edge" attr.name="weight" attr.type="long" />
+  <key id="d2" for="node" attr.name="chapters" attr.type="string" />
+  <key id="d1" for="node" attr.name="appearances" attr.type="long" />
+  <key id="d0" for="node" attr.name="count" attr.type="long" />
+  <graph edgedefault="undirected">
+    <node id="Le Mulet">
+      <data key="d0">63</data>
+      <data key="d1">16</data>
+      <data key="d2">[1, 2, 3, 4, 5, 6, 7, 8, 11, 12, 13, 16, 17, 18, 19, 21]</data>
+    </node>
+    <node id="Han Pritcher">
+      <data key="d0">54</data>
+      <data key="d1">8</data>
+      <data key="d2">[1, 2, 3, 4, 5, 6, 7, 14]</data>
+    </node>
+    <node id="Premier Citoyen">
+      <data key="d0">10</data>
+      <data key="d1">7</data>
+      <data key="d2">[1, 2, 6, 7, 12, 13, 16]</data>
+    </node>
+    <node id="Seigneur de Kalgan">
+      <data key="d0">16</data>
+      <data key="d1">7</data>
+      <data key="d2">[1, 12, 13, 14, 16, 18, 19]</data>
+    </node>
+    <node id="Monsieur">
+      <data key="d0">11</data>
+      <data key="d1">5</data>
+      <data key="d2">[1, 2, 5, 7, 8]</data>
+    </node>
+    <node id="Hari Seldon">
+      <data key="d0">29</data>
+      <data key="d1">13</data>
+      <data key="d2">[1, 2, 6, 8, 9, 10, 11, 12, 13, 14, 17, 19, 21]</data>
+    </node>
+    <node id="Bail Channis">
+      <data key="d0">8</data>
+      <data key="d1">4</data>
+      <data key="d2">[1, 5, 6, 7]</data>
+    </node>
+    <node id="Trantor">
+      <data key="d0">8</data>
+      <data key="d1">5</data>
+      <data key="d2">[2, 3, 15, 16, 17]</data>
+    </node>
+    <node id="Tazenda">
+      <data key="d0">20</data>
+      <data key="d1">4</data>
+      <data key="d2">[3, 4, 6, 7]</data>
+    </node>
+    <node id="Rossem">
+      <data key="d0">15</data>
+      <data key="d1">4</data>
+      <data key="d2">[3, 4, 6, 7]</data>
+    </node>
+    <node id="Bayta Darell">
+      <data key="d0">56</data>
+      <data key="d1">11</data>
+      <data key="d2">[7, 8, 10, 11, 14, 15, 16, 18, 19, 20, 21]</data>
+    </node>
+    <node id="Poli">
+      <data key="d0">7</data>
+      <data key="d1">4</data>
+      <data key="d2">[8, 11, 13, 14]</data>
+    </node>
+    <node id="Pelleas Anthor">
+      <data key="d0">61</data>
+      <data key="d1">9</data>
+      <data key="d2">[8, 10, 11, 14, 16, 18, 19, 20, 21]</data>
+    </node>
+    <node id="Orateur">
+      <data key="d0">13</data>
+      <data key="d1">5</data>
+      <data key="d2">[9, 10, 11, 20, 21]</data>
+    </node>
+    <node id="Elvett Semic">
+      <data key="d0">3</data>
+      <data key="d1">3</data>
+      <data key="d2">[10, 18, 19]</data>
+    </node>
+    <node id="Homir Munn">
+      <data key="d0">60</data>
+      <data key="d1">11</data>
+      <data key="d2">[10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]</data>
+    </node>
+    <node id="Kleise">
+      <data key="d0">9</data>
+      <data key="d1">3</data>
+      <data key="d2">[10, 11, 14]</data>
+    </node>
+    <node id="Seigneur Stettin">
+      <data key="d0">4</data>
+      <data key="d1">3</data>
+      <data key="d2">[12, 13, 14]</data>
+    </node>
+    <node id="Dame Callia">
+      <data key="d0">12</data>
+      <data key="d1">6</data>
+      <data key="d2">[12, 13, 14, 15, 16, 20]</data>
+    </node>
+    <node id="Lev Meirus">
+      <data key="d0">3</data>
+      <data key="d1">2</data>
+      <data key="d2">[13, 18]</data>
+    </node>
+    <node id="Madame">
+      <data key="d0">6</data>
+      <data key="d1">2</data>
+      <data key="d2">[13, 14]</data>
+    </node>
+    <node id="Papa">
+      <data key="d0">8</data>
+      <data key="d1">2</data>
+      <data key="d2">[15, 17]</data>
+    </node>
+    <node id="Preem Palver">
+      <data key="d0">10</data>
+      <data key="d1">3</data>
+      <data key="d2">[15, 17, 18]</data>
+    </node>
+    <node id="Turbor">
+      <data key="d0">8</data>
+      <data key="d1">4</data>
+      <data key="d2">[17, 18, 19, 20]</data>
+    </node>
+    <edge source="Le Mulet" target="Han Pritcher">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Le Mulet" target="Monsieur">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Le Mulet" target="Bail Channis">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Le Mulet" target="Rossem">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Le Mulet" target="Tazenda">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Le Mulet" target="Hari Seldon">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Le Mulet" target="Premier Citoyen">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Le Mulet" target="Homir Munn">
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Han Pritcher" target="Monsieur">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Han Pritcher" target="Hari Seldon">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Han Pritcher" target="Tazenda">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Han Pritcher" target="Bail Channis">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Premier Citoyen" target="Rossem">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Premier Citoyen" target="Seigneur de Kalgan">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Seigneur de Kalgan" target="Homir Munn">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Seigneur de Kalgan" target="Pelleas Anthor">
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Seigneur de Kalgan" target="Lev Meirus">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Seigneur de Kalgan" target="Bayta Darell">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Monsieur" target="Bail Channis">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Monsieur" target="Pelleas Anthor">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Hari Seldon" target="Orateur">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hari Seldon" target="Homir Munn">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hari Seldon" target="Turbor">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hari Seldon" target="Bayta Darell">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Bail Channis" target="Rossem">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Trantor" target="Homir Munn">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Trantor" target="Papa">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Tazenda" target="Rossem">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Bayta Darell" target="Pelleas Anthor">
+      <data key="d3">18</data>
+    </edge>
+    <edge source="Bayta Darell" target="Kleise">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Bayta Darell" target="Homir Munn">
+      <data key="d3">8</data>
+    </edge>
+    <edge source="Bayta Darell" target="Preem Palver">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Bayta Darell" target="Turbor">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Pelleas Anthor" target="Kleise">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Pelleas Anthor" target="Homir Munn">
+      <data key="d3">8</data>
+    </edge>
+    <edge source="Pelleas Anthor" target="Elvett Semic">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Pelleas Anthor" target="Turbor">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Elvett Semic" target="Homir Munn">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Homir Munn" target="Kleise">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Homir Munn" target="Madame">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Homir Munn" target="Dame Callia">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Homir Munn" target="Lev Meirus">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Homir Munn" target="Turbor">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Seigneur Stettin" target="Dame Callia">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Preem Palver" target="Turbor">
+      <data key="d3">2</data>
+    </edge>
+  </graph>
+</graphml>
