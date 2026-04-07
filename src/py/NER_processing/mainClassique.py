@@ -68,14 +68,12 @@ for file in os.listdir(repertoire):
         for ent in doc.ents:
             if ent.label_ == "PER" and is_valid_entity(ent.text):
                 LP.append(ent)
-                print(ent.text)
 
         # Aliases handling
         alias_map_PER = build_entity_aliases(LP, entity_type="PER") # à remplacer par mappingAliasesWithGraphV2(doc, st, LP, params)
-
+        PER_map = mapping_entity(LP, alias_map_PER)
         # Relation handling
         relations_PER = build_entity_relation_with_context(doc, st, PER_map)
-        print("BLA BLA : build_entity_relation_with_context terminé")
 
         # Merge counts using aliases
         LP_counts = merge_entity_counts(LP, alias_map_PER)
@@ -89,10 +87,11 @@ for file in os.listdir(repertoire):
             G.add_edge(key[0], key[1], weight=len(value))
             G.edges[key[0], key[1]]["context"] = json.dumps([vec.tolist() for vec in value])
 
-        df_dict["ID"].append("Fondation")
+        df_dict = {"ID": [], "graphml": []}
+        df_dict["ID"] = "Fondation"
         graphml = "".join(nx.generate_graphml(G))
-        df_dict["graphml"].append(graphml)
+        df_dict["graphml"] = graphml
 
-        df = pd.DataFrame(df_dict)
+        df = pd.DataFrame([df_dict])
         df.set_index("ID", inplace=True)
-        df.to_csv(f"./csv/{file}.csv")
+        df.to_csv(f"./csv/{os.path.splitext(file)[0]}.csv")

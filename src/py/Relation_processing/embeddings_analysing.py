@@ -99,9 +99,3 @@ for cat1, cat2 in combinations(vectors.keys(), 2):
     print(f"\n{cat1} - {cat2}")
     print(f"Distance euclidienne moyenne : {np.mean(euclidian)}")
     print(f"Similarité cosinus moyenne : {np.mean(cosine)}")
-
-
-    #TODO
-    # - Regarder si distance est bonne ou pas
-    # - S'intéresser à la longueur des vecteur
-    # - Ecrire programme pour attribuer des catégorie aux relations
