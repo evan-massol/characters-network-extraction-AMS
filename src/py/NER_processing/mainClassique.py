@@ -84,6 +84,7 @@ for file in os.listdir(repertoire):
             G.add_node(canonical_name)
             G.nodes[canonical_name]["names"] = canonical_name
         for key, value in relations_PER.items():
+            # print("mainClassique : nb vecteur", len(value))
             G.add_edge(key[0], key[1], weight=len(value))
             G.edges[key[0], key[1]]["context"] = json.dumps([vec.tolist() for vec in value])
 

@@ -63,18 +63,28 @@ for file in os.listdir(repertoire):
 
         # CONTEXTUALISATION
         for u, v, attr in G.edges(data=True):
-            contextual_embeddings = json.loads(attr.get("context", "[]"))
+            contextual_embeddings = json.loads(attr["context"])
 
-            # listprint(embedding_ref)
-            context, distance = find_closest_reference(contextual_embeddings, embedding_ref)
+            vectors_array = [np.array(vec) for vec in contextual_embeddings]
 
-            G.edges[u, v]["context"] = json.dumps(context)
+            sum_professional = 0
+            sum_friendly = 0
+            sum_romance = 0
+            for vec in vectors_array:
+                context, distance = find_closest_reference(vec, embedding_ref)
+                if context=="professionnal":
+                    sum_professional=sum_professional + 1
+                if context=="friendly":
+                    sum_friendly= sum_friendly+1
+                if context=="romance":
+                    sum_romance=sum_romance+1
+            G.edges[u, v]["professionnal"] = sum_professional
+            G.edges[u, v]["friendly"] = sum_friendly
+            G.edges[u, v]["romance"] = sum_romance
+            del G.edges[u, v]["context"]
+
+            print(u, " : ", v, " -> ", G.edges[u, v]["weight"])
         
         graphml_updated = "".join(nx.generate_graphml(G))
         df.loc["Fondation", "graphml"] = graphml_updated
         df.to_csv(f"./csv/processed_relation/{os.path.splitext(file)[0]}.csv")
-
-        # TODO
-        # Finir gestion des relations dans le fichier (nombre de relation + pourcentage de relation dans tel ou tel catégorie)
-        # Push pour permettre à evan de faire graphe
-        # Lancer programme sur gros pc (avec fonction puissante) 

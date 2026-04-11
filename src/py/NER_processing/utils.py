@@ -429,6 +429,5 @@ def build_entity_relation_with_context(doc, model, entity_map):
             if entity[1] != neighbor[1]:      # Éviter les auto-relations
                 context = receiveSentenceTokenized(doc, entity[0][1], neighbor[0][2]) #Extraction du context (phrase de la première entité + de la dernière + celle entre les deux entités)
                 embedded_context = embeddedMainTokens(context, model)
-                relations_map[(entity[0], neighbor[0])].append(embedded_context)
-
+                relations_map[(entity[1], neighbor[1])].append(embedded_context)
     return relations_map
