@@ -1,0 +1,441 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d3" for="edge" attr.name="weight" attr.type="long" />
+  <key id="d2" for="node" attr.name="chapters" attr.type="string" />
+  <key id="d1" for="node" attr.name="appearances" attr.type="long" />
+  <key id="d0" for="node" attr.name="count" attr.type="long" />
+  <graph edgedefault="undirected">
+    <node id="Trevize">
+      <data key="d0">189</data>
+      <data key="d1">38</data>
+      <data key="d2">[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 15, 16, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 37, 38, 39, 40, 41]</data>
+    </node>
+    <node id="Hari Seldon">
+      <data key="d0">36</data>
+      <data key="d1">14</data>
+      <data key="d2">[1, 2, 3, 4, 6, 8, 9, 11, 20, 21, 23, 28, 32, 37]</data>
+    </node>
+    <node id="Harlan Branno">
+      <data key="d0">58</data>
+      <data key="d1">17</data>
+      <data key="d2">[1, 2, 3, 4, 5, 6, 21, 27, 28, 31, 32, 36, 37, 38, 39, 40, 41]</data>
+    </node>
+    <node id="Salvor Hardin">
+      <data key="d0">5</data>
+      <data key="d1">3</data>
+      <data key="d2">[1, 4, 5]</data>
+    </node>
+    <node id="Madame le Maire">
+      <data key="d0">4</data>
+      <data key="d1">4</data>
+      <data key="d2">[1, 3, 5, 28]</data>
+    </node>
+    <node id="Le Mulet">
+      <data key="d0">25</data>
+      <data key="d1">14</data>
+      <data key="d2">[1, 5, 8, 10, 18, 21, 26, 27, 28, 31, 33, 35, 37, 38]</data>
+    </node>
+    <node id="Liono Kodell">
+      <data key="d0">53</data>
+      <data key="d1">15</data>
+      <data key="d2">[1, 2, 3, 4, 5, 6, 28, 29, 31, 32, 36, 37, 38, 39, 40]</data>
+    </node>
+    <node id="Arkady Darell">
+      <data key="d0">4</data>
+      <data key="d1">3</data>
+      <data key="d2">[2, 3, 5]</data>
+    </node>
+    <node id="Janov Pelorat">
+      <data key="d0">187</data>
+      <data key="d1">31</data>
+      <data key="d2">[4, 5, 6, 7, 8, 10, 11, 12, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 38, 39, 40, 41]</data>
+    </node>
+    <node id="Trantor">
+      <data key="d0">11</data>
+      <data key="d1">6</data>
+      <data key="d2">[5, 8, 11, 12, 14, 17]</data>
+    </node>
+    <node id="Terminus">
+      <data key="d0">6</data>
+      <data key="d1">5</data>
+      <data key="d2">[6, 7, 11, 32, 38]</data>
+    </node>
+    <node id="Quindor Shandess">
+      <data key="d0">14</data>
+      <data key="d1">8</data>
+      <data key="d2">[8, 9, 12, 17, 18, 23, 36, 40]</data>
+    </node>
+    <node id="Orateur Gendibal">
+      <data key="d0">29</data>
+      <data key="d1">12</data>
+      <data key="d2">[8, 9, 13, 14, 15, 17, 18, 19, 36, 38, 39, 41]</data>
+    </node>
+    <node id="Stor Gendibal">
+      <data key="d0">152</data>
+      <data key="d1">22</data>
+      <data key="d2">[8, 9, 10, 12, 13, 14, 15, 16, 17, 18, 19, 23, 24, 29, 30, 31, 35, 36, 37, 38, 39, 40]</data>
+    </node>
+    <node id="Preem Palver">
+      <data key="d0">8</data>
+      <data key="d1">4</data>
+      <data key="d2">[9, 13, 17, 19]</data>
+    </node>
+    <node id="Orateur Cheng">
+      <data key="d0">28</data>
+      <data key="d1">14</data>
+      <data key="d2">[9, 12, 13, 14, 15, 16, 17, 18, 19, 23, 30, 31, 38, 40]</data>
+    </node>
+    <node id="Premier Orateur">
+      <data key="d0">14</data>
+      <data key="d1">9</data>
+      <data key="d2">[9, 12, 13, 15, 18, 19, 36, 39, 40]</data>
+    </node>
+    <node id="Sapristi">
+      <data key="d0">3</data>
+      <data key="d1">3</data>
+      <data key="d2">[10, 20, 30]</data>
+    </node>
+    <node id="Gaïa">
+      <data key="d0">164</data>
+      <data key="d1">21</data>
+      <data key="d2">[12, 15, 20, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41]</data>
+    </node>
+    <node id="Rufirant">
+      <data key="d0">13</data>
+      <data key="d1">6</data>
+      <data key="d2">[12, 13, 14, 23, 29, 40]</data>
+    </node>
+    <node id="Delora Delarmi">
+      <data key="d0">29</data>
+      <data key="d1">7</data>
+      <data key="d2">[12, 13, 14, 16, 17, 18, 19]</data>
+    </node>
+    <node id="Sura Novi">
+      <data key="d0">8</data>
+      <data key="d1">5</data>
+      <data key="d2">[13, 14, 18, 23, 35]</data>
+    </node>
+    <node id="Oratrice Delarmi">
+      <data key="d0">8</data>
+      <data key="d1">5</data>
+      <data key="d2">[14, 17, 19, 36, 40]</data>
+    </node>
+    <node id="Maître Cherchieur">
+      <data key="d0">21</data>
+      <data key="d1">9</data>
+      <data key="d2">[14, 23, 24, 29, 30, 35, 36, 37, 40]</data>
+    </node>
+    <node id="Mamie Supernova">
+      <data key="d0">3</data>
+      <data key="d1">1</data>
+      <data key="d2">[17]</data>
+    </node>
+    <node id="Hamienne">
+      <data key="d0">3</data>
+      <data key="d1">2</data>
+      <data key="d2">[18, 23]</data>
+    </node>
+    <node id="Sobhaddartha">
+      <data key="d0">3</data>
+      <data key="d1">1</data>
+      <data key="d2">[20]</data>
+    </node>
+    <node id="Munn Li Compor">
+      <data key="d0">4</data>
+      <data key="d1">4</data>
+      <data key="d2">[22, 30, 33, 38]</data>
+    </node>
+    <node id="Professeur Quintesetz">
+      <data key="d0">4</data>
+      <data key="d1">2</data>
+      <data key="d2">[25, 26]</data>
+    </node>
+    <node id="Primo">
+      <data key="d0">3</data>
+      <data key="d1">2</data>
+      <data key="d2">[31, 36]</data>
+    </node>
+    <node id="Thoobing">
+      <data key="d0">8</data>
+      <data key="d1">2</data>
+      <data key="d2">[31, 32]</data>
+    </node>
+    <node id="Pel">
+      <data key="d0">12</data>
+      <data key="d1">5</data>
+      <data key="d2">[33, 34, 38, 40, 41]</data>
+    </node>
+    <node id="Dom">
+      <data key="d0">19</data>
+      <data key="d1">5</data>
+      <data key="d2">[34, 35, 38, 40, 41]</data>
+    </node>
+    <edge source="Trevize" target="Hari Seldon">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Trevize" target="Liono Kodell">
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Trevize" target="Harlan Branno">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Trevize" target="Janov Pelorat">
+      <data key="d3">43</data>
+    </edge>
+    <edge source="Trevize" target="Salvor Hardin">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Trevize" target="Terminus">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Trevize" target="Stor Gendibal">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Trevize" target="Delora Delarmi">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Trevize" target="Orateur Gendibal">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Trevize" target="Premier Orateur">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Trevize" target="Le Mulet">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Trevize" target="Quindor Shandess">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Trevize" target="Gaïa">
+      <data key="d3">34</data>
+    </edge>
+    <edge source="Trevize" target="Professeur Quintesetz">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Trevize" target="Thoobing">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Trevize" target="Dom">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Trevize" target="Orateur Cheng">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hari Seldon" target="Salvor Hardin">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hari Seldon" target="Le Mulet">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hari Seldon" target="Liono Kodell">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Hari Seldon" target="Arkady Darell">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hari Seldon" target="Gaïa">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hari Seldon" target="Stor Gendibal">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Hari Seldon" target="Harlan Branno">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Harlan Branno" target="Madame le Maire">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Harlan Branno" target="Liono Kodell">
+      <data key="d3">9</data>
+    </edge>
+    <edge source="Harlan Branno" target="Arkady Darell">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Harlan Branno" target="Trantor">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Harlan Branno" target="Janov Pelorat">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Harlan Branno" target="Gaïa">
+      <data key="d3">6</data>
+    </edge>
+    <edge source="Harlan Branno" target="Primo">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Harlan Branno" target="Stor Gendibal">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Harlan Branno" target="Premier Orateur">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Harlan Branno" target="Orateur Gendibal">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Salvor Hardin" target="Liono Kodell">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Madame le Maire" target="Arkady Darell">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Le Mulet" target="Gaïa">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Le Mulet" target="Janov Pelorat">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Liono Kodell" target="Thoobing">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Liono Kodell" target="Gaïa">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Liono Kodell" target="Stor Gendibal">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Janov Pelorat" target="Trantor">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Janov Pelorat" target="Gaïa">
+      <data key="d3">20</data>
+    </edge>
+    <edge source="Janov Pelorat" target="Stor Gendibal">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Janov Pelorat" target="Orateur Cheng">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Janov Pelorat" target="Professeur Quintesetz">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Janov Pelorat" target="Sapristi">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Janov Pelorat" target="Pel">
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Janov Pelorat" target="Dom">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Janov Pelorat" target="Orateur Gendibal">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Trantor" target="Stor Gendibal">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Trantor" target="Preem Palver">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Terminus" target="Gaïa">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Quindor Shandess" target="Stor Gendibal">
+      <data key="d3">7</data>
+    </edge>
+    <edge source="Quindor Shandess" target="Orateur Cheng">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Quindor Shandess" target="Delora Delarmi">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Quindor Shandess" target="Premier Orateur">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Orateur Gendibal" target="Premier Orateur">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Orateur Gendibal" target="Delora Delarmi">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Orateur Gendibal" target="Orateur Cheng">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Orateur Gendibal" target="Oratrice Delarmi">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Orateur Gendibal" target="Preem Palver">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Orateur Gendibal" target="Gaïa">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Orateur Gendibal" target="Stor Gendibal">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Stor Gendibal" target="Preem Palver">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Stor Gendibal" target="Orateur Cheng">
+      <data key="d3">7</data>
+    </edge>
+    <edge source="Stor Gendibal" target="Premier Orateur">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Stor Gendibal" target="Gaïa">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Stor Gendibal" target="Rufirant">
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Stor Gendibal" target="Delora Delarmi">
+      <data key="d3">12</data>
+    </edge>
+    <edge source="Stor Gendibal" target="Oratrice Delarmi">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Stor Gendibal" target="Mamie Supernova">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Stor Gendibal" target="Maître Cherchieur">
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Orateur Cheng" target="Delora Delarmi">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Orateur Cheng" target="Oratrice Delarmi">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Orateur Cheng" target="Premier Orateur">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Orateur Cheng" target="Gaïa">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Orateur Cheng" target="Primo">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Premier Orateur" target="Oratrice Delarmi">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Gaïa" target="Professeur Quintesetz">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Gaïa" target="Maître Cherchieur">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Gaïa" target="Primo">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Gaïa" target="Thoobing">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Gaïa" target="Pel">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Gaïa" target="Dom">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Rufirant" target="Sura Novi">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Rufirant" target="Delora Delarmi">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Sura Novi" target="Maître Cherchieur">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Pel" target="Dom">
+      <data key="d3">2</data>
+    </edge>
+  </graph>
+</graphml>

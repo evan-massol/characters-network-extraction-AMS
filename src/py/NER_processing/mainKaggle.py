@@ -1,122 +1,13 @@
 import os
 import json
 import re
+# from tqdm import tqdm 
 import networkx as nx
 import pandas as pd
 import spacy as sp
-from unidecode import unidecode
-from collections import Counter
-from utils import clean_entity_name
-
-#-------------------------------------FUNCTIONS-------------------------------------
-
-
-
-# Load the anti-dictionary
-def filter_antidict(file):
-    with open(file, 'r', encoding='utf-8') as f:
-        return set(unidecode(line.strip()) for line in f)
-    
-def is_valid_entity(text):
-    """Strict filter to eliminate PDF extraction artifacts, including Unicode dashes"""
-    text = text.strip()
-    # List of Unicode dashes to filter
-    unicode_dashes = "-–—―‒‑⁻−"
-    # Eliminate entities that contain only numbers or non-alphabetic characters
-    if not re.search(r'[a-zA-ZÀ-ÿ]', text):
-        return False
-    # Eliminate entities containing Unicode dashes
-    if any(dash in text for dash in unicode_dashes):
-        return False
-    # Eliminate words with typical PDF break patterns
-    if re.search(r"[a-z][A-Z]|[A-Z]{3,}|[a-z]{1,2}'[a-z]{1,2}", text):
-        return False
-    # Final validation: must resemble a proper name
-    if not re.match(r'^[A-ZÀ-Ÿ][a-zA-ZÀ-ÿ\-\s]{2,}$', text):
-        return False
-    # Anti-dictionary filter
-    if unidecode(text.lower()) in anti_words:
-        return False
-    return True
-
-
-def build_entity_aliases(entities_list, entity_type="PER", manual_aliases_file="./json/manual_aliases.json"):
-    """
-    Builds a dictionary of aliases to group variants of the same entity.
-    Automatically detects relationships between full names and short names.
-    
-    Args:
-        entities_list: List of entities to process
-        entity_type: Entity type ("PER", "LOC", "MISC")
-        manual_aliases_file: Path to the manual aliases JSON file
-    
-    Returns: dict {alias -> canonical_form}
-    """
-    # Load manual aliases from the JSON file if it exists
-    manual_aliases = {}
-    if os.path.exists(manual_aliases_file):
-        try:
-            with open(manual_aliases_file, 'r', encoding='utf-8') as f:
-                all_manual = json.load(f)
-                manual_aliases = all_manual.get(entity_type, {})
-        except Exception as e:
-            print(f"Warning: unable to load {manual_aliases_file}: {e}")
-    
-    # Sort entities by length (longest first)
-    sorted_entities = sorted(set([e.text for e in entities_list]), key=len, reverse=True)
-    
-    # Mapping dictionary: alias -> canonical form
-    alias_map = {}
-    
-    # For each entity, check if it is a subset of another
-    for entity in sorted_entities:
-        # If already mapped, skip
-        if entity in alias_map:
-            continue
-            
-        # This entity becomes its own canonical form
-        canonical = entity
-        alias_map[entity] = canonical
-        
-        # Extract words from the entity
-        words = entity.split()
-        
-        # If it's a compound name (2+ words), create aliases for the parts
-        if len(words) >= 2:
-            # Try the last word (usually surname)
-            last_word = words[-1]
-            if len(last_word) > 2:  # Avoid initials
-                # Check if this short word already exists in our list
-                if last_word in sorted_entities and last_word != entity:
-                    alias_map[last_word] = canonical
-            
-            # Try the first word (first name)
-            first_word = words[0]
-            if len(first_word) > 2 and len(words) == 2:
-                if first_word in sorted_entities and first_word != entity:
-                    alias_map[first_word] = canonical
-    
-    # Add manual aliases (they take precedence and overwrite auto detections)
-    alias_map.update(manual_aliases)
-    
-    return alias_map
-
-
-def merge_entity_counts(entities_list, alias_map):
-    """
-    Merges entity counts using the alias map.
-    
-    Returns: Counter with grouped entities
-    """
-    merged_counts = Counter()
-    
-    for entity in entities_list:
-        # Get the canonical form
-        canonical = alias_map.get(entity.text, entity.text)
-        merged_counts[canonical] += 1
-    
-    return merged_counts
-    
+from sentence_transformers import SentenceTransformer
+from py.text_preprocessing.utils import clean_entity_name, filter_antidict
+from py.NER_processing.utils import is_valid_entity, build_entity_aliases, mapping_entity, build_entity_relation, merge_entity_counts, mappingAliasesWithGraph, mappingAliasesWithGraphV2
 
 
 #------------------------------ENTITY EXTRACTION-------------------------------
@@ -126,16 +17,28 @@ def _extract_num(fname):
     return int(m.group()) if m else -1
 
 
+
+params = {
+    "minThreshold_textuel": 0,
+    "minThreshold_contextuel": 0,
+    "minThreshold_final": 80,
+    "weight_textuel": 0.5,
+    "weight_contextuel": 0.5,
+    "louvain_resolution": 1,
+}
+
+st = SentenceTransformer("dangvantuan/sentence-camembert-large")
 nlp = sp.load("fr_core_news_lg")
 
 anti_words = filter_antidict('fonctionnels_fr.txt')
 
-books = [('paf', './txt/prelude_a_fondation'),
-         ('lca', './txt/les_cavernes_d_acier')
+books = [('paf', './txt/corpus_kaggle/prelude_a_fondation/modify'),
+         ('lca', './txt/corpus_kaggle/les_cavernes_d_acier/modify')
         ]
 
 df_dict = {"ID": [], "graphml": []}
 entities_output = []  # List to store all extracted entities
+PER_map = {}  # To store the final PER mapping
 
 for code_book, filepath in books:
 
@@ -160,7 +63,9 @@ for code_book, filepath in books:
                     LM.append(ent)
 
             # Build alias maps for each entity type
-            alias_map_PER = build_entity_aliases(LP, entity_type="PER")
+            alias_map_PER = mappingAliasesWithGraphV2(doc, st, LP, params) #build_entity_aliases(LP, entity_type="PER")
+            PER_map = mapping_entity(LP, alias_map_PER)
+            relations_PER = build_entity_relation(PER_map)
             alias_map_MISC = build_entity_aliases(LM, entity_type="MISC")
 
             # Merge counts using aliases
@@ -209,12 +114,6 @@ for code_book, filepath in books:
             print('\n ---------------------------\n')
 
 
-            # ADDITIONAL RELATIONSHIP EXTRACTION LOGIC HERE
-
-
-            # TEXT PREPROCESSING
-
-
 
 #-------------------------------GRAPH CREATION--------------------------------
 
@@ -225,6 +124,8 @@ for code_book, filepath in books:
             for canonical_name in LP_counts.keys():
                 G.add_node(canonical_name)
                 G.nodes[canonical_name]["names"] = canonical_name
+            for key, value in relations_PER.items():
+                G.add_edge(key[0], key[1], weight=value)
 
             df_dict["ID"].append("{}{}".format(code_book, num_chapter))
             graphml = "".join(nx.generate_graphml(G))
@@ -259,3 +160,7 @@ print(f"Total chapters processed: {len(entities_output)}")
 print(f"Alias report generated in 'json/aliases_report.json'")
 print(f"  - {len(all_aliases['PER'])} PER aliases detected")
 print(f"  - {len(all_aliases['MISC'])} MISC aliases detected")
+
+
+print("\n -------------------- \n")
+print(PER_map)

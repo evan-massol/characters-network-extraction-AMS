@@ -1,0 +1,371 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d3" for="edge" attr.name="weight" attr.type="long" />
+  <key id="d2" for="node" attr.name="chapters" attr.type="string" />
+  <key id="d1" for="node" attr.name="appearances" attr.type="long" />
+  <key id="d0" for="node" attr.name="count" attr.type="long" />
+  <graph edgedefault="undirected">
+    <node id="Bel Riose">
+      <data key="d0">50</data>
+      <data key="d1">7</data>
+      <data key="d2">[1, 2, 3, 4, 5, 6, 7]</data>
+    </node>
+    <node id="Ducem Barr">
+      <data key="d0">13</data>
+      <data key="d1">5</data>
+      <data key="d2">[1, 2, 3, 4, 5]</data>
+    </node>
+    <node id="Onum Barr">
+      <data key="d0">40</data>
+      <data key="d1">7</data>
+      <data key="d2">[1, 2, 3, 4, 5, 6, 7]</data>
+    </node>
+    <node id="Siwenna">
+      <data key="d0">19</data>
+      <data key="d1">7</data>
+      <data key="d2">[1, 2, 3, 4, 6, 7, 17]</data>
+    </node>
+    <node id="Siwennien">
+      <data key="d0">4</data>
+      <data key="d1">2</data>
+      <data key="d2">[1, 4]</data>
+    </node>
+    <node id="Le Marchand">
+      <data key="d0">19</data>
+      <data key="d1">8</data>
+      <data key="d2">[1, 3, 4, 5, 8, 9, 11, 12]</data>
+    </node>
+    <node id="Hari Seldon">
+      <data key="d0">45</data>
+      <data key="d1">15</data>
+      <data key="d2">[1, 2, 4, 6, 7, 8, 9, 11, 12, 14, 15, 16, 19, 20, 21]</data>
+    </node>
+    <node id="Forell">
+      <data key="d0">14</data>
+      <data key="d1">3</data>
+      <data key="d2">[1, 2, 7]</data>
+    </node>
+    <node id="Patricien">
+      <data key="d0">3</data>
+      <data key="d1">1</data>
+      <data key="d2">[2]</data>
+    </node>
+    <node id="Cléon II">
+      <data key="d0">8</data>
+      <data key="d1">4</data>
+      <data key="d2">[2, 3, 5, 7]</data>
+    </node>
+    <node id="Loris VI">
+      <data key="d0">7</data>
+      <data key="d1">3</data>
+      <data key="d2">[3, 6, 7]</data>
+    </node>
+    <node id="Lathan Devers">
+      <data key="d0">43</data>
+      <data key="d1">5</data>
+      <data key="d2">[3, 4, 5, 6, 7]</data>
+    </node>
+    <node id="Luk">
+      <data key="d0">4</data>
+      <data key="d1">2</data>
+      <data key="d2">[5, 6]</data>
+    </node>
+    <node id="Bayta">
+      <data key="d0">99</data>
+      <data key="d1">14</data>
+      <data key="d2">[7, 8, 9, 10, 11, 13, 14, 15, 16, 17, 18, 19, 20, 21]</data>
+    </node>
+    <node id="Randu">
+      <data key="d0">29</data>
+      <data key="d1">7</data>
+      <data key="d2">[8, 9, 12, 13, 14, 15, 16]</data>
+    </node>
+    <node id="Fran">
+      <data key="d0">15</data>
+      <data key="d1">3</data>
+      <data key="d2">[8, 9, 12]</data>
+    </node>
+    <node id="Le Mulet">
+      <data key="d0">64</data>
+      <data key="d1">12</data>
+      <data key="d2">[9, 10, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]</data>
+    </node>
+    <node id="Han Pritcher">
+      <data key="d0">27</data>
+      <data key="d1">8</data>
+      <data key="d2">[9, 11, 12, 15, 16, 17, 19, 21]</data>
+    </node>
+    <node id="Indbur">
+      <data key="d0">16</data>
+      <data key="d1">5</data>
+      <data key="d2">[9, 11, 12, 13, 14]</data>
+    </node>
+    <node id="Toran">
+      <data key="d0">8</data>
+      <data key="d1">5</data>
+      <data key="d2">[10, 11, 17, 18, 19]</data>
+    </node>
+    <node id="Magnifiée">
+      <data key="d0">3</data>
+      <data key="d1">3</data>
+      <data key="d2">[11, 18, 20]</data>
+    </node>
+    <node id="Vénéré Seigneur">
+      <data key="d0">4</data>
+      <data key="d1">2</data>
+      <data key="d2">[11, 15]</data>
+    </node>
+    <node id="Radole">
+      <data key="d0">4</data>
+      <data key="d1">1</data>
+      <data key="d2">[12]</data>
+    </node>
+    <node id="Horleggor">
+      <data key="d0">6</data>
+      <data key="d1">3</data>
+      <data key="d2">[12, 13, 14]</data>
+    </node>
+    <node id="Mangin">
+      <data key="d0">5</data>
+      <data key="d1">2</data>
+      <data key="d2">[12, 13]</data>
+    </node>
+    <node id="Ovall Gri">
+      <data key="d0">3</data>
+      <data key="d1">1</data>
+      <data key="d2">[12]</data>
+    </node>
+    <node id="Hella">
+      <data key="d0">4</data>
+      <data key="d1">2</data>
+      <data key="d2">[14, 15]</data>
+    </node>
+    <node id="Bay">
+      <data key="d0">3</data>
+      <data key="d1">2</data>
+      <data key="d2">[15, 20]</data>
+    </node>
+    <node id="Néotrantor">
+      <data key="d0">4</data>
+      <data key="d1">3</data>
+      <data key="d2">[17, 18, 21]</data>
+    </node>
+    <node id="Dagobert IX">
+      <data key="d0">4</data>
+      <data key="d1">2</data>
+      <data key="d2">[17, 18]</data>
+    </node>
+    <node id="Jord Commason">
+      <data key="d0">11</data>
+      <data key="d1">2</data>
+      <data key="d2">[17, 18]</data>
+    </node>
+    <node id="Anacréon">
+      <data key="d0">3</data>
+      <data key="d1">2</data>
+      <data key="d2">[17, 18]</data>
+    </node>
+    <node id="Trantor">
+      <data key="d0">4</data>
+      <data key="d1">1</data>
+      <data key="d2">[18]</data>
+    </node>
+    <node id="Gilmer">
+      <data key="d0">3</data>
+      <data key="d1">1</data>
+      <data key="d2">[18]</data>
+    </node>
+    <edge source="Bel Riose" target="Ducem Barr">
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Bel Riose" target="Siwennien">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Bel Riose" target="Siwenna">
+      <data key="d3">7</data>
+    </edge>
+    <edge source="Bel Riose" target="Onum Barr">
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Bel Riose" target="Hari Seldon">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Bel Riose" target="Forell">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Bel Riose" target="Patricien">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Bel Riose" target="Cléon II">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Bel Riose" target="Lathan Devers">
+      <data key="d3">6</data>
+    </edge>
+    <edge source="Bel Riose" target="Le Marchand">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Bel Riose" target="Luk">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Bel Riose" target="Loris VI">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Ducem Barr" target="Onum Barr">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Ducem Barr" target="Siwenna">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Ducem Barr" target="Cléon II">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Onum Barr" target="Siwenna">
+      <data key="d3">6</data>
+    </edge>
+    <edge source="Onum Barr" target="Le Marchand">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Onum Barr" target="Lathan Devers">
+      <data key="d3">9</data>
+    </edge>
+    <edge source="Onum Barr" target="Luk">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Onum Barr" target="Loris VI">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Onum Barr" target="Hari Seldon">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Onum Barr" target="Forell">
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Onum Barr" target="Cléon II">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Siwenna" target="Hari Seldon">
+      <data key="d3">6</data>
+    </edge>
+    <edge source="Siwenna" target="Cléon II">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Siwenna" target="Lathan Devers">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Le Marchand" target="Hari Seldon">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Le Marchand" target="Lathan Devers">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Le Marchand" target="Cléon II">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Le Marchand" target="Fran">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Le Marchand" target="Bayta">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hari Seldon" target="Lathan Devers">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hari Seldon" target="Forell">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hari Seldon" target="Randu">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Hari Seldon" target="Indbur">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Hari Seldon" target="Bayta">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Hari Seldon" target="Le Mulet">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Hari Seldon" target="Néotrantor">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Forell" target="Lathan Devers">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Loris VI" target="Lathan Devers">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Lathan Devers" target="Luk">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Bayta" target="Randu">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Bayta" target="Le Mulet">
+      <data key="d3">15</data>
+    </edge>
+    <edge source="Bayta" target="Magnifiée">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Bayta" target="Vénéré Seigneur">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Bayta" target="Indbur">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Bayta" target="Bay">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Bayta" target="Jord Commason">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Bayta" target="Han Pritcher">
+      <data key="d3">8</data>
+    </edge>
+    <edge source="Randu" target="Fran">
+      <data key="d3">6</data>
+    </edge>
+    <edge source="Randu" target="Le Mulet">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Randu" target="Mangin">
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Randu" target="Ovall Gri">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Randu" target="Indbur">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Le Mulet" target="Mangin">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Le Mulet" target="Han Pritcher">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Le Mulet" target="Jord Commason">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Le Mulet" target="Néotrantor">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Han Pritcher" target="Indbur">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Toran" target="Jord Commason">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Magnifiée" target="Jord Commason">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Horleggor" target="Ovall Gri">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Mangin" target="Ovall Gri">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Néotrantor" target="Dagobert IX">
+      <data key="d3">1</data>
+    </edge>
+  </graph>
+</graphml>

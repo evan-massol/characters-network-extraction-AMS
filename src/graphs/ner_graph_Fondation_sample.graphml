@@ -1,0 +1,369 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d3" for="edge" attr.name="weight" attr.type="long" />
+  <key id="d2" for="node" attr.name="chapters" attr.type="string" />
+  <key id="d1" for="node" attr.name="appearances" attr.type="long" />
+  <key id="d0" for="node" attr.name="count" attr.type="long" />
+  <graph edgedefault="undirected">
+    <node id="Gaal Dornick">
+      <data key="d0">56</data>
+      <data key="d1">3</data>
+      <data key="d2">[1, 2, 3]</data>
+    </node>
+    <node id="Hari Seldon">
+      <data key="d0">78</data>
+      <data key="d1">14</data>
+      <data key="d2">[1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 13, 14, 18, 19]</data>
+    </node>
+    <node id="Trantor">
+      <data key="d0">9</data>
+      <data key="d1">4</data>
+      <data key="d2">[1, 2, 3, 6]</data>
+    </node>
+    <node id="Avakim">
+      <data key="d0">5</data>
+      <data key="d1">1</data>
+      <data key="d2">[2]</data>
+    </node>
+    <node id="Linge Chen">
+      <data key="d0">10</data>
+      <data key="d1">2</data>
+      <data key="d2">[2, 3]</data>
+    </node>
+    <node id="Terminus">
+      <data key="d0">3</data>
+      <data key="d1">3</data>
+      <data key="d2">[3, 7, 9]</data>
+    </node>
+    <node id="Salvor Hardin">
+      <data key="d0">108</data>
+      <data key="d1">11</data>
+      <data key="d2">[3, 4, 5, 6, 7, 8, 9, 10, 11, 14, 17]</data>
+    </node>
+    <node id="Anacréon">
+      <data key="d0">52</data>
+      <data key="d1">10</data>
+      <data key="d2">[3, 4, 5, 6, 7, 8, 9, 10, 11, 13]</data>
+    </node>
+    <node id="Pirenne">
+      <data key="d0">31</data>
+      <data key="d1">4</data>
+      <data key="d2">[3, 4, 5, 6]</data>
+    </node>
+    <node id="Haut Rodric">
+      <data key="d0">7</data>
+      <data key="d1">2</data>
+      <data key="d2">[4, 7]</data>
+    </node>
+    <node id="Jord Fara">
+      <data key="d0">10</data>
+      <data key="d1">3</data>
+      <data key="d2">[4, 5, 6]</data>
+    </node>
+    <node id="Dorwin">
+      <data key="d0">7</data>
+      <data key="d1">2</data>
+      <data key="d2">[4, 5]</data>
+    </node>
+    <node id="Lameth">
+      <data key="d0">3</data>
+      <data key="d1">1</data>
+      <data key="d2">[5]</data>
+    </node>
+    <node id="Yohan Lee">
+      <data key="d0">16</data>
+      <data key="d1">6</data>
+      <data key="d2">[6, 7, 8, 9, 10, 11]</data>
+    </node>
+    <node id="Sef Sermak">
+      <data key="d0">20</data>
+      <data key="d1">3</data>
+      <data key="d2">[7, 9, 13]</data>
+    </node>
+    <node id="Poly Verisof">
+      <data key="d0">10</data>
+      <data key="d1">4</data>
+      <data key="d2">[8, 9, 10, 11]</data>
+    </node>
+    <node id="Wienis">
+      <data key="d0">19</data>
+      <data key="d1">4</data>
+      <data key="d2">[8, 9, 10, 11]</data>
+    </node>
+    <node id="Lepold Ier">
+      <data key="d0">21</data>
+      <data key="d1">4</data>
+      <data key="d2">[8, 9, 10, 11]</data>
+    </node>
+    <node id="Lefkin">
+      <data key="d0">3</data>
+      <data key="d1">1</data>
+      <data key="d2">[11]</data>
+    </node>
+    <node id="Askone">
+      <data key="d0">6</data>
+      <data key="d1">3</data>
+      <data key="d2">[11, 12, 17]</data>
+    </node>
+    <node id="Eskel Gorov">
+      <data key="d0">15</data>
+      <data key="d1">2</data>
+      <data key="d2">[12, 13]</data>
+    </node>
+    <node id="Limmar Ponyets">
+      <data key="d0">3</data>
+      <data key="d1">2</data>
+      <data key="d2">[12, 13]</data>
+    </node>
+    <node id="Grand Maître">
+      <data key="d0">7</data>
+      <data key="d1">2</data>
+      <data key="d2">[12, 13]</data>
+    </node>
+    <node id="Hober Mallow">
+      <data key="d0">13</data>
+      <data key="d1">7</data>
+      <data key="d2">[13, 14, 15, 16, 17, 18, 19]</data>
+    </node>
+    <node id="Le Marchand">
+      <data key="d0">10</data>
+      <data key="d1">5</data>
+      <data key="d2">[13, 14, 15, 17, 18]</data>
+    </node>
+    <node id="Jorane Sutt">
+      <data key="d0">8</data>
+      <data key="d1">4</data>
+      <data key="d2">[13, 17, 18, 19]</data>
+    </node>
+    <node id="Publis Manlio">
+      <data key="d0">7</data>
+      <data key="d1">2</data>
+      <data key="d2">[14, 18]</data>
+    </node>
+    <node id="Jaim Twer">
+      <data key="d0">20</data>
+      <data key="d1">5</data>
+      <data key="d2">[14, 15, 16, 17, 18]</data>
+    </node>
+    <node id="Jord Parma">
+      <data key="d0">7</data>
+      <data key="d1">3</data>
+      <data key="d2">[14, 15, 18]</data>
+    </node>
+    <node id="Maître Marchand">
+      <data key="d0">3</data>
+      <data key="d1">2</data>
+      <data key="d2">[15, 17]</data>
+    </node>
+    <node id="Onum Barr">
+      <data key="d0">10</data>
+      <data key="d1">1</data>
+      <data key="d2">[16]</data>
+    </node>
+    <node id="Siwenna">
+      <data key="d0">9</data>
+      <data key="d1">2</data>
+      <data key="d2">[16, 17]</data>
+    </node>
+    <node id="Ankor Jael">
+      <data key="d0">16</data>
+      <data key="d1">3</data>
+      <data key="d2">[17, 18, 19]</data>
+    </node>
+    <edge source="Gaal Dornick" target="Hari Seldon">
+      <data key="d3">22</data>
+    </edge>
+    <edge source="Gaal Dornick" target="Trantor">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Gaal Dornick" target="Avakim">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Gaal Dornick" target="Linge Chen">
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Hari Seldon" target="Trantor">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Hari Seldon" target="Linge Chen">
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Hari Seldon" target="Jord Fara">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Hari Seldon" target="Salvor Hardin">
+      <data key="d3">12</data>
+    </edge>
+    <edge source="Hari Seldon" target="Anacréon">
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Hari Seldon" target="Pirenne">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hari Seldon" target="Haut Rodric">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hari Seldon" target="Yohan Lee">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Hari Seldon" target="Poly Verisof">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hari Seldon" target="Lepold Ier">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Hari Seldon" target="Publis Manlio">
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Hari Seldon" target="Jaim Twer">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hari Seldon" target="Hober Mallow">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Trantor" target="Avakim">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Terminus" target="Salvor Hardin">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Terminus" target="Sef Sermak">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Terminus" target="Yohan Lee">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Salvor Hardin" target="Anacréon">
+      <data key="d3">20</data>
+    </edge>
+    <edge source="Salvor Hardin" target="Pirenne">
+      <data key="d3">21</data>
+    </edge>
+    <edge source="Salvor Hardin" target="Haut Rodric">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Salvor Hardin" target="Jord Fara">
+      <data key="d3">6</data>
+    </edge>
+    <edge source="Salvor Hardin" target="Dorwin">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Salvor Hardin" target="Lameth">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Salvor Hardin" target="Yohan Lee">
+      <data key="d3">6</data>
+    </edge>
+    <edge source="Salvor Hardin" target="Sef Sermak">
+      <data key="d3">8</data>
+    </edge>
+    <edge source="Salvor Hardin" target="Lepold Ier">
+      <data key="d3">6</data>
+    </edge>
+    <edge source="Salvor Hardin" target="Wienis">
+      <data key="d3">9</data>
+    </edge>
+    <edge source="Salvor Hardin" target="Poly Verisof">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Salvor Hardin" target="Publis Manlio">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Anacréon" target="Pirenne">
+      <data key="d3">11</data>
+    </edge>
+    <edge source="Anacréon" target="Haut Rodric">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Anacréon" target="Dorwin">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Anacréon" target="Jord Fara">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Anacréon" target="Poly Verisof">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Anacréon" target="Lepold Ier">
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Anacréon" target="Sef Sermak">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Anacréon" target="Wienis">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Pirenne" target="Haut Rodric">
+      <data key="d3">7</data>
+    </edge>
+    <edge source="Pirenne" target="Jord Fara">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Pirenne" target="Dorwin">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Yohan Lee" target="Sef Sermak">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Yohan Lee" target="Poly Verisof">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Poly Verisof" target="Lepold Ier">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Poly Verisof" target="Wienis">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Wienis" target="Lepold Ier">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Askone" target="Eskel Gorov">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Eskel Gorov" target="Limmar Ponyets">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Hober Mallow" target="Le Marchand">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hober Mallow" target="Jorane Sutt">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hober Mallow" target="Jaim Twer">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Hober Mallow" target="Jord Parma">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hober Mallow" target="Maître Marchand">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Hober Mallow" target="Ankor Jael">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Le Marchand" target="Jorane Sutt">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Le Marchand" target="Jaim Twer">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Jorane Sutt" target="Jaim Twer">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Jorane Sutt" target="Publis Manlio">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Publis Manlio" target="Ankor Jael">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Jaim Twer" target="Jord Parma">
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Jaim Twer" target="Ankor Jael">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Onum Barr" target="Siwenna">
+      <data key="d3">6</data>
+    </edge>
+  </graph>
+</graphml>

@@ -1,14 +1,6 @@
-"""
-Utility script to analyze detected aliases and generate suggestions.
-Use this script to:
-- View all groupings made
-- Identify potential errors
-- Generate suggestions for manual_aliases.json
-"""
-
 import json
 from collections import defaultdict
-from utils import filter_antidict, clean_entity_name
+from py.text_preprocessing.utils import filter_antidict, clean_entity_name
 
 def load_aliases_report(filepath="./json/aliases_report.json"):
     """Load the generated alias report."""
@@ -21,7 +13,7 @@ def load_entities_output(filepath="./json/entities_output.json"):
         data = json.load(f)
         # Clean all entity names in-place
         for chapter in data:
-            for entity_type in ["PER", "LOC", "MISC"]:
+            for entity_type in ["PER", "MISC"]:
                 for entity in chapter["entities"][entity_type]:
                     entity["name"] = clean_entity_name(entity["name"])
         return data
@@ -32,7 +24,7 @@ def analyze_aliases(aliases_report):
     print("ALIAS ANALYSIS REPORT")
     print("=" * 80)
     
-    for entity_type in ["PER", "LOC", "MISC"]:
+    for entity_type in ["PER", "MISC"]:
         if not aliases_report[entity_type]:
             continue
             
@@ -50,55 +42,38 @@ def analyze_aliases(aliases_report):
             print(f"\n  ✓ {canonical}")
             for alias in sorted(aliases):
                 print(f"    ← {alias}")
-
-def find_potential_errors(entities_output):
-    """
-    Identify potentially erroneous groupings
-    (e.g., short names that could belong to multiple people)
-    """
-    print("\n" + "=" * 80)
-    print("CHECKING POTENTIALLY PROBLEMATIC GROUPINGS")
-    print("=" * 80)
-    
-    # Collect all names and their frequencies
-    all_names = defaultdict(int)
-    for chapter in entities_output:
-        for entity in chapter["entities"]["PER"]:
-            all_names[entity["name"]] += entity["count"]
-    
-    # Identifier les noms très fréquents (pourraient être sur-groupés)
-    high_freq = {name: count for name, count in all_names.items() if count > 100}
-    
-    if high_freq:
-        print("\n⚠ Entités avec beaucoup d'occurrences (vérifiez le regroupement):")
-        for name, count in sorted(high_freq.items(), key=lambda x: x[1], reverse=True):
-            print(f"  - {name}: {count} occurrences")
-    
-    # Identifier les noms très courts (1 mot) qui pourraient être ambigus
-    short_names = {name: count for name, count in all_names.items() 
-                   if len(name.split()) == 1 and count > 10}
-    
-    if short_names:
-        print("\n⚠ Noms courts fréquents (pourraient être ambigus):")
-        for name, count in sorted(short_names.items(), key=lambda x: x[1], reverse=True):
-            print(f"  - {name}: {count} occurrences")
-
+                
 def generate_manual_suggestions():
     """
-    Generate suggestions for the manual_aliases.json file
-    based on detected patterns.
+    Génère des suggestions pour le fichier manual_aliases.json
+    à partir du rapport d'alias détectés.
     """
     print("\n" + "=" * 80)
     print("SUGGESTIONS FOR MANUAL ALIASES")
     print("=" * 80)
-    print("\nCopy these lines into manual_aliases.json if they are correct:")
+    print("\nCopiez ces lignes dans manual_aliases.json si elles sont correctes :")
     print("\n```json")
-    
-    suggestions = {"PER": {}, "LOC": {}, "MISC": {}}
-    
-    # For now, just display the structure
-    # You can enrich this logic with your own rules
-    
+
+    # Charger le rapport d'alias
+    try:
+        aliases_report = load_aliases_report()
+    except Exception as e:
+        print(f"Erreur lors du chargement du rapport d'alias : {e}")
+        print("{}\n```")
+        return
+
+    suggestions = {"PER": {}, "MISC": {}}
+
+    for entity_type in ["PER", "MISC"]:
+        canonical_to_aliases = defaultdict(list)
+        for alias, canonical in aliases_report[entity_type].items():
+            if alias != canonical:
+                canonical_to_aliases[canonical].append(alias)
+        for canonical, aliases in canonical_to_aliases.items():
+            # On ne propose que si plusieurs alias pour une même forme canonique
+            if len(aliases) > 0:
+                suggestions[entity_type][canonical] = sorted(aliases)
+
     print(json.dumps(suggestions, ensure_ascii=False, indent=2))
     print("```")
 
@@ -121,10 +96,6 @@ def show_entity_stats(entities_output, antidict=None):
             if not antidict or entity["name"].lower() not in antidict:
                 total_per += entity["count"]
                 unique_per.add(entity["name"])
-        for entity in chapter["entities"]["LOC"]:
-            if not antidict or entity["name"].lower() not in antidict:
-                total_loc += entity["count"]
-                unique_loc.add(entity["name"])
         for entity in chapter["entities"]["MISC"]:
             if not antidict or entity["name"].lower() not in antidict:
                 total_misc += entity["count"]
@@ -134,17 +105,13 @@ def show_entity_stats(entities_output, antidict=None):
     print(f"  - {len(unique_per)} entités uniques")
     print(f"  - {total_per} occurrences totales")
     
-    print(f"\nLieux (LOC):")
-    print(f"  - {len(unique_loc)} entités uniques")
-    print(f"  - {total_loc} occurrences totales")
-    
     print(f"\nDivers (MISC):")
     print(f"  - {len(unique_misc)} entités uniques")
     print(f"  - {total_misc} occurrences totales")
 
 def main():
     """Fonction principale."""
-    print("\n🔍 Analyse des alias détectés...\n")
+    print("\nAnalyse des alias détectés...\n")
     
     try:
         aliases_report = load_aliases_report()
@@ -154,19 +121,18 @@ def main():
         # Analyses
         show_entity_stats(entities_output, antidict=antidict)
         analyze_aliases(aliases_report)
-        find_potential_errors(entities_output)
         generate_manual_suggestions()
         
         print("\n" + "=" * 80)
-        print("✓ Analyse terminée !")
+        print("Analyse terminée !")
         print("=" * 80)
         print("\nConsultez manual_aliases.json pour ajouter vos corrections manuelles.")
         
     except FileNotFoundError as e:
-        print(f"❌ Erreur: Fichier non trouvé - {e}")
+        print(f"Erreur: Fichier non trouvé - {e}")
         print("   Assurez-vous d'avoir exécuté FirstInLeaderboard.py d'abord.")
     except Exception as e:
-        print(f"❌ Erreur: {e}")
+        print(f"Erreur: {e}")
 
 if __name__ == "__main__":
     main()
