@@ -3,11 +3,15 @@
 env
 
 *.pdf
+*.csv
+*.png
 
 __pycache__/
+
 
 # Ignore location entities analysis results
 src/json/aliases_report.json
 src/json/entities_output.json
+src/json/reference_embeddings_to_categorizing_relations.json
 src/EvanMASSOL_MartinGERIS.csv
 src/EvanMASSOL_MartinGERIS_Fondation.csv
