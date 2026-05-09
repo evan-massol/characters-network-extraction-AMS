@@ -136,7 +136,7 @@ def plot_stacked_relation_bars(records, title, output_path, summary_output_path,
 
     plt.tight_layout()
     os.makedirs(Path(output_path).parent, exist_ok=True)
-    plt.savefig(output_path, dpi=300, bbox_inches="tight")
+    plt.savefig(output_path, dpi=300) #bbox_inches="tight"
     plt.close(fig)
     print(f"Saved: {output_path}")
 

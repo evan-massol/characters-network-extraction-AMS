@@ -8,21 +8,7 @@ import pandas as pd
 import spacy as sp
 from sentence_transformers import SentenceTransformer
 
-from py.NER_processing.utils import is_valid_entity, build_entity_aliases, mapping_entity, build_entity_relation_with_context, merge_entity_counts
-
-
-###############################################################################
-# PLAN REWORK FOR THIS PROGRAM
-#
-# PIPELINE :
-# for each corpus
-#     - NER 
-#     - handle alias 
-#     - find relation 
-#     - generate CSV with characters (their aliases) and relations (embeddings' meaningful words)
-#
-# In another program, we embedd contextual sentences
-###############################################################################
+from py.NER_processing.utils import is_valid_entity, build_entity_aliases, mapping_entity, build_entity_relation_with_context, merge_entity_counts, mappingAliasesWithGraphV2
 
 
 
@@ -70,7 +56,7 @@ for file in os.listdir(repertoire):
                 LP.append(ent)
 
         # Aliases handling
-        alias_map_PER = build_entity_aliases(LP, entity_type="PER") # à remplacer par mappingAliasesWithGraphV2(doc, st, LP, params)
+        alias_map_PER = mappingAliasesWithGraphV2(doc, st, LP, params) # ou build_entity_aliases(LP, entity_type="PER") pour un execution plus rapide
         PER_map = mapping_entity(LP, alias_map_PER)
         # Relation handling
         relations_PER = build_entity_relation_with_context(doc, st, PER_map)

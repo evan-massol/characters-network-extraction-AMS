@@ -1,7 +1,7 @@
 import os
 import json
 import re
-from tqdm import tqdm 
+# from tqdm import tqdm 
 import networkx as nx
 import pandas as pd
 import spacy as sp
@@ -24,7 +24,7 @@ params = {
     "minThreshold_final": 80,
     "weight_textuel": 0.5,
     "weight_contextuel": 0.5,
-    "louvain_resolution": 1.15,
+    "louvain_resolution": 1,
 }
 
 st = SentenceTransformer("dangvantuan/sentence-camembert-large")
